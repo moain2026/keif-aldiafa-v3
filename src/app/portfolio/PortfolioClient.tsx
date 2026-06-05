@@ -2,7 +2,7 @@
 
 import { useState, useRef, useCallback, useEffect } from "react";
 import { motion, AnimatePresence, useMotionValue, useTransform, animate, useScroll } from "motion/react";
-import { ImageWithFallback } from "@/components/ImageWithFallback";
+
 import ProtectedImage from "@/components/ProtectedImage";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import {
@@ -11,7 +11,7 @@ import {
   EQUIPMENT_IMAGES,
 } from "@/lib/images";
 
-const WA = "966508252134";
+
 const ITEMS_PER_PAGE = 12;
 
 type FilterType = "all" | "events" | "weddings" | "equipment";
@@ -21,6 +21,13 @@ interface PortfolioItem {
   image: string;
   category: FilterType;
 }
+
+const seoAltMapping: Record<string, string> = {
+  all: "خدمات ضيافة فاخرة في السعودية - كيف الضيافة",
+  events: "تجهيز ضيافة فعاليات ومؤتمرات VIP - صبابين وقهوجية مناسبات",
+  weddings: "ضيافة زواجات فاخرة في السعودية - صبابات ومباشرات ضيافة نسائية",
+  equipment: "تأجير معدات ضيافة ملكية - دلال نحاسية وكاونترات استقبال"
+};
 
 const portfolioItems: PortfolioItem[] = [
   ...EVENT_IMAGES.map((img, i) => ({
@@ -148,15 +155,16 @@ function Lightbox({
             onDragEnd={handleDragEnd}
             className="w-full h-full flex items-center justify-center cursor-grab active:cursor-grabbing select-none"
           >
-            <ProtectedImage
-              src={item.image}
-              alt={`صورة ${index + 1}`}
-              width={1200}
-              height={800}
-              className="max-w-full max-h-full"
-              priority
-              showWatermark={true}
-            />
+            <div className="relative w-full h-full max-w-[95vw] max-h-[85vh] md:max-w-[75vw] md:max-h-[75vh] flex items-center justify-center">
+              <ProtectedImage
+                src={item.image}
+                alt={`${seoAltMapping[item.category]} - عرض تفصيلي رقم ${index + 1}`}
+                fill={true}
+                className="object-contain shadow-2xl select-none"
+                priority
+                showWatermark={true}
+              />
+            </div>
           </motion.div>
         </AnimatePresence>
       </div>
@@ -174,7 +182,7 @@ function RoyalTrioNav({ activeFilter, onFilterChange }: { activeFilter: FilterTy
   const { scrollY } = useScroll();
 
   useEffect(() => {
-    const unsubscribe = scrollY.onChange((latest) => {
+    const unsubscribe = scrollY.onChange(() => {
       if (containerRef.current) {
         const containerTop = containerRef.current.getBoundingClientRect().top;
         setIsSticky(containerTop <= 0);
@@ -309,9 +317,9 @@ export default function PortfolioClient() {
       {/* Royal Trio Sticky Navigation */}
       <RoyalTrioNav activeFilter={activeFilter} onFilterChange={setActiveFilter} />
 
-      {/* Gallery Grid - Matching Offerings Style (Square & rounded-2xl) */}
+      {/* Gallery Grid - Masonry Style (Natural Aspect Ratio) */}
       <div className="container mx-auto px-4 pt-12">
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+        <div className="columns-2 md:columns-3 lg:columns-4 gap-4 sm:gap-6 space-y-4 sm:space-y-6">
           {displayedItems.map((item, idx) => (
             <motion.div
               key={item.id}
@@ -320,13 +328,13 @@ export default function PortfolioClient() {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.4 }}
               onClick={() => setSelectedIndex(idx)}
-              className="group relative rounded-2xl overflow-hidden cursor-pointer aspect-square bg-black"
+              className="break-inside-avoid group relative rounded-2xl overflow-hidden cursor-pointer bg-[#1a1a1a]"
             >
               <ProtectedImage
                 src={item.image}
-                alt={`صورة ${idx + 1}`}
-                fill
-                className="transition-transform duration-700 group-hover:scale-110"
+                alt={`${seoAltMapping[item.category]} - لقطة ${idx + 1} من معرض أعمالنا`}
+                className="w-full h-auto transition-transform duration-700 group-hover:scale-110"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
               <div className="absolute inset-0 img-overlay" />
               <div className="absolute inset-0 bg-[#B8860B]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

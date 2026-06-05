@@ -66,7 +66,7 @@ const nextConfig = {
       },
     ],
     formats: ["image/avif", "image/webp"],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2560, 3168],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 60 * 60 * 24 * 60, // 60 days
   },
@@ -75,7 +75,13 @@ const nextConfig = {
     return [
       {
         source: "/(.*)",
-        headers: securityHeaders,
+        headers: [
+          ...securityHeaders,
+          {
+            key: 'X-Robots-Tag',
+            value: process.env.VERCEL_ENV === 'production' ? 'all' : 'noindex, nofollow',
+          },
+        ],
       },
       {
         source: "/(.*)\\.(jpg|jpeg|png|gif|svg|webp|avif|ico|woff|woff2)",
@@ -111,6 +117,37 @@ const nextConfig = {
     return [
       {
         source: "/home",
+        destination: "/",
+        permanent: true,
+      },
+      // Legacy WordPress Redirects
+      {
+        source: "/",
+        has: [{ type: "query", key: "page_id", value: "33" }],
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/",
+        has: [{ type: "query", key: "page_id", value: "1538" }],
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/",
+        has: [{ type: "query", key: "page_id", value: "1497" }],
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/",
+        has: [{ type: "query", key: "page_id", value: "1344" }],
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/",
+        has: [{ type: "query", key: "page_id", value: "1608" }],
         destination: "/",
         permanent: true,
       },

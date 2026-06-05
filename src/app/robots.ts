@@ -10,6 +10,5 @@ export default function robots(): MetadataRoute.Robots {
       },
     ],
     sitemap: "https://keifaldiafa.com/sitemap.xml",
-    host: "https://keifaldiafa.com",
   };
 }

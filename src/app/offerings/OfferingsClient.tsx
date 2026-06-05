@@ -2,7 +2,7 @@
 
 import { useState, useCallback, useEffect, useRef } from "react";
 import { motion, AnimatePresence, useMotionValue, useTransform, animate, useScroll } from "motion/react";
-import Image from "next/image";
+
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import ProtectedImage from "@/components/ProtectedImage";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -12,6 +12,10 @@ import {
   DATES_IMAGES,
   SWEETS_IMAGES,
   PASTRY_IMAGES,
+  SNACKS_IMAGES,
+  SANDWICHES_IMAGES,
+  FRUITS_IMAGES,
+  NUTS_IMAGES,
 } from "@/lib/images";
 
 const WA = "966508252134";
@@ -81,6 +85,9 @@ const categories: CategoryData[] = [
       { name: "شوكولاتة بستاني",        description: "بستاني الفاخرة بنكهات مميزة",           img: SWEETS_IMAGES.bostaniChocolate },
       { name: "كرواءسون شوكولاتة",       description: "كرواسون فرنسي محشو",                   img: SWEETS_IMAGES.chocolateCroissant },
       { name: "بان كيك",                description: "بان كيك طازج بالتوبينج",               img: SWEETS_IMAGES.pancake },
+      { name: "بوفيه حلى كاسات",         description: "حلى كاسات شوكولاتة وبسبوسة ومكعبات",    img: SWEETS_IMAGES.chocolateMousseBasbousaBuffet },
+      { name: "تشكيلة شرقية فاخرة",      description: "بقلاوة وكنافة بالفستق مع فواكه طازجة",   img: SWEETS_IMAGES.baklavaKunafaFruitPlatter },
+      { name: "ركن الحلويات الفاخر",     description: "كاسات مانجو وريد فيلفيت وبقلاوة أصابع",  img: SWEETS_IMAGES.mangoPannaCottaRedVelvetStation },
     ],
   },
   {
@@ -91,6 +98,62 @@ const categories: CategoryData[] = [
       { name: "معجنات عربية",          description: "تشكيلة معجنات أصيلة",                  img: PASTRY_IMAGES.arabicPastry },
       { name: "معجنات متنوعة",         description: "باقة متنوعة للمناسبات",               img: PASTRY_IMAGES.assortedPastry },
       { name: "مقبلات فاخرة",          description: "مقبلات صغيرة فاخرة",                  img: PASTRY_IMAGES.appetizers },
+    ],
+  },
+  {
+    id: "snacks", label: "السناكات", icon: "🍿", description: "وجبات خفيفة فاخرة ومتنوعة تليق بالمناسبات",
+    items: [
+      { name: "ميني بيتزا",        description: "بيتزا صغيرة بحشوات متنوعة",           img: SNACKS_IMAGES.miniPizza },
+      { name: "ناتشوز",            description: "ناتشوز مقرمشة بالجبن والصلصة",        img: SNACKS_IMAGES.nachos },
+      { name: "بطاطس ودجز",        description: "ودجز ذهبية مقرمشة",                   img: SNACKS_IMAGES.potatoWedges },
+      { name: "سبرنج رول",         description: "لفائف مقرمشة بحشوات شرقية",           img: SNACKS_IMAGES.springRoll },
+      { name: "تشيكن بوبس",        description: "كرات دجاج مقرمشة ذهبية",             img: SNACKS_IMAGES.chickenPops },
+      { name: "كروكيت",            description: "كروكيت بالبطاطس والجبن",              img: SNACKS_IMAGES.croquette },
+      { name: "فنجر فود",          description: "تشكيلة مقبلات صغيرة فاخرة",           img: SNACKS_IMAGES.fingerFood },
+      { name: "ميني برجر",         description: "برجر صغير بلمسة فاخرة",              img: SNACKS_IMAGES.miniBurger },
+      { name: "تشيز ستيك",         description: "أصابع جبن مقرمشة ذهبية",             img: SNACKS_IMAGES.cheeseStick },
+      { name: "بروشيتا",           description: "خبز محمص بالطماطم والريحان",          img: SNACKS_IMAGES.bruschetta },
+    ],
+  },
+  {
+    id: "sandwiches", label: "السندوتشات", icon: "🥪", description: "سندوتشات طازجة محضرة بعناية فائقة",
+    items: [
+      { name: "كلوب ساندوتش",      description: "ساندوتش كلاسيكي ثلاثي الطبقات",       img: SANDWICHES_IMAGES.clubSandwich },
+      { name: "دجاج مشوي",         description: "ساندوتش دجاج مشوي بالأعشاب",         img: SANDWICHES_IMAGES.grilledChicken },
+      { name: "ساندوتش تونة",      description: "تونة طازجة بالخضروات",               img: SANDWICHES_IMAGES.tunaSandwich },
+      { name: "لحم بارد",          description: "شرائح لحم بارد فاخرة",               img: SANDWICHES_IMAGES.coldCuts },
+      { name: "حلوم مشوي",         description: "جبن حلوم مشوي بالخضروات",            img: SANDWICHES_IMAGES.grilledHalloumi },
+      { name: "ديك رومي",          description: "شرائح ديك رومي مدخنة",               img: SANDWICHES_IMAGES.turkeySandwich },
+      { name: "سلمون مدخن",        description: "سلمون مدخن بالكريمة",                img: SANDWICHES_IMAGES.smokedSalmon },
+    ],
+  },
+  {
+    id: "fruits", label: "فواكه مشكلة", icon: "🍇", description: "فواكه طازجة مقطعة ومقدمة بأناقة",
+    items: [
+      { name: "فراولة طازجة",       description: "فراولة حمراء طازجة ومنتقاة",          img: FRUITS_IMAGES.strawberry },
+      { name: "عنب أحمر وأخضر",    description: "عنب فاخر بنوعيه",                    img: FRUITS_IMAGES.grapes },
+      { name: "مانجو مقطعة",       description: "مانجو ناضجة مقطعة بأناقة",            img: FRUITS_IMAGES.mango },
+      { name: "أناناس طازج",       description: "أناناس استوائي مقطع",                img: FRUITS_IMAGES.pineapple },
+      { name: "كيوي مقطع",         description: "كيوي أخضر طازج ومنعش",               img: FRUITS_IMAGES.kiwi },
+      { name: "توت مشكل",          description: "تشكيلة توت بري فاخرة",               img: FRUITS_IMAGES.mixedBerries },
+      { name: "بطيخ مكعبات",       description: "بطيخ أحمر مقطع مكعبات",              img: FRUITS_IMAGES.watermelon },
+      { name: "تين طازج",          description: "تين موسمي طازج ومميز",               img: FRUITS_IMAGES.figs },
+      { name: "رمان مفصص",         description: "حبات رمان مفصصة بعناية",             img: FRUITS_IMAGES.pomegranate },
+    ],
+  },
+  {
+    id: "nuts", label: "المكسرات", icon: "🥜", description: "مكسرات فاخرة محمصة ومملحة بعناية",
+    items: [
+      { name: "لوز محمص",          description: "لوز محمص بالملح الخفيف",              img: NUTS_IMAGES.roastedAlmonds },
+      { name: "كاجو ملكي",         description: "كاجو فاخر محمص بالزبدة",             img: NUTS_IMAGES.royalCashew },
+      { name: "فستق حلبي",         description: "فستق حلبي أخضر فاخر",               img: NUTS_IMAGES.pistachio },
+      { name: "جوز عين الجمل",     description: "جوز طبيعي غني بالفوائد",             img: NUTS_IMAGES.walnut },
+      { name: "بندق محمص",         description: "بندق محمص بنكهة مميزة",              img: NUTS_IMAGES.roastedHazelnut },
+      { name: "مكسرات مشكلة فاخرة", description: "تشكيلة ملكية من أجود المكسرات",       img: NUTS_IMAGES.premiumMix },
+      { name: "صنوبر ذهبي",        description: "صنوبر محمص ذهبي اللون",              img: NUTS_IMAGES.pineNuts },
+      { name: "مكاديميا",          description: "مكاديميا فاخرة نادرة",               img: NUTS_IMAGES.macadamia },
+      { name: "بيكان محمص",        description: "بيكان أمريكي محمص فاخر",             img: NUTS_IMAGES.roastedPecan },
+      { name: "فول سوداني مملح",    description: "فول سوداني مقرمش ومملح",             img: NUTS_IMAGES.saltedPeanuts },
     ],
   },
 ];
@@ -223,12 +286,16 @@ function Lightbox({
 // ─────────────────────────────────────────────
 function RoyalTrioNav({ activeTab, onTabChange }: { activeTab: string; onTabChange: (id: string) => void }) {
   const [isSticky, setIsSticky] = useState(false);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
   const navRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
   const { scrollY } = useScroll();
 
+  // Track sticky state
   useEffect(() => {
-    const unsubscribe = scrollY.on("change", (latest) => {
+    const unsubscribe = scrollY.on("change", () => {
       if (containerRef.current) {
         const containerTop = containerRef.current.getBoundingClientRect().top;
         setIsSticky(containerTop <= 0);
@@ -236,6 +303,29 @@ function RoyalTrioNav({ activeTab, onTabChange }: { activeTab: string; onTabChan
     });
     return () => unsubscribe();
   }, [scrollY]);
+
+  // Track horizontal scroll state for fade indicators
+  const checkScroll = useCallback(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    const { scrollLeft, scrollWidth, clientWidth } = el;
+    // RTL: scrollLeft is negative in RTL
+    const absScroll = Math.abs(scrollLeft);
+    setCanScrollRight(absScroll > 1);
+    setCanScrollLeft(absScroll < scrollWidth - clientWidth - 1);
+  }, []);
+
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    checkScroll();
+    el.addEventListener("scroll", checkScroll, { passive: true });
+    window.addEventListener("resize", checkScroll);
+    return () => {
+      el.removeEventListener("scroll", checkScroll);
+      window.removeEventListener("resize", checkScroll);
+    };
+  }, [checkScroll]);
 
   return (
     <div ref={containerRef} className="w-full">
@@ -252,70 +342,90 @@ function RoyalTrioNav({ activeTab, onTabChange }: { activeTab: string; onTabChan
         transition={{ duration: 0.3, ease: 'easeInOut' }}
       >
         <div className="max-w-7xl mx-auto px-4">
-          <div className="flex justify-center gap-2 sm:gap-3">
-            {categories.map((category) => (
-              <motion.button
-                key={category.id}
-                onClick={() => onTabChange(category.id)}
-                className="relative group flex-1 max-w-sm"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <motion.div
-                  className="absolute inset-0 rounded-3xl transition-all duration-300"
-                  animate={{
-                    background: activeTab === category.id
-                      ? 'linear-gradient(135deg, rgba(184,134,11,0.25), rgba(212, 160, 23, 0.15))'
-                      : 'rgba(0, 0, 0, 0.25)',
-                    border: activeTab === category.id
-                      ? '2px solid rgba(184, 134, 11, 0.7)'
-                      : '1.5px solid rgba(184, 134, 11, 0.15)',
-                    boxShadow: activeTab === category.id
-                      ? '0 0 30px rgba(184, 134, 11, 0.4), inset 0 0 20px rgba(184, 134, 11, 0.1)'
-                      : 'none',
-                  }}
-                />
-                <div className="relative flex flex-col items-center justify-center p-2 sm:p-4 h-full min-h-[65px] sm:min-h-[80px]">
-                  <motion.span 
-                    className="text-lg sm:text-xl mb-1.5"
-                    animate={{ 
-                      scale: activeTab === category.id ? 1.2 : 1,
-                      filter: activeTab === category.id ? 'drop-shadow(0 0 8px rgba(184, 134, 11, 0.5))' : 'grayscale(0.5) opacity(0.7)'
-                    }}
-                  >
-                    {category.icon}
-                  </motion.span>
-                  <motion.p
-                    className="text-[10px] sm:text-[12px] text-center font-bold leading-tight"
-                    style={{
-                      textShadow: '0 1px 4px rgba(0, 0, 0, 0.5), 0 0 8px rgba(184, 134, 11, 0.2)',
-                    }}
-                    animate={{
-                      color: activeTab === category.id ? '#D4A017' : '#F5F5DC',
-                      opacity: activeTab === category.id ? 1 : 0.8,
-                    }}
-                    transition={{ type: 'spring', stiffness: 280, damping: 20, mass: 0.8, delay: 0.05 }}
-                    layout
-                  >
-                    {category.label}
-                  </motion.p>
-                </div>
-                {activeTab === category.id && (
+          <div className="relative">
+            {/* Left fade indicator (RTL: means more content to the right) */}
+            <div
+              className={`absolute left-0 top-0 bottom-0 w-8 z-10 pointer-events-none transition-opacity duration-300 sm:hidden ${canScrollLeft ? 'opacity-100' : 'opacity-0'}`}
+              style={{ background: 'linear-gradient(to right, rgba(15,15,15,0.95), transparent)' }}
+            />
+            {/* Right fade indicator (RTL: means more content to the left) */}
+            <div
+              className={`absolute right-0 top-0 bottom-0 w-8 z-10 pointer-events-none transition-opacity duration-300 sm:hidden ${canScrollRight ? 'opacity-100' : 'opacity-0'}`}
+              style={{ background: 'linear-gradient(to left, rgba(15,15,15,0.95), transparent)' }}
+            />
+            <div
+              ref={scrollRef}
+              className="flex gap-2 sm:gap-3 overflow-x-auto pb-2 sm:pb-0 sm:justify-center sm:flex-wrap scrollbar-hide"
+              style={{ WebkitOverflowScrolling: 'touch', scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+            >
+              {categories.map((category) => (
+                <motion.button
+                  key={category.id}
+                  onClick={() => onTabChange(category.id)}
+                  className="relative group min-w-[72px] sm:min-w-0 sm:flex-1 max-w-sm flex-shrink-0 sm:flex-shrink"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
                   <motion.div
-                    layoutId="activeIndicator"
-                    className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#B8860B] via-[#D4A017] to-[#B8860B]"
-                    style={{ borderRadius: '2px' }}
-                    transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+                    className="absolute inset-0 rounded-3xl overflow-hidden transition-all duration-300"
+                    animate={{
+                      background: activeTab === category.id
+                        ? 'linear-gradient(135deg, rgba(184,134,11,0.25), rgba(212, 160, 23, 0.15))'
+                        : 'rgba(0, 0, 0, 0.25)',
+                      border: activeTab === category.id
+                        ? '2px solid rgba(184, 134, 11, 0.7)'
+                        : '1.5px solid rgba(184, 134, 11, 0.15)',
+                    }}
+                    style={{
+                      borderRadius: '1.5rem',
+                      filter: activeTab === category.id
+                        ? 'drop-shadow(0 0 12px rgba(184, 134, 11, 0.35))'
+                        : 'none',
+                    }}
                   />
-                )}
-              </motion.button>
-            ))}
+                  <div className="relative flex flex-col items-center justify-center p-2 sm:p-4 h-full min-h-[65px] sm:min-h-[80px]">
+                    <motion.span
+                      className="text-lg sm:text-xl mb-1.5"
+                      animate={{
+                        scale: activeTab === category.id ? 1.2 : 1,
+                        filter: activeTab === category.id ? 'drop-shadow(0 0 8px rgba(184, 134, 11, 0.5))' : 'grayscale(0.5) opacity(0.7)'
+                      }}
+                    >
+                      {category.icon}
+                    </motion.span>
+                    <motion.p
+                      className="text-[10px] sm:text-[12px] text-center font-bold leading-tight"
+                      style={{
+                        textShadow: '0 1px 4px rgba(0, 0, 0, 0.5), 0 0 8px rgba(184, 134, 11, 0.2)',
+                      }}
+                      animate={{
+                        color: activeTab === category.id ? '#D4A017' : '#F5F5DC',
+                        opacity: activeTab === category.id ? 1 : 0.8,
+                      }}
+                      transition={{ type: 'spring', stiffness: 280, damping: 20, mass: 0.8, delay: 0.05 }}
+                      layout
+                    >
+                      {category.label}
+                    </motion.p>
+                  </div>
+                  {activeTab === category.id && (
+                    <motion.div
+                      layoutId="activeIndicator"
+                      className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#B8860B] via-[#D4A017] to-[#B8860B]"
+                      style={{ borderRadius: '2px' }}
+                      transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+                    />
+                  )}
+                </motion.button>
+              ))}
+            </div>
           </div>
         </div>
       </motion.section>
     </div>
   );
 }
+
 
 // ─────────────────────────────────────────────
 // Main Component

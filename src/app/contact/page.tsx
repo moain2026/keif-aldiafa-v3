@@ -11,7 +11,7 @@ const SITE_URL = "https://keifaldiafa.com";
 export const metadata: Metadata = generatePageMetadata({
   title: "تواصل معنا",
   description:
-    "تواصل مع كيف الضيافة - واتساب +966508252134، بريد إلكتروني keifdiafa@gmail.com. احصل على استشارة مجانية لتصميم تجربة ضيافة فاخرة لمناسبتك.",
+    "تواصل مع كيف الضيافة - واتساب +966508252134، بريد إلكتروني keifaldiafa@gmail.com. احصل على استشارة مجانية لتصميم تجربة ضيافة فاخرة لمناسبتك.",
   path: "/contact",
   keywords: [
     "تواصل كيف الضيافة",

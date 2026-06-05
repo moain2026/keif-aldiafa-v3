@@ -18,7 +18,10 @@ export function generateOrganizationSchema() {
       telephone: PHONE,
       contactType: "customer service",
       availableLanguage: ["Arabic", "English"],
-      areaServed: "SA",
+      areaServed: {
+      "@type": "Country",
+      name: "Saudi Arabia",
+    },
     },
     sameAs: [
       "https://www.instagram.com/keifaldiafa",
@@ -42,9 +45,11 @@ export function generateLocalBusinessSchema() {
     image: `${SITE_URL}/icon-512.png`,
     address: {
       "@type": "PostalAddress",
-      addressCountry: "SA",
+      streetAddress: "الرياض",
       addressLocality: "الرياض",
       addressRegion: "منطقة الرياض",
+      postalCode: "12211",
+      addressCountry: "SA",
     },
     geo: {
       "@type": "GeoCoordinates",
@@ -62,8 +67,8 @@ export function generateLocalBusinessSchema() {
         "Saturday",
         "Sunday",
       ],
-      opens: "08:00",
-      closes: "00:00",
+      opens: "00:00",
+      closes: "23:59",
     },
     priceRange: "$$$$",
     servesCuisine: "Arabic Hospitality",
@@ -75,12 +80,6 @@ export function generateLocalBusinessSchema() {
       "https://www.instagram.com/keifaldiafa",
       `https://wa.me/966508252134`,
     ],
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "200",
-      bestRating: "5",
-    },
   };
 }
 

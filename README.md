@@ -183,7 +183,7 @@ src/
 
 ## التواصل
 
-- **واتساب**: [+966535636933](https://wa.me/966535636933)
-- **البريد**: [keifdiafa@gmail.com](mailto:keifdiafa@gmail.com)
+- **واتساب**: [+966508252134](https://wa.me/966508252134)
+- **البريد**: [keifaldiafa@gmail.com](mailto:keifaldiafa@gmail.com)
 - **إنستغرام**: [@keifdiafa](https://instagram.com/keifdiafa)
 - **الموقع**: [keifaldiafa.com](https://keifaldiafa.com)

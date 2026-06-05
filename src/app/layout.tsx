@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { IBM_Plex_Sans_Arabic, Tajawal, Amiri, Cairo } from "next/font/google";
+import { Tajawal, Cairo } from "next/font/google";
 import "@/styles/globals.css";
 import {
   generateLocalBusinessSchema,
@@ -9,27 +9,11 @@ import {
 
 const SITE_URL = "https://keifaldiafa.com";
 
-const ibmPlexArabic = IBM_Plex_Sans_Arabic({
-  subsets: ["arabic", "latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  display: "swap",
-  variable: "--font-ibm-plex-arabic",
-  preload: true,
-});
-
 const tajawal = Tajawal({
   subsets: ["arabic", "latin"],
   weight: ["300", "400", "500", "700", "800", "900"],
   display: "swap",
   variable: "--font-tajawal",
-  preload: true,
-});
-
-const amiri = Amiri({
-  subsets: ["arabic", "latin"],
-  weight: ["400", "700"],
-  display: "swap",
-  variable: "--font-amiri",
   preload: true,
 });
 
@@ -47,15 +31,20 @@ export const metadata: Metadata = {
     template: "%s | كيف الضيافة",
   },
   description:
-    "منصة تجربة فاخرة تعكس جودة وفخامة خدمات الضيافة السعودية - قهوة، شاي، تقديمات راقية وفريق احترافي.",
+    "كيف الضيافة - أفضل صبابين قهوة وصبابات زواجات في المملكة. نقدم ضيافة مناسبات VIP، قهوجية ومباشرين بزي فاخر، وتجهيز طاولات استقبال ملكية لكافة المحافل.",
   keywords: [
     "كيف الضيافة",
     "خدمات الضيافة",
     "ضيافة فاخرة",
     "قهوة سعودية",
     "ضيافة الرياض",
-    "مضيفون",
-    "مضيفات",
+    "صبابين قهوة",
+    "صبابات زواجات",
+    "قهوجية ومباشرين",
+    "مباشرات ضيافة",
+    "ضيافة مناسبات VIP",
+    "تجهيز طاولات استقبال",
+    "عدة ضيافة ملكية",
     "تقديمات فاخرة",
     "معدات ضيافة",
     "حفلات",
@@ -150,7 +139,7 @@ export default function RootLayout({
     <html
       lang="ar"
       dir="rtl"
-      className={`scroll-smooth ${ibmPlexArabic.variable} ${tajawal.variable} ${amiri.variable} ${cairo.variable}`}
+      className={`scroll-smooth ${tajawal.variable} ${cairo.variable}`}
     >
       <head>
         {/* Organization Schema */}

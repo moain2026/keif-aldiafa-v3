@@ -166,7 +166,7 @@ export function PartnersMarquee() {
             ✦ نثق بهم ويثقون بنا ✦
           </p>
           <h2
-            className="text-[#F5F5DC] text-center font-amiri"
+            className="text-[#F5F5DC] text-center font-tajawal font-bold"
             style={{ fontSize: "clamp(1.5rem, 4vw, 2.4rem)", fontWeight: 800, lineHeight: 1.2 }}
           >
             شركاء النجاح
@@ -197,7 +197,7 @@ export function PartnersMarquee() {
       <motion.p 
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        className="text-[#F5F5DC]/30 text-[10px] sm:text-xs text-center mt-8 font-ibm-plex-arabic tracking-wide"
+        className="text-[#F5F5DC]/30 text-[10px] sm:text-xs text-center mt-8 font-cairo tracking-wide"
       >
         يمكنك سحب الشريط يدوياً لاستكشاف المزيد من الشركاء
       </motion.p>

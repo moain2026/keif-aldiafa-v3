@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Suspense } from "react";
 
 interface BreadcrumbItem {
   label: string;
@@ -18,27 +19,7 @@ const pathLabels: Record<string, string> = {
   "/contact": "تواصل معنا",
 };
 
-/**
- * Breadcrumbs - Accessible navigation breadcrumb component.
- *
- * Features:
- * - Auto-generates breadcrumb trail from current path
- * - RTL-friendly with proper Arabic labels
- * - ARIA attributes for accessibility
- * - Styled to match the luxury gold theme
- * - Schema.org BreadcrumbList markup emitted separately in page.tsx
- *
- * Usage:
- * ```tsx
- * <Breadcrumbs />
- * // or with custom items
- * <Breadcrumbs items={[
- *   { label: "الرئيسية", href: "/" },
- *   { label: "خدماتنا", href: "/services" },
- * ]} />
- * ```
- */
-export function Breadcrumbs({
+function BreadcrumbsContent({
   items,
   className = "",
 }: {
@@ -104,6 +85,14 @@ export function Breadcrumbs({
         })}
       </ol>
     </nav>
+  );
+}
+
+export function Breadcrumbs(props: { items?: BreadcrumbItem[]; className?: string }) {
+  return (
+    <Suspense fallback={null}>
+      <BreadcrumbsContent {...props} />
+    </Suspense>
   );
 }
 

@@ -10,7 +10,7 @@ const ERROR_IMG_SRC =
  * Shimmer placeholder for image loading
  */
 function shimmerBase64(w: number, h: number): string {
-  const shimmer = `
+  const shimmer = (w: number, h: number) => `
     <svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="g">
@@ -23,7 +23,13 @@ function shimmerBase64(w: number, h: number): string {
       <rect id="r" width="${w}" height="${h}" fill="url(#g)" />
       <animate xlink:href="#r" attributeName="x" from="-${w}" to="${w}" dur="1.5s" repeatCount="indefinite" />
     </svg>`;
-  return `data:image/svg+xml;base64,${Buffer.from(shimmer).toString("base64")}`;
+  
+  const svg = shimmer(w, h);
+  const base64 = typeof window === 'undefined' 
+    ? Buffer.from(svg).toString('base64') 
+    : window.btoa(svg);
+    
+  return `data:image/svg+xml;base64,${base64}`;
 }
 
 interface OptimizedImageProps {

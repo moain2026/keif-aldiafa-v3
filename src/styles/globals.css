@@ -138,3 +138,7 @@ h2 { font-weight: 800; }
     border-radius: 28px !important;
   }
 }
+
+/* Hide scrollbar for category nav */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }

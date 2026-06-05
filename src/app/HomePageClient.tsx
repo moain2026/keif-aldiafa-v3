@@ -3,9 +3,7 @@
 import { useRef, lazy, Suspense } from "react";
 import Link from "next/link";
 import { motion, useScroll, useTransform } from "motion/react";
-import { ImageWithFallback } from "@/components/ImageWithFallback";
-
-import { HERO_IMG, HERO_MOBILE_IMG } from "@/lib/images";
+import { HERO_IMG } from "@/lib/images";
 
 const PartnersMarquee = lazy(() =>
   import("@/components/PartnersMarquee").then((m) => ({ default: m.PartnersMarquee }))
@@ -174,7 +172,7 @@ export function HomePageClient() {
               className="max-w-2xl mx-auto w-full px-4"
             >
               <p className="text-text-primary/90 mb-6 font-tajawal text-[clamp(1rem,2vw,1.15rem)] leading-[1.8] font-light">
-                نبتكر تجارب ضيافة استثنائية تلبي تطلعات النخبة، ونرتقي بمعايير الفخامة لفعاليات الشركات والمحافل الحكومية والخاصة.
+                نبتكر تجارب ضيافة استثنائية تلبي تطلعات النخبة، مع أفضل طاقم صبابين وصبابات زواجات ومباشرين بزي فاخر لفعاليات الشركات والمحافل الحكومية والخاصة.
               </p>
               
               <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 mb-10">
@@ -210,7 +208,7 @@ export function HomePageClient() {
       <section className="py-24 px-4 bg-luxury-black relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold-matte/20 to-transparent" />
         <div className="max-w-7xl mx-auto relative z-10">
-          <SectionHeader label="لماذا نحن" title="نصنع الفرق في كل تفصيل" />
+          <SectionHeader label="لماذا نحن" title="ضيافة مناسبات VIP نصنع فيها الفرق" />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {whyCards.map((card, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="card-luxury p-8 rounded-3xl group">
