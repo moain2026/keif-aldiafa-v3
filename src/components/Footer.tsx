@@ -170,6 +170,17 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3" style={{ borderTop: "1px solid rgba(184,134,11,0.08)" }}>
           <p className="text-[#F5F5DC]/30 text-xs">© {new Date().getFullYear()} كيف الضيافة. جميع الحقوق محفوظة.</p>
+          <p className="text-[#F5F5DC]/40 text-xs">
+            تطوير وتصميم{" "}
+            <a
+              href="https://wa.me/967770941666"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#B8860B] hover:text-[#D4AF37] font-medium transition-colors duration-200"
+            >
+              م. معين العبّاسي
+            </a>
+          </p>
           <p className="text-[#B8860B]/30 text-xs" style={{ letterSpacing: "0.1em" }}>KEIF AL-DIAFA · LUXURY HOSPITALITY · KSA</p>
         </div>
       </div>
