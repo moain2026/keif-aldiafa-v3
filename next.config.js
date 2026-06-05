@@ -115,39 +115,10 @@ const nextConfig = {
 
   async redirects() {
     return [
+      // ملاحظة: توحيد www→non-www وروابط WordPress القديمة (?page_id)
+      // تتم الآن عبر src/middleware.ts (تجنّب حلقة 308 السابقة).
       {
         source: "/home",
-        destination: "/",
-        permanent: true,
-      },
-      // Legacy WordPress Redirects
-      {
-        source: "/",
-        has: [{ type: "query", key: "page_id", value: "33" }],
-        destination: "/",
-        permanent: true,
-      },
-      {
-        source: "/",
-        has: [{ type: "query", key: "page_id", value: "1538" }],
-        destination: "/",
-        permanent: true,
-      },
-      {
-        source: "/",
-        has: [{ type: "query", key: "page_id", value: "1497" }],
-        destination: "/",
-        permanent: true,
-      },
-      {
-        source: "/",
-        has: [{ type: "query", key: "page_id", value: "1344" }],
-        destination: "/",
-        permanent: true,
-      },
-      {
-        source: "/",
-        has: [{ type: "query", key: "page_id", value: "1608" }],
         destination: "/",
         permanent: true,
       },
