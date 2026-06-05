@@ -263,6 +263,22 @@ function NavbarContent({ deferredPrompt, setDeferredPrompt }: NavbarProps) {
                     </button>
                   </motion.div>
                 )}
+
+                {/* Developer credit */}
+                <div className="mt-6 pt-5 border-t border-white/5 text-center">
+                  <p className="text-xs text-text-primary/40">
+                    إعداد وتصميم{" "}
+                    <a
+                      href="https://wa.me/967770941666"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={closeMenu}
+                      className="text-gold-matte hover:opacity-80 font-bold transition-opacity duration-200"
+                    >
+                      معين العبّاسي
+                    </a>
+                  </p>
+                </div>
               </div>
             </motion.nav>
           </>
