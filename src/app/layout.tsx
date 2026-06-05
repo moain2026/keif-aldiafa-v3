@@ -55,6 +55,9 @@ export const metadata: Metadata = {
     "luxury catering",
   ],
   metadataBase: new URL(SITE_URL),
+  verification: {
+    google: "qiyji6ldzrSpPA0KolUsquX_SF3BDLfiphfkoXJibro",
+  },
   alternates: {
     canonical: SITE_URL,
     languages: {
