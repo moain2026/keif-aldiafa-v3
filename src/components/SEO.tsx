@@ -131,8 +131,8 @@ export const SEO_CONSTANTS = {
   WHATSAPP: "966508252134",
   INSTAGRAM: "https://www.instagram.com/keifaldiafa",
   ADDRESS: {
-    city: "الرياض",
-    region: "منطقة الرياض",
+    // نشاط وطني يغطي كل المملكة (ليس محصوراً بمدينة)
+    region: "المملكة العربية السعودية",
     country: "SA",
     countryName: "المملكة العربية السعودية",
   },

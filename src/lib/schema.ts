@@ -31,30 +31,25 @@ export function generateOrganizationSchema() {
 }
 
 export function generateLocalBusinessSchema() {
+  // نشاط وطني (Service Area Business) — الخدمة تغطي كل المملكة،
+  // لذلك لا نحصر النشاط بإحداثيات مدينة واحدة (كانت الرياض خطأً يحصر الظهور).
   return {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["ProfessionalService", "FoodService"],
     "@id": `${SITE_URL}/#business`,
     name: SITE_NAME,
     alternateName: "Keif Al-Diafa",
     description:
-      "خدمات الضيافة الفاخرة في المملكة العربية السعودية - قهوة سعودية، شاي، تقديمات وفريق احترافي",
+      "خدمات الضيافة الفاخرة في جميع مناطق المملكة العربية السعودية - قهوة سعودية، شاي، تقديمات وفريق احترافي تغطي كل المدن.",
     url: SITE_URL,
     telephone: PHONE,
     email: EMAIL,
     image: `${SITE_URL}/icon-512.png`,
+    logo: `${SITE_URL}/icon-512.png`,
+    // عنوان على مستوى الدولة (بدون حصر بمدينة/إحداثيات)
     address: {
       "@type": "PostalAddress",
-      streetAddress: "الرياض",
-      addressLocality: "الرياض",
-      addressRegion: "منطقة الرياض",
-      postalCode: "12211",
       addressCountry: "SA",
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: 24.7136,
-      longitude: 46.6753,
     },
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
@@ -72,10 +67,18 @@ export function generateLocalBusinessSchema() {
     },
     priceRange: "$$$$",
     servesCuisine: "Arabic Hospitality",
-    areaServed: {
-      "@type": "Country",
-      name: "Saudi Arabia",
-    },
+    // التغطية الوطنية: المملكة كاملة + أبرز المناطق (تقوّي الظهور في كل مدينة)
+    areaServed: [
+      { "@type": "Country", name: "Saudi Arabia" },
+      { "@type": "City", name: "الرياض" },
+      { "@type": "City", name: "جدة" },
+      { "@type": "City", name: "مكة المكرمة" },
+      { "@type": "City", name: "المدينة المنورة" },
+      { "@type": "City", name: "الدمام" },
+      { "@type": "City", name: "ينبع" },
+      { "@type": "City", name: "الطائف" },
+      { "@type": "City", name: "أبها" },
+    ],
     sameAs: [
       "https://www.instagram.com/keifaldiafa",
       `https://wa.me/966508252134`,
