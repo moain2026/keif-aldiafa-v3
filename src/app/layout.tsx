@@ -6,6 +6,7 @@ import {
   generateWebSiteSchema,
   generateOrganizationSchema,
 } from "@/lib/schema";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 const SITE_URL = "https://keifaldiafa.com";
 
@@ -177,6 +178,7 @@ export default function RootLayout({
           تخطي إلى المحتوى الرئيسي
         </a>
         {children}
+        <GoogleAnalytics />
       </body>
     </html>
   );
