@@ -12,7 +12,7 @@ const WA = "966508252134";
 
 const whyCards = [
   { icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-7 h-7"><path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" /></svg>, title: "خبرة متميزة", desc: "أكثر من ٨ سنوات في تقديم خدمات الضيافة الفاخرة للمناسبات الكبرى والمحافل الرسمية" },
-  { icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-7 h-7"><path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg>, title: "فريق احترافي", desc: "كوادر مدربة على أعلى معايير الضيافة الدولية والأصالة العربية" },
+  { icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-7 h-7"><path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg>, title: "فريق احترافي", desc: "قهوجيين وصبابين وصبابات مدربون على أعلى معايير الضيافة الدولية والأصالة العربية" },
   { icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-7 h-7"><path strokeLinecap="round" strokeLinejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" /></svg>, title: "تقديمات فاخرة", desc: "أرقى المشروبات والتقديمات من قهوة سعودية وشاي وحلويات فاخرة" },
   { icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-7 h-7"><path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>, title: "تغطية المملكة", desc: "نصل إلى جميع مناطق المملكة بأسطول من المعدات الفاخرة" },
 ];
@@ -122,7 +122,7 @@ export function HomePageClient() {
               <div className="h-px w-8 sm:w-10 bg-gradient-to-r from-gold-matte to-transparent" />
             </motion.div>
 
-            <motion.h1
+            <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
@@ -136,7 +136,7 @@ export function HomePageClient() {
               }}
             >
               كيف الضيافة
-            </motion.h1>
+            </motion.p>
 
             <motion.div
               initial={{ scaleX: 0 }}
@@ -171,8 +171,17 @@ export function HomePageClient() {
               transition={{ duration: 0.7, delay: 0.8 }}
               className="max-w-2xl mx-auto w-full px-4"
             >
+              <motion.h1
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.75 }}
+                className="text-gold-highlight mb-4 font-cairo"
+                style={{ fontSize: "clamp(1.05rem, 2.6vw, 1.35rem)", fontWeight: 700, lineHeight: 1.6 }}
+              >
+                قهوجيين وصبابين قهوة لضيافة فاخرة في السعودية
+              </motion.h1>
               <p className="text-text-primary/90 mb-6 font-tajawal text-[clamp(1rem,2vw,1.15rem)] leading-[1.8] font-light">
-                نبتكر تجارب ضيافة استثنائية تلبي تطلعات النخبة، مع أفضل طاقم صبابين وصبابات زواجات ومباشرين بزي فاخر لفعاليات الشركات والمحافل الحكومية والخاصة.
+                نبتكر تجارب ضيافة استثنائية تلبي تطلعات النخبة، مع أفضل طاقم قهوجيين وصبابين قهوة، صبابات ومباشرات زواجات، ومباشرين بزي فاخر لفعاليات الشركات والمحافل الحكومية والخاصة.
               </p>
               
               <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 mb-10">
@@ -188,7 +197,7 @@ export function HomePageClient() {
                 <Link href={`https://wa.me/${WA}`} target="_blank" className="gold-button w-full sm:w-auto px-10 py-4 rounded-full text-sm tracking-widest">
                   احجز الآن
                 </Link>
-                <Link href="services" className="w-full sm:w-auto px-10 py-4 rounded-full text-sm tracking-widest border border-gold-matte/30 text-gold-matte hover:bg-gold-matte/10 transition-all">
+                <Link href="/services" className="w-full sm:w-auto px-10 py-4 rounded-full text-sm tracking-widest border border-gold-matte/30 text-gold-matte hover:bg-gold-matte/10 transition-all">
                   اكتشف خدماتنا
                 </Link>
               </div>

@@ -24,7 +24,7 @@ export default function AboutClient() {
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <motion.p initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="text-[#B8860B] mb-3" style={{ fontSize: "0.75rem", letterSpacing: "0.35em" }}>✦ تعرّف علينا ✦</motion.p>
           <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-[#F5F5DC] mb-4 font-tajawal" style={{ fontSize: "clamp(2rem, 6vw, 3.5rem)", fontWeight: 900, lineHeight: 1.15}}>من نحن في<br /><span className="gold-gradient-text">كيف الضيافة</span></motion.h1>
-          <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-[#F5F5DC]/55 max-w-xl mx-auto text-sm leading-relaxed">منذ ٢٠١٦ ونحن نقدم خدمات الضيافة الفاخرة بأعلى معايير الجودة والاحترافية</motion.p>
+          <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-[#F5F5DC]/55 max-w-xl mx-auto text-sm leading-relaxed">منذ ٢٠١٦ ونحن نقدم خدمات الضيافة الفاخرة بطاقم قهوجيين وصبابين وصبابات محترفين، بأعلى معايير الجودة والاحترافية</motion.p>
         </div>
       </section>
 
@@ -37,7 +37,7 @@ export default function AboutClient() {
           </motion.div>
           <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, margin: "-50px" }}>
             <h2 className="text-[#F5F5DC] mb-5" style={{ fontSize: "clamp(1.5rem, 3.5vw, 2rem)", fontWeight: 800}}>قصتنا</h2>
-            <p className="text-[#F5F5DC]/55 text-sm leading-8 mb-6">بدأنا رحلتنا عام ٢٠١٦ برؤية واضحة: تقديم خدمات ضيافة فاخرة تعكس أصالة الثقافة السعودية مع لمسة عصرية مبتكرة. منذ ذلك الحين، قدمنا خدماتنا لأكثر من ٥٠٠ مناسبة، من حفلات الزفاف الفاخرة إلى الفعاليات الحكومية الكبرى.</p>
+            <p className="text-[#F5F5DC]/55 text-sm leading-8 mb-6">بدأنا رحلتنا عام ٢٠١٦ برؤية واضحة: تقديم خدمات ضيافة فاخرة تعكس أصالة الثقافة السعودية مع لمسة عصرية مبتكرة. منذ ذلك الحين، قدمنا خدماتنا لأكثر من ٥٠٠ مناسبة، من حفلات الزفاف الفاخرة إلى الفعاليات الحكومية الكبرى، بطاقم يضم نخبة من القهوجيين وصبابي القهوة السعودية والصبابات والمباشرات المدربات على أرقى أصول الضيافة.</p>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               {[
                 { num: "+500", label: "مناسبة" },

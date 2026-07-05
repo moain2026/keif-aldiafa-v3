@@ -9,7 +9,7 @@ import {
 const SITE_URL = "https://keifaldiafa.com";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "معرض الأعمال",
+  title: "معرض أعمال الضيافة — +500 مناسبة ناجحة",
   description:
     "استعرض أعمالنا السابقة في الضيافة الفاخرة - حفلات زفاف، مؤتمرات، فعاليات حكومية وتجارية. أكثر من 500 مناسبة ناجحة في جميع مناطق المملكة.",
   path: "/portfolio",

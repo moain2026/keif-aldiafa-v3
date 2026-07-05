@@ -27,7 +27,7 @@ const categories: ServiceCategory[] = [
   {
     key: "male", label: "الخدمات الرجالية", sublabel: "Male Hospitality", icon: "👨‍💼", color: "#B8860B",
     services: [
-      { id: "hosts", title: "صبابين قهوة ومباشرين", subtitle: "Male Hosts & Servers", img: SERVICE_IMAGES.maleWaiter, description: "طاقم صبابين ومباشرين محترفين بزي فاخر، مدربون على أصول الضيافة السعودية وتقديم القهوة ببروتوكول VIP للمناسبات الرسمية والخاصة.", features: ["زي رسمي ملكي", "خبرة في القهوة السعودية", "مباشرين بزي موحد", "بروتوكول VIP"], outfits: [{ name: "حزام", img: OUTFIT_IMAGES.hizam, desc: "زي صبابين بحزام أنيق" }, { name: "دقلة", img: OUTFIT_IMAGES.dagla, desc: "دقلة صبابين سعودية أصيلة" }, { name: "دقلة وجنبية", img: OUTFIT_IMAGES.daglaJanbiya, desc: "دقلة مع جنبية تراثية فاخرة" }, { name: "سديرية", img: OUTFIT_IMAGES.sideriya, desc: "سديرية صبابين أنيقة" }, { name: "مكاوي", img: OUTFIT_IMAGES.makkawi, desc: "زي مباشرين مكاوي تراثي" }] },
+      { id: "hosts", title: "قهوجيين وصبابين قهوة ومباشرين", subtitle: "Male Hosts & Servers", img: SERVICE_IMAGES.maleWaiter, description: "طاقم قهوجيين وصبابين قهوة ومباشرين محترفين بزي فاخر، مدربون على أصول الضيافة السعودية وتقديم القهوة ببروتوكول VIP للمناسبات الرسمية والخاصة.", features: ["زي رسمي ملكي", "قهوجي خبير بالقهوة السعودية", "مباشرين بزي موحد", "بروتوكول VIP"], outfits: [{ name: "حزام", img: OUTFIT_IMAGES.hizam, desc: "زي صبابين بحزام أنيق" }, { name: "دقلة", img: OUTFIT_IMAGES.dagla, desc: "دقلة صبابين سعودية أصيلة" }, { name: "دقلة وجنبية", img: OUTFIT_IMAGES.daglaJanbiya, desc: "دقلة مع جنبية تراثية فاخرة" }, { name: "سديرية", img: OUTFIT_IMAGES.sideriya, desc: "سديرية صبابين أنيقة" }, { name: "مكاوي", img: OUTFIT_IMAGES.makkawi, desc: "زي مباشرين مكاوي تراثي" }] },
       { 
         id: "zamzam", 
         title: "سقّاء زمزم", 
@@ -53,7 +53,7 @@ const categories: ServiceCategory[] = [
         title: "صبابات زواجات ومباشرات",
         subtitle: "Female Hosts & Servers",
         img: FEMALE_SERVICES_IMAGES.mainBg,
-        description: "أفضل صبابات زواجات ومباشرات ضيافة في المملكة، طاقم نسائي محترف بزي موحد فاخر لخدمة مناسباتكم النسائية الراقية.",
+        description: "أفضل قهوجية وصبابات زواجات ومباشرات ضيافة في المملكة، طاقم نسائي محترف بزي موحد فاخر لخدمة مناسباتكم النسائية الراقية.",
         features: ["صبابات بزي موحد", "مباشرات ضيافة VIP", "تنسيق استقبال فاخر", "خدمة ملكية"],
         outfits: [
           { name: "عباءة صبابات فاخرة - 1", img: FEMALE_SERVICES_IMAGES.female1, desc: "عباءة صبابات مصممة بأناقة فائقة" },
@@ -165,7 +165,7 @@ function ServiceModal({ service, onClose }: { service: ServiceItem; onClose: () 
           <div className="absolute inset-0 img-overlay md:hidden pointer-events-none" />
           <div className="absolute bottom-0 left-0 right-0 p-6 md:hidden">
             <p className="text-[#B8860B] text-xs mb-1" style={{ letterSpacing: "0.15em" }}>{service.subtitle}</p>
-            <h2 className="text-[#F5F5DC]" style={{ fontSize: "1.8rem", fontWeight: 800}}>{service.title}</h2>
+            <p aria-hidden="true" className="text-[#F5F5DC]" style={{ fontSize: "1.8rem", fontWeight: 800}}>{service.title}</p>
             {service.outfits.length > 0 && (
               <p className="text-[#B8860B] text-sm mt-1 font-medium">{service.outfits[selectedOutfit].name}</p>
             )}
@@ -364,8 +364,8 @@ export default function ServicesClient() {
         <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at 50% 20%, rgba(184,134,11,0.08) 0%, transparent 60%)" }} />
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <motion.p initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="text-[#B8860B] mb-3" style={{ fontSize: "0.75rem", letterSpacing: "0.35em" }}>✦ خدماتنا ✦</motion.p>
-          <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-[#F5F5DC] mb-4 font-tajawal" style={{ fontSize: "clamp(2rem, 6vw, 3.5rem)", fontWeight: 900, lineHeight: 1.15}}>باقة متكاملة من<br /><span className="gold-gradient-text">الضيافة الفاخرة</span></motion.h1>
-          <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-[#F5F5DC]/55 max-w-xl mx-auto text-sm leading-relaxed">اكتشف مجموعة خدماتنا المتكاملة المصممة لتلبية جميع احتياجات الضيافة في مناسباتكم</motion.p>
+          <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-[#F5F5DC] mb-4 font-tajawal" style={{ fontSize: "clamp(2rem, 6vw, 3.5rem)", fontWeight: 900, lineHeight: 1.15}}>خدمات قهوجية وصبابين وصبابات<br /><span className="gold-gradient-text">ضيافة VIP لكل المناسبات</span></motion.h1>
+          <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-[#F5F5DC]/55 max-w-xl mx-auto text-sm leading-relaxed">باقة متكاملة من الضيافة الفاخرة — قهوجيين وصبابين قهوة، صبابات ومباشرات، وخدمات فنية وتراثية مصممة لتلبية جميع احتياجات الضيافة في مناسباتكم</motion.p>
         </div>
       </section>
 

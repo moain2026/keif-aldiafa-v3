@@ -54,6 +54,13 @@ const filters: { key: FilterType; label: string; icon: string }[] = [
   { key: "equipment", label: "المعدات", icon: "⚙️" },
 ];
 
+const categoryHeadings: Record<FilterType, string> = {
+  all: "جميع أعمال الضيافة: فعاليات، أعراس ومعدات فاخرة",
+  events: "ضيافة فعاليات ومؤتمرات ومحافل رسمية",
+  weddings: "ضيافة أعراس وزواجات فاخرة بطاقم قهوجيين وصبابات",
+  equipment: "معدات ضيافة ملكية: دلال نحاسية وكاونترات استقبال",
+};
+
 // ─────────────────────────────────────────────
 // Lightbox
 // ─────────────────────────────────────────────
@@ -309,8 +316,8 @@ export default function PortfolioClient() {
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <Breadcrumbs />
           <motion.p initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="text-[#B8860B] mb-3 mt-8" style={{ fontSize: "0.75rem", letterSpacing: "0.35em" }}>✦ معرض أعمالنا ✦</motion.p>
-          <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-[#F5F5DC] mb-4 font-tajawal" style={{ fontSize: "clamp(2rem, 6vw, 3.5rem)", fontWeight: 900, lineHeight: 1.15}}>توثيق للحظات<br /><span className="gold-gradient-text">الفخامة والتميز</span></motion.h1>
-          <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-[#F5F5DC]/55 max-w-xl mx-auto text-sm leading-relaxed">استعرض أفضل لحظاتنا من الفعاليات والأعراس والمعدات الفاخرة التي تعكس جودة خدماتنا</motion.p>
+          <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-[#F5F5DC] mb-4 font-tajawal" style={{ fontSize: "clamp(2rem, 6vw, 3.5rem)", fontWeight: 900, lineHeight: 1.15}}>معرض أعمالنا: مناسبات ضيافة<br /><span className="gold-gradient-text">في مدن المملكة</span></motion.h1>
+          <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-[#F5F5DC]/55 max-w-xl mx-auto text-sm leading-relaxed">توثيق للحظات الفخامة والتميز — استعرض أفضل لحظاتنا من الفعاليات والأعراس والمعدات الفاخرة التي تعكس جودة خدماتنا</motion.p>
         </div>
       </section>
 
@@ -319,6 +326,7 @@ export default function PortfolioClient() {
 
       {/* Gallery Grid - Masonry Style (Natural Aspect Ratio) */}
       <div className="container mx-auto px-4 pt-12">
+        <h2 className="text-center text-[#F5F5DC]/85 mb-8 font-tajawal" style={{ fontSize: "clamp(1.05rem, 2.5vw, 1.4rem)", fontWeight: 700 }}>{categoryHeadings[activeFilter]}</h2>
         <div className="columns-2 md:columns-3 lg:columns-4 gap-4 sm:gap-6 space-y-4 sm:space-y-6">
           {displayedItems.map((item, idx) => (
             <motion.div

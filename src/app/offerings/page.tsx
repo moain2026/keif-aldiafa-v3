@@ -10,7 +10,7 @@ import {
 const SITE_URL = "https://keifaldiafa.com";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "تقديماتنا",
+  title: "تقديمات ضيافة: قهوة سعودية وشاي وحلويات فاخرة",
   description:
     "أرقى التقديمات والمشروبات - قهوة سعودية أصيلة، شاي فاخر، حلويات شرقية وغربية، تمور فاخرة ومعدات ضيافة للإيجار. جودة لا مثيل لها.",
   path: "/offerings",

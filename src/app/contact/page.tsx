@@ -9,7 +9,7 @@ import {
 const SITE_URL = "https://keifaldiafa.com";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "تواصل معنا",
+  title: "احجز قهوجيين وطاقم ضيافة — استشارة مجانية",
   description:
     "تواصل مع كيف الضيافة - واتساب +966508252134، بريد إلكتروني keifaldiafa@gmail.com. احصل على استشارة مجانية لتصميم تجربة ضيافة فاخرة لمناسبتك.",
   path: "/contact",
