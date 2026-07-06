@@ -157,6 +157,9 @@ export function generateImageGallerySchema(
       name: SITE_NAME,
       url: SITE_URL,
     },
+    // المُنشئ/المالك مرّة واحدة على مستوى المعرض (لا تكرار Organization لكل صورة).
+    author: { "@id": `${SITE_URL}/#business` },
+    copyrightHolder: { "@id": `${SITE_URL}/#business` },
     associatedMedia: images.map((img) => ({
       "@type": "ImageObject",
       contentUrl: img.url,
@@ -166,9 +169,9 @@ export function generateImageGallerySchema(
       height: 900,
       name: img.title || img.alt,
       caption: img.alt,
+      // مرجع بـ@id بدل تضمين Organization كاملة (يقلّص حجم HTML بشدة).
       creditText: SITE_NAME,
-      creator: { "@type": "Organization", name: SITE_NAME },
-      copyrightNotice: `\u00a9 ${new Date().getFullYear()} ${SITE_NAME}`,
+      creator: { "@id": `${SITE_URL}/#business` },
     })),
   };
 }

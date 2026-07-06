@@ -41,7 +41,7 @@ export default function AboutClient() {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               {[
                 { num: "+500", label: "مناسبة" },
-                { num: "8+", label: "سنوات خبرة" },
+                { num: `+${new Date().getFullYear() - 2016}`, label: "سنوات خبرة" },
                 { num: "+200", label: "عميل" },
                 { num: "100%", label: "رضا" },
               ].map((s, i) => (

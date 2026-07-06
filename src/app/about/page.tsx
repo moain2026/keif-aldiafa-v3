@@ -11,7 +11,7 @@ const SITE_URL = "https://keifaldiafa.com";
 export const metadata: Metadata = generatePageMetadata({
   title: "من نحن",
   description:
-    "تعرف على كيف الضيافة - أكثر من 8 سنوات خبرة في تقديم خدمات الضيافة الفاخرة في المملكة العربية السعودية. فريق محترف وتغطية شاملة لجميع المناطق.",
+    "تعرف على كيف الضيافة - خبرة منذ 2016 في تقديم خدمات الضيافة الفاخرة في المملكة العربية السعودية. فريق محترف وتغطية شاملة لجميع المناطق.",
   path: "/about",
   keywords: [
     "عن كيف الضيافة",
@@ -30,7 +30,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 const webPageSchema = generateWebPageSchema({
   name: "من نحن - كيف الضيافة",
   description:
-    "تعرف على كيف الضيافة - أكثر من 8 سنوات خبرة في تقديم خدمات الضيافة الفاخرة",
+    "تعرف على كيف الضيافة - خبرة منذ 2016 في تقديم خدمات الضيافة الفاخرة",
   url: `${SITE_URL}/about`,
 });
 
