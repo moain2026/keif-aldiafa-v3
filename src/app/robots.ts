@@ -9,6 +9,10 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/admin/", "/private/"],
       },
     ],
-    sitemap: "https://keifaldiafa.com/sitemap.xml",
+    sitemap: [
+      "https://keifaldiafa.com/sitemap.xml",
+      "https://keifaldiafa.com/image-sitemap.xml",
+      "https://keifaldiafa.com/sitemap_index.xml",
+    ],
   };
 }

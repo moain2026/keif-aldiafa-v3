@@ -5,9 +5,12 @@ import {
   generateBreadcrumbSchema,
   generateServiceSchema,
   generateWebPageSchema,
+  generateImageGallerySchema,
 } from "@/lib/schema";
+import { getImagesForPage } from "@/lib/imageCatalog";
 
 const SITE_URL = "https://keifaldiafa.com";
+const offeringsImages = getImagesForPage("/offerings");
 
 export const metadata: Metadata = generatePageMetadata({
   title: "تقديمات ضيافة: قهوة سعودية وشاي وحلويات فاخرة",
@@ -48,7 +51,13 @@ const webPageSchema = generateWebPageSchema({
   description:
     "استعرض مجموعة التقديمات الفاخرة من المشروبات والحلويات والتمور",
   url: `${SITE_URL}/offerings`,
+  primaryImage: offeringsImages[0]?.url,
 });
+
+const imageGallerySchema = generateImageGallerySchema(
+  `${SITE_URL}/offerings`,
+  offeringsImages
+);
 
 export default function OfferingsPage() {
   return (
@@ -64,6 +73,10 @@ export default function OfferingsPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(imageGallerySchema) }}
       />
       <OfferingsClient />
     </>

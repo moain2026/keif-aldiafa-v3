@@ -105,8 +105,10 @@ export function generateWebPageSchema(page: {
   name: string;
   description: string;
   url: string;
+  /** Preferred/representative image for this page (Google: primaryImageOfPage). */
+  primaryImage?: string;
 }) {
-  return {
+  const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "@id": page.url,
@@ -120,6 +122,51 @@ export function generateWebPageSchema(page: {
       url: SITE_URL,
     },
     inLanguage: "ar",
+  };
+  // Google recommends primaryImageOfPage to influence the representative image
+  // shown in Search / Google Images / Discover.
+  if (page.primaryImage) {
+    schema.primaryImageOfPage = {
+      "@type": "ImageObject",
+      contentUrl: page.primaryImage,
+      url: page.primaryImage,
+    };
+  }
+  return schema;
+}
+
+/**
+ * ImageGallery of ImageObject entries for a page's images.
+ * `contentUrl` is REQUIRED by Google for image rich-result / badge eligibility
+ * in Google Images. `caption`/`name` provide the descriptive text (this is where
+ * captions live now that image:caption was removed from the sitemap spec).
+ */
+export function generateImageGallerySchema(
+  pageUrl: string,
+  images: { url: string; alt: string; title?: string }[]
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ImageGallery",
+    "@id": `${pageUrl}#gallery`,
+    url: pageUrl,
+    inLanguage: "ar",
+    isPartOf: {
+      "@type": "WebSite",
+      "@id": `${SITE_URL}/#website`,
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
+    associatedMedia: images.map((img) => ({
+      "@type": "ImageObject",
+      contentUrl: img.url,
+      url: img.url,
+      name: img.title || img.alt,
+      caption: img.alt,
+      creditText: SITE_NAME,
+      creator: { "@type": "Organization", name: SITE_NAME },
+      copyrightNotice: `\u00a9 ${new Date().getFullYear()} ${SITE_NAME}`,
+    })),
   };
 }
 

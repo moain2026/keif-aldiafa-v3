@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, lazy, Suspense } from "react";
+import { useRef, useEffect, lazy, Suspense } from "react";
 import Link from "next/link";
 import { motion, useScroll, useTransform } from "motion/react";
 import { HERO_IMG } from "@/lib/images";
@@ -63,6 +63,31 @@ function GoldenSparkle({ delay, x, y }: { delay: number; x: number; y: number })
 
 export function HomePageClient() {
   const heroRef = useRef<HTMLDivElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  // Defer hero video load until after first paint so it does not compete
+  // with the LCP poster image over the network.
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+    const start = () => {
+      video.preload = "auto";
+      video.load();
+      const play = () => {
+        video.play().catch(() => {});
+      };
+      if (video.readyState >= 2) play();
+      else video.addEventListener("loadeddata", play, { once: true });
+    };
+    // Kick off after the browser is idle / painted.
+    const ric = (window as unknown as {
+      requestIdleCallback?: (cb: () => void) => number;
+    }).requestIdleCallback;
+    const timerId = ric ? ric(start) : window.setTimeout(start, 800);
+    return () => {
+      window.clearTimeout(timerId);
+    };
+  }, []);
   const { scrollYProgress } = useScroll({ target: heroRef, offset: ["start start", "end start"] });
   const heroY = useTransform(scrollYProgress, [0, 1], ["0%", "25%"]);
   const heroOpacity = useTransform(scrollYProgress, [0, 0.75], [1, 0]);
@@ -74,10 +99,11 @@ export function HomePageClient() {
         <motion.div className="absolute inset-0" style={{ y: heroY }}>
           {/* Video Background from v3 */}
           <video
-            autoPlay
+            ref={videoRef}
             loop
             muted
             playsInline
+            preload="none"
             className="absolute inset-0 w-full h-full object-cover"
             poster={HERO_IMG}
           >

@@ -12,7 +12,7 @@ const SITE_URL = "https://keifaldiafa.com";
 
 const tajawal = Tajawal({
   subsets: ["arabic", "latin"],
-  weight: ["300", "400", "500", "700", "800", "900"],
+  weight: ["300", "400", "500", "700"],
   display: "swap",
   variable: "--font-tajawal",
   preload: true,
@@ -20,7 +20,7 @@ const tajawal = Tajawal({
 
 const cairo = Cairo({
   subsets: ["arabic", "latin"],
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  weight: ["300", "400", "500", "700"],
   display: "swap",
   variable: "--font-cairo",
   preload: true,
@@ -146,6 +146,21 @@ export default function RootLayout({
       className={`scroll-smooth ${tajawal.variable} ${cairo.variable}`}
     >
       <head>
+        {/* Preload hero poster (LCP) for the homepage */}
+        <link
+          rel="preload"
+          as="image"
+          href="/images/hero/hero-desktop.webp"
+          media="(min-width: 768px)"
+          fetchPriority="high"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/images/hero/hero-mobile.webp"
+          media="(max-width: 767px)"
+          fetchPriority="high"
+        />
         {/* Organization Schema */}
         <script
           type="application/ld+json"

@@ -21,7 +21,7 @@ const securityHeaders = [
       "default-src 'self'",
       "script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com",
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-      "img-src 'self' data: blob: https://images.unsplash.com https://via.placeholder.com https://*.unsplash.com https://raw.githubusercontent.com",
+      "img-src 'self' data: blob:",
       "font-src 'self' https://fonts.gstatic.com data:",
       "connect-src 'self' https://www.google-analytics.com https://wa.me",
       "frame-ancestors 'self'",
@@ -40,26 +40,10 @@ const nextConfig = {
   // Experimental performance features
   experimental: {
     scrollRestoration: true,
+    optimizePackageImports: ["motion"],
   },
 
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "images.unsplash.com",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "via.placeholder.com",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "raw.githubusercontent.com",
-        pathname: "/**",
-      },
-    ],
     localPatterns: [
       {
         pathname: "/images/**",

@@ -4,7 +4,9 @@ import { generatePageMetadata } from "@/components/SEO";
 import {
   generateBreadcrumbSchema,
   generateWebPageSchema,
+  generateImageGallerySchema,
 } from "@/lib/schema";
+import { getImagesForPage } from "@/lib/imageCatalog";
 
 const SITE_URL = "https://keifaldiafa.com";
 
@@ -28,12 +30,20 @@ const breadcrumbSchema = generateBreadcrumbSchema([
   { name: "معرض الأعمال", url: `${SITE_URL}/portfolio` },
 ]);
 
+const portfolioImages = getImagesForPage("/portfolio");
+
 const webPageSchema = generateWebPageSchema({
   name: "معرض الأعمال - كيف الضيافة",
   description:
     "استعرض أعمالنا السابقة في الضيافة الفاخرة - حفلات زفاف ومؤتمرات وفعاليات",
   url: `${SITE_URL}/portfolio`,
+  primaryImage: portfolioImages[0]?.url,
 });
+
+const imageGallerySchema = generateImageGallerySchema(
+  `${SITE_URL}/portfolio`,
+  portfolioImages
+);
 
 export default function PortfolioPage() {
   return (
@@ -45,6 +55,10 @@ export default function PortfolioPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(imageGallerySchema) }}
       />
       <PortfolioClient />
     </>

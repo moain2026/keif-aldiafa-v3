@@ -1,0 +1,49 @@
+{
+  "project": "keif-v2",
+  "site": "https://keifaldiafa.com",
+  "generatedAt": "2026-07-06",
+  "standard": "Google Search Central (current, post-2022 image-sitemap spec)",
+  "totals": {
+    "indexableImages": 388,
+    "format": "webp",
+    "svgExcluded": 5,
+    "imagesInSitemap": 388,
+    "landingPagesGrouped": 4
+  },
+  "deliverables": {
+    "imageCatalog": "src/lib/imageCatalog.ts",
+    "imageSitemap": "src/app/image-sitemap.xml/route.ts",
+    "sitemapIndex": "src/app/sitemap_index.xml/route.ts",
+    "robots": "src/app/robots.ts",
+    "schema": "src/lib/schema.ts (generateImageGallerySchema, primaryImageOfPage)",
+    "wiredPages": ["/portfolio", "/offerings", "/services"],
+    "report": "SEO-IMAGE-REPORT.md"
+  },
+  "crawlEndpoints": {
+    "robots": "https://keifaldiafa.com/robots.txt",
+    "pageSitemap": "https://keifaldiafa.com/sitemap.xml",
+    "imageSitemap": "https://keifaldiafa.com/image-sitemap.xml",
+    "sitemapIndex": "https://keifaldiafa.com/sitemap_index.xml"
+  },
+  "sitemapTags": {
+    "used": ["image:image", "image:loc"],
+    "deprecatedNotUsed": ["image:title", "image:caption", "image:geo_location", "image:license"]
+  },
+  "build": {
+    "tsc": "pass (0 errors)",
+    "nextBuild": "pass (13/13 static pages)"
+  },
+  "checklist": {
+    "descriptiveFilenames": true,
+    "naturalAltNoStuffing": true,
+    "realImgTagsNotCssBackground": true,
+    "imageSitemapCurrentSpec": true,
+    "sitemapIndexAndRobots": true,
+    "structuredDataImageObjectContentUrl": true,
+    "primaryImageOfPage": true,
+    "openGraphImage": true,
+    "modernFormatWebp": true,
+    "responsiveLazyLoading": true,
+    "coreWebVitalsAddressed": true
+  }
+}

@@ -221,9 +221,13 @@ function RoyalTrioNav({ activeTab, onTabChange }: { activeTab: number; onTabChan
   const [isSticky, setIsSticky] = useState(false);
   const navRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+  const [navHeight, setNavHeight] = useState(0);
   const { scrollY } = useScroll();
 
   useEffect(() => {
+    if (navRef.current) {
+      setNavHeight(navRef.current.offsetHeight);
+    }
     const unsubscribe = scrollY.onChange(() => {
       if (containerRef.current) {
         const containerTop = containerRef.current.getBoundingClientRect().top;
@@ -234,18 +238,24 @@ function RoyalTrioNav({ activeTab, onTabChange }: { activeTab: number; onTabChan
   }, [scrollY]);
 
   return (
-    <div ref={containerRef} className="w-full">
-      <motion.section
+    <div
+      ref={containerRef}
+      className="w-full"
+      /* Reserve height while sticky so the grid below does not jump (CLS) */
+      style={{ minHeight: isSticky && navHeight ? navHeight : undefined }}
+    >
+      <section
         ref={navRef}
-        className={`w-full transition-all duration-300 ${isSticky ? 'fixed top-0 left-0 right-0 z-50' : 'relative'}`}
-        animate={{
-          paddingTop: isSticky ? '12px' : '16px',
-          paddingBottom: isSticky ? '12px' : '16px',
+        className={`w-full ${isSticky ? 'fixed top-0 left-0 right-0 z-50' : 'relative'}`}
+        style={{
+          paddingTop: '16px',
+          paddingBottom: '16px',
           background: isSticky ? 'rgba(15, 15, 15, 0.95)' : 'transparent',
           backdropFilter: isSticky ? 'blur(16px)' : 'none',
-          borderBottom: isSticky ? '1px solid rgba(184, 134, 11, 0.15)' : 'none',
+          WebkitBackdropFilter: isSticky ? 'blur(16px)' : 'none',
+          borderBottom: isSticky ? '1px solid rgba(184, 134, 11, 0.15)' : '1px solid transparent',
+          transition: 'background 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out, border-color 0.3s ease-in-out',
         }}
-        transition={{ duration: 0.3, ease: 'easeInOut' }}
       >
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-center gap-2 sm:gap-3">
@@ -293,10 +303,8 @@ function RoyalTrioNav({ activeTab, onTabChange }: { activeTab: number; onTabChan
                     animate={{
                       color: activeTab === idx ? '#D4A017' : '#F5F5DC',
                       opacity: activeTab === idx ? 1 : 0.8,
-                      fontSize: isSticky ? '0.75rem' : '0.85rem',
                     }}
                     transition={{ type: 'spring', stiffness: 280, damping: 20, mass: 0.8, delay: 0.05 }}
-                    layout
                   >
                     {cat.label}
                   </motion.p>
@@ -314,15 +322,15 @@ function RoyalTrioNav({ activeTab, onTabChange }: { activeTab: number; onTabChan
             ))}
           </div>
         </div>
-      </motion.section>
+      </section>
     </div>
   );
 }
 
 function ServiceCard({ service, onClick }: { service: ServiceItem; onClick: () => void }) {
   return (
-    <div onClick={onClick} className="relative rounded-2xl overflow-hidden group cursor-pointer h-full" style={{ minHeight: "100%" }}>
-      <ImageWithFallback src={service.img} alt={service.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+    <div onClick={onClick} className="relative rounded-2xl overflow-hidden group cursor-pointer h-full w-full" style={{ minHeight: "100%" }}>
+      <ImageWithFallback src={service.img} alt={service.title} fill sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" className="object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
       {/* Watermark - Removed from Grid View as requested */}
       <div className="absolute inset-0 img-overlay" />
       <div className="absolute inset-0 bg-[#B8860B]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
