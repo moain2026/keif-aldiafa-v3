@@ -1,9 +1,16 @@
 import { MetadataRoute } from "next";
+import { CITIES } from "@/lib/cities";
 
 const SITE_URL = "https://keifaldiafa.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date().toISOString();
+
+  const cityRoutes = CITIES.map((c) => ({
+    path: `/locations/${c.slug}`,
+    priority: 0.7,
+    changeFrequency: "monthly" as const,
+  }));
 
   const routes = [
     { path: "/", priority: 1.0, changeFrequency: "weekly" as const },
@@ -12,6 +19,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/portfolio", priority: 0.8, changeFrequency: "monthly" as const },
     { path: "/about", priority: 0.7, changeFrequency: "monthly" as const },
     { path: "/contact", priority: 0.8, changeFrequency: "monthly" as const },
+    { path: "/locations", priority: 0.8, changeFrequency: "monthly" as const },
+    ...cityRoutes,
   ];
 
   return routes.map((route) => ({
