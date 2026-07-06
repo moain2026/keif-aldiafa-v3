@@ -64,27 +64,26 @@ const ProtectedImage: React.FC<ProtectedImageProps> = ({
           height={!fill ? (height || 600) : undefined}
           fill={fill}
           priority={priority}
-          className={`${fill ? 'object-contain' : 'w-full h-auto block'}`}
+          // احترم object-fit الممرّر عبر className (لو موجود)؛ وإلا افتراضي cover في وضع fill
+          className={`${fill ? (/(object-(cover|contain|fill))/.test(className) ? '' : 'object-cover') : 'w-full h-auto block'}`}
           draggable={false}
           sizes={sizes}
         />
 
-        {/* Watermark Layer - Strictly bound to the image above */}
+        {/* علامة مائية أنيقة وصغيرة في الزاوية (لا تغطي الموضوع) — حماية بلا إفساد الصورة */}
         {showWatermark && (
-          <div className="absolute bottom-[8%] left-0 right-0 flex justify-center z-10 pointer-events-none">
-            <div 
-              className="relative w-[50%] max-w-[240px] opacity-[0.45] drop-shadow-[0_1px_4px_rgba(0,0,0,0.15)]"
-              style={{ 
-                mixBlendMode: 'screen',
-                filter: 'brightness(1.1) contrast(1.1)'
-              }}
+          <div className="absolute bottom-2 left-2 z-10 pointer-events-none">
+            <div
+              className="relative w-[64px] sm:w-[76px] opacity-[0.55] drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]"
+              style={{ mixBlendMode: 'screen' }}
             >
               <Image
                 src="/images/watermarks/svg/logo-1.svg"
-                alt="Watermark"
-                width={240}
-                height={240}
+                alt=""
+                width={80}
+                height={80}
                 className="w-full h-auto"
+                aria-hidden="true"
               />
             </div>
           </div>

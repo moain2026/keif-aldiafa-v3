@@ -24,6 +24,8 @@ interface ImageWithFallbackProps {
   style?: React.CSSProperties;
   sizes?: string;
   quality?: number;
+  /** أوقف blur placeholder (للصور المكررة مثل شعارات الشركاء — يوفّر حجم HTML) */
+  disableBlur?: boolean;
 }
 
 /**
@@ -42,6 +44,7 @@ function ImageWithFallbackInner({
   style,
   sizes = "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw",
   quality = 75,
+  disableBlur = false,
 }: ImageWithFallbackProps) {
   const [didError, setDidError] = useState(false);
 
@@ -76,8 +79,9 @@ function ImageWithFallbackInner({
     priority,
     loading: (priority ? "eager" : loading || "lazy") as "lazy" | "eager",
     onError: () => setDidError(true),
-    placeholder: "blur" as const,
-    blurDataURL: shimmerBase64(),
+    ...(disableBlur
+      ? {}
+      : { placeholder: "blur" as const, blurDataURL: shimmerBase64() }),
   };
 
   if (fill) {

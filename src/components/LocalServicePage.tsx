@@ -164,11 +164,11 @@ export default function LocalServicePage(props: LocalServicePageProps) {
         {/* Gallery */}
         {props.gallery.length > 0 && (
           <RevealOnScroll as="section">
-            <h2 className="text-[#C5A059] font-tajawal text-2xl sm:text-3xl font-bold mb-6">من أعمالنا</h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <h2 className="text-[#C5A059] font-tajawal text-2xl sm:text-3xl font-bold mb-8 text-center">من أعمالنا</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7">
               {props.gallery.map((g, i) => (
-                <div key={i} className="relative aspect-square rounded-xl overflow-hidden border border-[#C5A059]/10">
-                  <Image src={g.src} alt={g.alt} fill sizes="(max-width: 768px) 50vw, 33vw" className="object-cover" />
+                <div key={i} className="group relative aspect-[4/5] rounded-2xl overflow-hidden border border-[#C5A059]/15 shadow-[0_8px_24px_rgba(0,0,0,0.28)] transition-transform duration-500 hover:-translate-y-1">
+                  <Image src={g.src} alt={g.alt} fill sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw" className="object-cover object-[center_30%] transition-transform duration-700 group-hover:scale-105" />
                 </div>
               ))}
             </div>

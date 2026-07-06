@@ -64,6 +64,7 @@ function PartnerCard({ partner }: { partner: (typeof allPartners)[0] }) {
             width={160}
             height={80}
             quality={85}
+            disableBlur
           />
         </div>
       </div>

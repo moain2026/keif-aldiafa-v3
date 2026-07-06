@@ -4,6 +4,7 @@ import Link from "next/link";
 import ProtectedImage from "@/components/ProtectedImage";
 import { RevealOnScroll } from "@/components/animations/RevealOnScroll";
 import { CITIES, getCity } from "@/lib/cities";
+import { CITIES as SC_CITIES, SERVICES as SC_SERVICES, localSlug } from "@/lib/localPages";
 import { getAllImages } from "@/lib/imageCatalog";
 import { generatePageMetadata } from "@/components/SEO";
 import {
@@ -173,21 +174,24 @@ export default function CityPage({ params }: Params) {
             </div>
           </RevealOnScroll>
 
-          {/* Gallery — ProtectedImage + watermark, مثل الصفحات الرسمية */}
+          {/* Gallery — أنيق بنسبة موحّدة ومساحات تنفّس (معايير عالمية) + علامة مائية ركنية */}
           <RevealOnScroll as="section">
-            <h2 className="text-[#C5A059] font-tajawal text-2xl sm:text-3xl font-bold mb-6 text-center">
+            <h2 className="text-[#C5A059] font-tajawal text-2xl sm:text-3xl font-bold mb-8 text-center">
               من أعمالنا في {city.name}
             </h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7">
               {imgs.gallery.map((g, i) => (
-                <div key={i} className="relative aspect-square rounded-xl overflow-hidden border border-[#C5A059]/10">
+                <div
+                  key={i}
+                  className="group relative aspect-[4/5] rounded-2xl overflow-hidden border border-[#C5A059]/15 shadow-[0_8px_24px_rgba(0,0,0,0.28)] transition-transform duration-500 hover:-translate-y-1"
+                >
                   <ProtectedImage
                     src={g.src}
                     alt={`من أعمال كيف الضيافة في ${city.name} — لقطة ${i + 1}`}
                     fill
                     showWatermark
-                    sizes="(max-width:768px) 50vw, 33vw"
-                    className="object-cover"
+                    sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw"
+                    className="object-cover object-[center_30%] transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
               ))}
@@ -215,6 +219,29 @@ export default function CityPage({ params }: Params) {
               احجز عبر واتساب
             </a>
           </RevealOnScroll>
+
+          {/* روابط داخلية لصفحات الخدمة×المدينة (يربط صفحات المال — مهم للسيو) */}
+          {(() => {
+            const scKey = Object.keys(SC_CITIES).find((k) => SC_CITIES[k].ar === city.name);
+            if (!scKey) return null;
+            return (
+              <RevealOnScroll as="section">
+                <h2 className="text-[#C5A059] font-tajawal text-2xl sm:text-3xl font-bold mb-6">خدماتنا في {city.name}</h2>
+                <div className="grid sm:grid-cols-3 gap-4">
+                  {Object.keys(SC_SERVICES).map((svc) => (
+                    <Link
+                      key={svc}
+                      href={`/${localSlug(svc, scKey)}`}
+                      className="block rounded-2xl p-5 bg-[#1a1a1a] border border-[#C5A059]/15 hover:border-[#C5A059]/40 transition group"
+                    >
+                      <span className="block text-[#F5F5DC] font-tajawal font-bold mb-1 group-hover:text-[#C5A059] transition">{SC_SERVICES[svc].ar} في {city.name}</span>
+                      <span className="block text-[#F5F5DC]/55 text-xs leading-relaxed">{SC_SERVICES[svc].short}</span>
+                    </Link>
+                  ))}
+                </div>
+              </RevealOnScroll>
+            );
+          })()}
 
           {/* Other cities */}
           <section className="border-t border-white/10 pt-8">
