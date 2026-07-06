@@ -66,6 +66,8 @@ export default function Page({ params }: Props) {
     name: `${s.ar} في ${c.ar}`,
     description: data.metaDescription,
     url,
+    cityAr: c.ar,
+    serviceType: s.ar,
   });
   const faqSchema = generateFAQSchema(data.faqs);
   const webPageSchema = generateWebPageSchema({

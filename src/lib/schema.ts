@@ -177,6 +177,9 @@ export function generateServiceSchema(service: {
   name: string;
   description: string;
   url: string;
+  /** إذا مُرّرت مدينة محددة → areaServed = City (أقوى للسيو المحلي) */
+  cityAr?: string;
+  serviceType?: string;
 }) {
   return {
     "@context": "https://schema.org",
@@ -189,11 +192,10 @@ export function generateServiceSchema(service: {
       name: SITE_NAME,
       "@id": `${SITE_URL}/#business`,
     },
-    areaServed: {
-      "@type": "Country",
-      name: "Saudi Arabia",
-    },
-    serviceType: "Hospitality Services",
+    areaServed: service.cityAr
+      ? { "@type": "City", name: service.cityAr }
+      : { "@type": "Country", name: "Saudi Arabia" },
+    serviceType: service.serviceType || "Hospitality Services",
   };
 }
 

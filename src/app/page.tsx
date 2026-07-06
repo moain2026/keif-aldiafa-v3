@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { HomePageClient } from "./HomePageClient";
+import { HOME_FAQS } from "@/lib/homeFaqs";
 import {
   generateBreadcrumbSchema,
   generateFAQSchema,
@@ -36,28 +37,7 @@ export const metadata: Metadata = {
   },
 };
 
-const faqSchema = generateFAQSchema([
-  {
-    question: "ما هي خدمات كيف الضيافة؟",
-    answer:
-      "نقدم خدمات ضيافة فاخرة شاملة تتضمن: قهوجيين وصبّابين قهوة سعودية، صبابات ومباشرات زواجات، سقاء زمزم، خدمات فنية (خطاط، رسام، فرقة شعبية)، تأجير معدات، وتقديمات فاخرة من مشروبات حارة وباردة وحلويات.",
-  },
-  {
-    question: "ما هي المناطق التي تغطيها كيف الضيافة؟",
-    answer:
-      "نغطي جميع مناطق المملكة العربية السعودية بما في ذلك الرياض، جدة، مكة المكرمة، المدينة المنورة، الدمام، الخبر، الطائف، أبها، تبوك، حائل، نجران وجازان.",
-  },
-  {
-    question: "كيف يمكنني التواصل مع كيف الضيافة؟",
-    answer:
-      "يمكنك التواصل معنا عبر واتساب على الرقم +966508252134 أو البريد الإلكتروني keifaldiafa@gmail.com أو زيارة صفحة التواصل على موقعنا.",
-  },
-  {
-    question: "هل تقدمون استشارة مجانية؟",
-    answer:
-      "نعم، نقدم استشارة مجانية لتصميم تجربة ضيافة فاخرة تناسب مناسبتك. تواصل معنا عبر واتساب أو نموذج الاتصال.",
-  },
-]);
+const faqSchema = generateFAQSchema(HOME_FAQS);
 
 const breadcrumbSchema = generateBreadcrumbSchema([
   { name: "الرئيسية", url: SITE_URL },

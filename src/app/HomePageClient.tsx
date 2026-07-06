@@ -4,6 +4,7 @@ import { useRef, useEffect, lazy, Suspense } from "react";
 import Link from "next/link";
 import { motion, useScroll, useTransform } from "motion/react";
 import { HERO_IMG } from "@/lib/images";
+import { HOME_FAQS } from "@/lib/homeFaqs";
 
 const PartnersMarquee = lazy(() =>
   import("@/components/PartnersMarquee").then((m) => ({ default: m.PartnersMarquee }))
@@ -202,7 +203,7 @@ export function HomePageClient() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.75 }}
                 className="text-gold-highlight mb-4 font-cairo"
-                style={{ fontSize: "clamp(1.05rem, 2.6vw, 1.35rem)", fontWeight: 700, lineHeight: 1.6 }}
+                style={{ fontSize: "clamp(1.5rem, 4.5vw, 2.1rem)", fontWeight: 800, lineHeight: 1.4 }}
               >
                 قهوجيين وصبابين قهوة لضيافة فاخرة في السعودية
               </motion.h1>
@@ -252,6 +253,21 @@ export function HomePageClient() {
                 </div>
                 <h3 className="text-xl font-cairo font-bold text-text-primary mb-3">{card.title}</h3>
                 <p className="text-text-secondary leading-relaxed text-sm">{card.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ (مرئي — متطابق مع FAQPage schema) */}
+      <section className="py-20 px-4 bg-luxury-rich relative">
+        <div className="max-w-3xl mx-auto">
+          <SectionHeader label="أسئلة شائعة" title="أسئلة شائعة عن كيف الضيافة" />
+          <div className="space-y-6">
+            {HOME_FAQS.map((f, i) => (
+              <motion.div key={i} initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }}>
+                <h3 className="text-text-primary font-cairo font-bold mb-2">{f.question}</h3>
+                <p className="text-text-secondary leading-relaxed text-sm">{f.answer}</p>
               </motion.div>
             ))}
           </div>
