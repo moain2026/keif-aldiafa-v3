@@ -275,7 +275,7 @@ function NavbarContent({ deferredPrompt, setDeferredPrompt }: NavbarProps) {
                       onClick={closeMenu}
                       className="text-gold-matte hover:opacity-80 font-bold transition-opacity duration-200"
                     >
-                      معين العبّاسي
+                      Alabbasi Soft
                     </a>
                   </p>
                 </div>

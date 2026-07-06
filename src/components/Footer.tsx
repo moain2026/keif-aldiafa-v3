@@ -176,7 +176,7 @@ export default function Footer() {
               className="gold-gradient-text font-semibold"
               style={{ letterSpacing: "0.06em" }}
             >
-              Alabbasi سوفت
+              Alabbasi Soft
             </span>
             <span className="inline-block w-6 h-px bg-gradient-to-l from-transparent to-[#B8860B]/40" />
           </p>
