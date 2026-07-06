@@ -29,6 +29,23 @@ const seoAltMapping: Record<string, string> = {
   equipment: "تأجير معدات ضيافة ملكية - دلال نحاسية وكاونترات استقبال"
 };
 
+/**
+ * Builds a UNIQUE, natural alt per image (P0 fix): combines the Arabic category
+ * context with the descriptive part of the image filename, so every image gets
+ * a distinct, human-readable alt instead of a repeated template. Pure (no fs) so
+ * it is safe in this client component.
+ */
+function uniqueAlt(src: string, category: FilterType): string {
+  const base = (src.split("/").pop() || "").replace(/\.[a-z0-9]+$/i, "");
+  const words = base
+    .split(/[-_]+/)
+    .filter((w) => w && !/^\d+$/.test(w))
+    .slice(0, 8);
+  const descriptive = words.join(" ");
+  const context = seoAltMapping[category] || seoAltMapping.all;
+  return descriptive ? `${context} — ${descriptive}` : context;
+}
+
 const portfolioItems: PortfolioItem[] = [
   ...EVENT_IMAGES.map((img, i) => ({
     id: i + 1,
@@ -165,8 +182,9 @@ function Lightbox({
             <div className="relative w-full h-full max-w-[95vw] max-h-[85vh] md:max-w-[75vw] md:max-h-[75vh] flex items-center justify-center">
               <ProtectedImage
                 src={item.image}
-                alt={`${seoAltMapping[item.category]} - عرض تفصيلي رقم ${index + 1}`}
+                alt={uniqueAlt(item.image, item.category)}
                 fill={true}
+                sizes="(max-width: 768px) 95vw, 75vw"
                 className="object-contain shadow-2xl select-none"
                 priority
                 showWatermark={true}
@@ -340,7 +358,7 @@ export default function PortfolioClient() {
             >
               <ProtectedImage
                 src={item.image}
-                alt={`${seoAltMapping[item.category]} - لقطة ${idx + 1} من معرض أعمالنا`}
+                alt={uniqueAlt(item.image, item.category)}
                 className="w-full h-auto transition-transform duration-700 group-hover:scale-110"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />

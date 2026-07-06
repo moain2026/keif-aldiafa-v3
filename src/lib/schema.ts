@@ -161,6 +161,9 @@ export function generateImageGallerySchema(
       "@type": "ImageObject",
       contentUrl: img.url,
       url: img.url,
+      // Google prefers width/height on ImageObject; images are standardized WebP.
+      width: 1200,
+      height: 900,
       name: img.title || img.alt,
       caption: img.alt,
       creditText: SITE_NAME,
