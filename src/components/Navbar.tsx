@@ -266,8 +266,8 @@ function NavbarContent({ deferredPrompt, setDeferredPrompt }: NavbarProps) {
 
                 {/* Developer credit */}
                 <div className="mt-6 pt-5 border-t border-white/5 text-center">
-                  <p className="text-xs text-text-primary/40">
-                    إعداد وتصميم{" "}
+                  <p className="text-xs text-text-primary/40" dir="ltr">
+                    Developed by{" "}
                     <a
                       href="https://wa.me/967770941666"
                       target="_blank"

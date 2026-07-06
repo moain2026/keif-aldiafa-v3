@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 import { CITIES } from "@/lib/cities";
+import { LOCAL_PAGES, localSlug } from "@/lib/localPages";
 
 const SITE_URL = "https://keifaldiafa.com";
 
@@ -12,6 +13,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "monthly" as const,
   }));
 
+  // صفحات الخدمة × المدينة (تطابق البحث: صبابين قهوة جدة...)
+  const serviceCityRoutes = LOCAL_PAGES.map((p) => ({
+    path: `/${localSlug(p.service, p.city)}`,
+    priority: 0.8,
+    changeFrequency: "monthly" as const,
+  }));
+
   const routes = [
     { path: "/", priority: 1.0, changeFrequency: "weekly" as const },
     { path: "/services", priority: 0.9, changeFrequency: "weekly" as const },
@@ -21,6 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/contact", priority: 0.8, changeFrequency: "monthly" as const },
     { path: "/locations", priority: 0.8, changeFrequency: "monthly" as const },
     ...cityRoutes,
+    ...serviceCityRoutes,
   ];
 
   return routes.map((route) => ({

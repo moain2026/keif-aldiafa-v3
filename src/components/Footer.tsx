@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import { DallahLogo } from "@/components/DallahLogo";
 import { navLinks, useWhatsAppUrl } from "@/components/Navbar";
+import { CITIES } from "@/lib/cities";
 
 export default function Footer() {
   const waUrl = useWhatsAppUrl();
@@ -65,6 +66,19 @@ export default function Footer() {
                   <Link href={link.href} className="text-[#F5F5DC]/50 text-sm hover:text-[#B8860B] transition-colors duration-200 flex items-center gap-2 group min-h-[36px]">
                     <span className="w-3 h-px bg-[#B8860B]/30 group-hover:w-5 group-hover:bg-[#B8860B] transition-all duration-300" />
                     {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+            {/* المناطق — روابط صفحات المدن (2×2) لاكتشافها وتقوية السيو المحلي */}
+            <h3 className="text-[#B8860B] mt-6 mb-4" style={{ fontSize: "0.9rem", fontWeight: 700, letterSpacing: "0.1em" }}>خدماتنا حسب المدينة</h3>
+            <ul className="grid grid-cols-2 gap-x-4 gap-y-2.5">
+              {CITIES.map((city) => (
+                <li key={city.slug}>
+                  <Link href={`/locations/${city.slug}`} className="text-[#F5F5DC]/50 text-sm hover:text-[#B8860B] transition-colors duration-200 flex items-center gap-2 group min-h-[36px]">
+                    <span className="w-3 h-px bg-[#B8860B]/30 group-hover:w-5 group-hover:bg-[#B8860B] transition-all duration-300 flex-shrink-0" />
+                    <span>ضيافة {city.name}</span>
                   </Link>
                 </li>
               ))}
@@ -170,8 +184,9 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3" style={{ borderTop: "1px solid rgba(184,134,11,0.08)" }}>
           <p className="text-[#F5F5DC]/30 text-xs">© {new Date().getFullYear()} كيف الضيافة. جميع الحقوق محفوظة.</p>
-          <p className="flex items-center gap-2 text-[#F5F5DC]/40 text-xs">
+          <p className="flex items-center gap-2 text-[#F5F5DC]/40 text-xs" dir="ltr">
             <span className="inline-block w-6 h-px bg-gradient-to-r from-transparent to-[#B8860B]/40" />
+            <span style={{ letterSpacing: "0.04em" }}>Developed by</span>
             <span
               className="gold-gradient-text font-semibold"
               style={{ letterSpacing: "0.06em" }}
