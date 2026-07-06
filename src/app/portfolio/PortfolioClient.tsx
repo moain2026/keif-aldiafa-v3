@@ -202,6 +202,7 @@ function Lightbox({
 // ─────────────────────────────────────────────
 function RoyalTrioNav({ activeFilter, onFilterChange }: { activeFilter: FilterType; onFilterChange: (key: FilterType) => void }) {
   const [isSticky, setIsSticky] = useState(false);
+  const [navHeight, setNavHeight] = useState(0);
   const navRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollY } = useScroll();
@@ -216,19 +217,26 @@ function RoyalTrioNav({ activeFilter, onFilterChange }: { activeFilter: FilterTy
     return () => unsubscribe();
   }, [scrollY]);
 
+  // Measure nav height so we can reserve space (spacer) when it goes `fixed`,
+  // preventing the content below from jumping up (major CLS source).
+  useEffect(() => {
+    if (navRef.current) setNavHeight(navRef.current.offsetHeight);
+  }, []);
+
   return (
     <div ref={containerRef} className="w-full">
       <motion.section
         ref={navRef}
-        className={`w-full transition-all duration-300 ${isSticky ? 'fixed top-0 left-0 right-0 z-50' : 'relative'}`}
-        animate={{
+        className={`w-full ${isSticky ? 'fixed top-0 left-0 right-0 z-50' : 'relative'}`}
+        style={{
           paddingTop: isSticky ? '12px' : '16px',
           paddingBottom: isSticky ? '12px' : '16px',
           background: isSticky ? 'rgba(15, 15, 15, 0.95)' : 'transparent',
           backdropFilter: isSticky ? 'blur(16px)' : 'none',
-          borderBottom: isSticky ? '1px solid rgba(184, 134, 11, 0.15)' : 'none',
+          WebkitBackdropFilter: isSticky ? 'blur(16px)' : 'none',
+          borderBottom: isSticky ? '1px solid rgba(184, 134, 11, 0.15)' : '1px solid transparent',
+          transition: 'background 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out, border-color 0.3s ease-in-out',
         }}
-        transition={{ duration: 0.3, ease: 'easeInOut' }}
       >
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-center gap-2 sm:gap-3">
@@ -276,10 +284,8 @@ function RoyalTrioNav({ activeFilter, onFilterChange }: { activeFilter: FilterTy
                     animate={{
                       color: activeFilter === filter.key ? '#D4A017' : '#F5F5DC',
                       opacity: activeFilter === filter.key ? 1 : 0.8,
-                      fontSize: isSticky ? '0.75rem' : '0.85rem',
                     }}
                     transition={{ type: 'spring', stiffness: 280, damping: 20, mass: 0.8, delay: 0.05 }}
-                    layout
                   >
                     {filter.label}
                   </motion.p>
@@ -299,6 +305,9 @@ function RoyalTrioNav({ activeFilter, onFilterChange }: { activeFilter: FilterTy
           </div>
         </div>
       </motion.section>
+      {/* Spacer: reserves the nav height when it goes `fixed` so content below
+          does not jump up (eliminates the large CLS on this page). */}
+      {isSticky && navHeight > 0 && <div style={{ height: navHeight }} aria-hidden="true" />}
     </div>
   );
 }
@@ -333,14 +342,15 @@ export default function PortfolioClient() {
         <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at 50% 20%, rgba(184,134,11,0.08) 0%, transparent 60%)" }} />
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <Breadcrumbs />
-          <motion.p initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="text-[#B8860B] mb-3 mt-8" style={{ fontSize: "0.75rem", letterSpacing: "0.35em" }}>✦ معرض أعمالنا ✦</motion.p>
-          <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-[#F5F5DC] mb-4 font-tajawal" style={{ fontSize: "clamp(2rem, 6vw, 3.5rem)", fontWeight: 900, lineHeight: 1.15}}>معرض أعمالنا: مناسبات ضيافة<br /><span className="gold-gradient-text">في مدن المملكة</span></motion.h1>
-          <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-[#F5F5DC]/55 max-w-xl mx-auto text-sm leading-relaxed">توثيق للحظات الفخامة والتميز — استعرض أفضل لحظاتنا من الفعاليات والأعراس والمعدات الفاخرة التي تعكس جودة خدماتنا</motion.p>
+          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-[#B8860B] mb-3 mt-8" style={{ fontSize: "0.75rem", letterSpacing: "0.35em" }}>✦ معرض أعمالنا ✦</motion.p>
+          <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.1 }} className="text-[#F5F5DC] mb-4 font-tajawal" style={{ fontSize: "clamp(2rem, 6vw, 3.5rem)", fontWeight: 900, lineHeight: 1.15}}>معرض أعمالنا: مناسبات ضيافة<br /><span className="gold-gradient-text">في مدن المملكة</span></motion.h1>
+          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} className="text-[#F5F5DC]/55 max-w-xl mx-auto text-sm leading-relaxed">توثيق للحظات الفخامة والتميز — استعرض أفضل لحظاتنا من الفعاليات والأعراس والمعدات الفاخرة التي تعكس جودة خدماتنا</motion.p>
         </div>
       </section>
 
       {/* Royal Trio Sticky Navigation */}
       <RoyalTrioNav activeFilter={activeFilter} onFilterChange={setActiveFilter} />
+
 
       {/* Gallery Grid - Masonry Style (Natural Aspect Ratio) */}
       <div className="container mx-auto px-4 pt-12">
@@ -349,12 +359,12 @@ export default function PortfolioClient() {
           {displayedItems.map((item, idx) => (
             <motion.div
               key={item.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.4 }}
               onClick={() => setSelectedIndex(idx)}
-              className="break-inside-avoid group relative rounded-2xl overflow-hidden cursor-pointer bg-[#1a1a1a]"
+              className="break-inside-avoid group relative rounded-2xl overflow-hidden cursor-pointer bg-[#1a1a1a] mb-4 sm:mb-6"
             >
               <ProtectedImage
                 src={item.image}

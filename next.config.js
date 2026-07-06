@@ -63,7 +63,16 @@ const nextConfig = {
           ...securityHeaders,
           {
             key: 'X-Robots-Tag',
-            value: process.env.VERCEL_ENV === 'production' ? 'all' : 'noindex, nofollow',
+            // Index in production by default. Only block indexing for EXPLICIT
+            // preview/staging environments. Previously this required
+            // VERCEL_ENV==='production', which silently emitted `noindex` on any
+            // non-Vercel or custom deployment — hiding the ENTIRE site from Google.
+            value:
+              process.env.VERCEL_ENV === 'preview' ||
+              process.env.NEXT_PUBLIC_NOINDEX === 'true' ||
+              process.env.NODE_ENV !== 'production'
+                ? 'noindex, nofollow'
+                : 'all',
           },
         ],
       },
