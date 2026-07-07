@@ -57,7 +57,11 @@ export const metadata: Metadata = {
   ],
   metadataBase: new URL(SITE_URL),
   verification: {
-    google: "qiyji6ldzrSpPA0KolUsquX_SF3BDLfiphfkoXJibro",
+    // ندعم الرمزين معاً (Search Console القديم + الجديد)
+    google: [
+      "qiyji6ldzrSpPA0KolUsquX_SF3BDLfiphfkoXJibro",
+      "r2i2igipi3DvgQTW6POkWgw-GhT5E0zXWFrKnm9ilfY",
+    ],
   },
   alternates: {
     canonical: SITE_URL,
