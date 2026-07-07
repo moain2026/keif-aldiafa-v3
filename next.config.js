@@ -19,11 +19,13 @@ const securityHeaders = [
     key: "Content-Security-Policy",
     value: [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com",
+      "script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com",
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-      "img-src 'self' data: blob:",
+      // الصور: يحتاج Google Ads/Analytics tracking pixels + محول Next
+      "img-src 'self' data: blob: https://www.google.com https://www.google-analytics.com https://googleads.g.doubleclick.net https://stats.g.doubleclick.net",
       "font-src 'self' https://fonts.gstatic.com data:",
-      "connect-src 'self' https://www.google-analytics.com https://wa.me",
+      // الاتصالات: يحتاج Google Ads (ccm/collect، doubleclick) + Analytics + region GA endpoints
+      "connect-src 'self' https://www.google.com https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://region1.analytics.google.com https://googleads.g.doubleclick.net https://ad.doubleclick.net https://stats.g.doubleclick.net https://wa.me",
       "frame-ancestors 'self'",
       "base-uri 'self'",
       "form-action 'self'",
