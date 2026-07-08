@@ -70,18 +70,23 @@ const ProtectedImage: React.FC<ProtectedImageProps> = ({
           sizes={sizes}
         />
 
-        {/* علامة مائية أنيقة وصغيرة في الزاوية (لا تغطي الموضوع) — حماية بلا إفساد الصورة */}
+        {/* علامة مائية مركزية متوازنة — تحمي من القص/لقطة الشاشة مع إبقاء الصورة أنيقة.
+            الوسط (top-1/2 + left-1/2 + translate) + 35٪ من عرض الصورة + shape-based drop-shadow
+            + mix-blend-mode:screen (يظهر بلون الصورة الفاتح — يبان بدقة ولا يخنق الموضوع). */}
         {showWatermark && (
-          <div className="absolute bottom-2 left-2 z-10 pointer-events-none">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 pointer-events-none flex items-center justify-center w-[35%] max-w-[200px] min-w-[80px]">
             <div
-              className="relative w-[64px] sm:w-[76px] opacity-[0.55] drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]"
-              style={{ mixBlendMode: 'screen' }}
+              className="relative w-full opacity-30 drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]"
+              style={{
+                mixBlendMode: 'screen',
+                filter: 'brightness(1.15) contrast(1.1)',
+              }}
             >
               <Image
                 src="/images/watermarks/svg/logo-1.svg"
                 alt=""
-                width={80}
-                height={80}
+                width={200}
+                height={200}
                 className="w-full h-auto"
                 aria-hidden="true"
               />
