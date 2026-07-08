@@ -1,10 +1,7 @@
 import { Metadata } from "next";
 import { HomePageClient } from "./HomePageClient";
-import { HOME_FAQS } from "@/lib/homeFaqs";
-import {
-  generateBreadcrumbSchema,
-  generateFAQSchema,
-} from "@/lib/schema";
+
+import { generateBreadcrumbSchema } from "@/lib/schema";
 
 const SITE_URL = "https://keifaldiafa.com";
 
@@ -37,8 +34,6 @@ export const metadata: Metadata = {
   },
 };
 
-const faqSchema = generateFAQSchema(HOME_FAQS);
-
 const breadcrumbSchema = generateBreadcrumbSchema([
   { name: "الرئيسية", url: SITE_URL },
 ]);
@@ -46,10 +41,10 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 export default function HomePage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      {/* Preload صور الهيرو (LCP) — خاص بالرئيسية فقط (لا يُذرّر على صفحات داخلية) */}
+      <link rel="preload" as="image" href="/images/hero/hero-desktop.webp" media="(min-width: 768px)" fetchPriority="high" />
+      <link rel="preload" as="image" href="/images/hero/hero-mobile.webp" media="(max-width: 767px)" fetchPriority="high" />
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}

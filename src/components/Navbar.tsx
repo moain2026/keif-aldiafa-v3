@@ -268,15 +268,7 @@ function NavbarContent({ deferredPrompt, setDeferredPrompt }: NavbarProps) {
                 <div className="mt-6 pt-5 border-t border-white/5 text-center">
                   <p className="text-xs text-text-primary/40" dir="ltr">
                     Developed by{" "}
-                    <a
-                      href="https://wa.me/967770941666"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={closeMenu}
-                      className="text-gold-matte hover:opacity-80 font-bold transition-opacity duration-200"
-                    >
-                      Alabbasi Soft
-                    </a>
+                    <span className="text-gold-matte font-bold">Alabbasi Soft</span>
                   </p>
                 </div>
               </div>

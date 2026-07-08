@@ -4,9 +4,11 @@ import { LOCAL_PAGES, localSlug } from "@/lib/localPages";
 
 const SITE_URL = "https://keifaldiafa.com";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date().toISOString();
+// تاريخ ثابت لآخر تعديل فعلي (يُحدّث يدوياً عند إطلاق محتوى جديد، لا عند كل زحف)
+// مرجع: Google، إذا ثبت أن lastmod مزيف تتجاهله وتخسر مصداقية إعادة الزحف.
+const SITE_LAST_MODIFIED = "2026-07-08";
 
+export default function sitemap(): MetadataRoute.Sitemap {
   const cityRoutes = CITIES.map((c) => ({
     path: `/locations/${c.slug}`,
     priority: 0.7,
@@ -34,7 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return routes.map((route) => ({
     url: `${SITE_URL}${route.path}`,
-    lastModified: now,
+    lastModified: SITE_LAST_MODIFIED,
     changeFrequency: route.changeFrequency,
     priority: route.priority,
   }));

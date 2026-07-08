@@ -150,21 +150,8 @@ export default function RootLayout({
       className={`scroll-smooth ${tajawal.variable} ${cairo.variable}`}
     >
       <head>
-        {/* Preload hero poster (LCP) for the homepage */}
-        <link
-          rel="preload"
-          as="image"
-          href="/images/hero/hero-desktop.webp"
-          media="(min-width: 768px)"
-          fetchPriority="high"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="/images/hero/hero-mobile.webp"
-          media="(max-width: 767px)"
-          fetchPriority="high"
-        />
+        {/* تم نقل preload لـhero إلى src/app/page.tsx فقط
+            (كان هنا يضيف ~230KB على كل صفحة داخلية دون فائدة) */}
         {/* Organization Schema */}
         <script
           type="application/ld+json"

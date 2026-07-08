@@ -6,6 +6,12 @@ import { motion } from "motion/react";
 import { DallahLogo } from "@/components/DallahLogo";
 import { navLinks, useWhatsAppUrl } from "@/components/Navbar";
 import { CITIES } from "@/lib/cities";
+import {
+  CITIES as SC_CITIES,
+  SERVICES as SC_SERVICES,
+  LOCAL_PAGES,
+  localSlug,
+} from "@/lib/localPages";
 
 export default function Footer() {
   const waUrl = useWhatsAppUrl();
@@ -82,6 +88,34 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
+            </ul>
+
+            {/* صفحات الخدمة×المدينة (24 رابط) — فكّ عزلة صفحات الأموال وتمرير PageRank داخلي */}
+            <h3
+              className="text-[#B8860B] mt-6 mb-4"
+              style={{ fontSize: "0.9rem", fontWeight: 700, letterSpacing: "0.1em" }}
+            >
+              خدماتنا في مدن المملكة
+            </h3>
+            <ul className="space-y-2 max-h-56 overflow-y-auto pr-1" style={{ scrollbarWidth: "thin" }}>
+              {LOCAL_PAGES.map((p) => {
+                const c = SC_CITIES[p.city];
+                const s = SC_SERVICES[p.service];
+                if (!c || !s) return null;
+                return (
+                  <li key={`${p.service}-${p.city}`}>
+                    <Link
+                      href={`/${localSlug(p.service, p.city)}`}
+                      className="text-[#F5F5DC]/45 text-xs hover:text-[#B8860B] transition-colors duration-200 flex items-center gap-2 group min-h-[28px] leading-tight"
+                    >
+                      <span className="w-2 h-px bg-[#B8860B]/30 group-hover:w-4 group-hover:bg-[#B8860B] transition-all duration-300 flex-shrink-0" />
+                      <span>
+                        {s.ar} {c.ar}
+                      </span>
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
