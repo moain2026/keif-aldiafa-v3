@@ -194,7 +194,21 @@ export function generateImageGallerySchema(
       caption: img.alt,
       // مرجع بـ@id بدل تضمين Organization كاملة (يقلّص حجم HTML بشدة).
       creditText: SITE_NAME,
-      creator: { "@id": `${SITE_URL}/#business` },
+      creator: {
+        "@type": "Organization",
+        "@id": `${SITE_URL}/#business`,
+        name: SITE_NAME,
+        url: SITE_URL,
+      },
+      // إشارات حقوق النشر والترخيص (الحقول الاختيارية التي يرصدها GSC):
+      // — license: رابط لـ/legal يوضح حقوق الاستخدام
+      // — copyrightNotice: إشعار جميع الحقوق محفوظة للعلامة
+      // — acquireLicensePage: صفحة تواصل للحصول على ترخيص (contact page)
+      // — هذه تحسّن ظهور الصور في Google Images مع أيقونة licensable
+      license: `${SITE_URL}/legal`,
+      acquireLicensePage: `${SITE_URL}/contact`,
+      copyrightNotice: `© ${new Date().getFullYear()} ${SITE_NAME}. جميع الحقوق محفوظة.`,
+      copyrightYear: new Date().getFullYear(),
     })),
   };
 }

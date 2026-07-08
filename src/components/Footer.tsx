@@ -217,7 +217,15 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3" style={{ borderTop: "1px solid rgba(184,134,11,0.08)" }}>
-          <p className="text-[#F5F5DC]/30 text-xs">© {new Date().getFullYear()} كيف الضيافة. جميع الحقوق محفوظة.</p>
+          <p className="text-[#F5F5DC]/30 text-xs">
+            © {new Date().getFullYear()} كيف الضيافة. جميع الحقوق محفوظة.{" · "}
+            <Link
+              href="/legal"
+              className="text-[#F5F5DC]/45 hover:text-[#B8860B] transition-colors duration-200 underline-offset-2 hover:underline"
+            >
+              الحقوق القانونية
+            </Link>
+          </p>
           <p className="flex items-center gap-2 text-[#F5F5DC]/40 text-xs" dir="ltr">
             <span className="inline-block w-6 h-px bg-gradient-to-r from-transparent to-[#B8860B]/40" />
             <span style={{ letterSpacing: "0.04em" }}>Developed by</span>
