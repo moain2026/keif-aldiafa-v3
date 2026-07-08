@@ -35,7 +35,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   return routes.map((route) => ({
-    url: `${SITE_URL}${route.path}`,
+    // ترميز percent-encoding للأحرف العربية في <loc> لمطابقة مواصفة sitemaps.org
+    // (encodeURI يحفظ المحارف المحجوزة مثل / و : ويرمّز فقط الحروف غير ASCII)
+    url: encodeURI(`${SITE_URL}${route.path}`),
     lastModified: SITE_LAST_MODIFIED,
     changeFrequency: route.changeFrequency,
     priority: route.priority,

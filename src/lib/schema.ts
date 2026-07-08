@@ -31,26 +31,52 @@ export function generateOrganizationSchema() {
 }
 
 export function generateLocalBusinessSchema() {
-  // نشاط وطني (Service Area Business) — الخدمة تغطي كل المملكة،
-  // لذلك لا نحصر النشاط بإحداثيات مدينة واحدة (كانت الرياض خطأً يحصر الظهور).
+  // Service Area Business (SAB) — المقر الفعلي: جدة، التغطية: كل المملكة.
+  // الفريق يتنقل لموقع العميل (لا العكس) — تصميم SAB مطابق لتوجيهات Google:
+  //   — استخدام CateringService (فرع رسمي من FoodEstablishment → LocalBusiness) بدل FoodService الخاطئ (ليس LocalBusiness).
+  //   — address بمستوى المدينة (جدة) دون streetAddress — تجنّب عنوان خاطئ في الخرائط.
+  //   — geo بإحداثيات مركز جدة (recommended من Google — ترسّخ الإشارة المحلية بلا حصر التغطية).
+  //   — جدة أول مدينة في areaServed (إشارة أولوية للسوق الأساسي).
+  //   — foundingDate + founder لتعزيز E-E-A-T.
+  const cities = [
+    "جدة",
+    "الرياض",
+    "مكة المكرمة",
+    "المدينة المنورة",
+    "الدمام",
+    "الطائف",
+    "أبها",
+    "ينبع",
+  ].map((name) => ({ "@type": "City" as const, name }));
+
   return {
     "@context": "https://schema.org",
-    "@type": ["ProfessionalService", "FoodService"],
+    "@type": "CateringService",
     "@id": `${SITE_URL}/#business`,
     name: SITE_NAME,
     alternateName: "Keif Al-Diafa",
     description:
-      "خدمات الضيافة الفاخرة في جميع مناطق المملكة العربية السعودية - قهوة سعودية، شاي، تقديمات وفريق احترافي تغطي كل المدن.",
+      "خدمات ضيافة فاخرة متنقلة في جميع مدن المملكة العربية السعودية — قهوة سعودية، شاي، تقديمات، وفريق ضيافة احترافي يصل إلى موقع مناسبتك. المقر الرئيسي: جدة.",
     url: SITE_URL,
-    telephone: PHONE,
-    email: EMAIL,
     image: `${SITE_URL}/icon-512.png`,
     logo: `${SITE_URL}/icon-512.png`,
-    // عنوان على مستوى الدولة (بدون حصر بمدينة/إحداثيات)
+    telephone: PHONE,
+    email: EMAIL,
+    foundingDate: "2016",
+    founder: { "@type": "Person", name: "فريق كيف الضيافة" },
     address: {
       "@type": "PostalAddress",
+      addressLocality: "جدة",
+      addressRegion: "منطقة مكة المكرمة",
       addressCountry: "SA",
     },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 21.4858,
+      longitude: 39.1925,
+    },
+    areaServed: [...cities, { "@type": "Country" as const, name: "Saudi Arabia" }],
+    serviceArea: cities,
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: [
@@ -65,24 +91,20 @@ export function generateLocalBusinessSchema() {
       opens: "00:00",
       closes: "23:59",
     },
-    priceRange: "$$$$",
-    servesCuisine: "Arabic Hospitality",
-    // التغطية الوطنية: المملكة كاملة + أبرز المناطق (تقوّي الظهور في كل مدينة)
-    areaServed: [
-      { "@type": "Country", name: "Saudi Arabia" },
-      { "@type": "City", name: "الرياض" },
-      { "@type": "City", name: "جدة" },
-      { "@type": "City", name: "مكة المكرمة" },
-      { "@type": "City", name: "المدينة المنورة" },
-      { "@type": "City", name: "الدمام" },
-      { "@type": "City", name: "ينبع" },
-      { "@type": "City", name: "الطائف" },
-      { "@type": "City", name: "أبها" },
-    ],
+    priceRange: "SAR 500 - SAR 5000",
+    servesCuisine: "قهوة سعودية وضيافة عربية",
     sameAs: [
       "https://www.instagram.com/keifaldiafa",
-      `https://wa.me/966508252134`,
+      "https://wa.me/966508252134",
     ],
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: PHONE,
+      email: EMAIL,
+      contactType: "customer service",
+      availableLanguage: ["Arabic", "English"],
+      areaServed: "SA",
+    },
   };
 }
 
