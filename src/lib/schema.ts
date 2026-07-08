@@ -91,7 +91,8 @@ export function generateLocalBusinessSchema() {
       opens: "00:00",
       closes: "23:59",
     },
-    priceRange: "SAR 500 - SAR 5000",
+    // النشاط يخدم حفلات ومؤسسات ومناسبات متنوّعة، لا باقات محددة — رمز جوجل «فاخر» $$$ ينقل الانطباع المحيط دون أرقام تنفّر.
+    priceRange: "$$$",
     servesCuisine: "قهوة سعودية وضيافة عربية",
     sameAs: [
       "https://www.instagram.com/keifaldiafa",
