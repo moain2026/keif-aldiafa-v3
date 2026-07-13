@@ -14,7 +14,7 @@ import Script from "next/script";
  * الـ CSP في next.config.js يسمح بنطاقات جوجل.
  */
 
-const GA_MEASUREMENT_ID = "G-ZZHYDVVMT1";
+// GA4 (G-ZZHYDVVMT1) + gtag config محقونان مباشرة في <head> بـlayout.tsx.
 const GOOGLE_ADS_ID = "AW-11081441847";
 
 /**
