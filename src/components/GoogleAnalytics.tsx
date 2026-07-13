@@ -44,6 +44,42 @@ export default function GoogleAnalytics() {
         `}
       </Script>
 
+      {/* تتبّع التحويلات: أي نقرة على رابط واتساب (wa.me) أو اتصال (tel:)
+          تُطلق حدث conversion لـGoogle Ads + GA4 + Meta + TikTok تلقائياً.
+          مستمع عام (event delegation) — يغطّي كل الأزرار في الموقع دون تعديل كل زر. */}
+      <Script id="conversion-tracking" strategy="afterInteractive">
+        {`
+          (function () {
+            function fireConversion(kind) {
+              try {
+                // Google Ads conversion (حدث عام — يُربط بإجراء التحويل من لوحة Google Ads)
+                if (typeof gtag === 'function') {
+                  gtag('event', 'conversion', { send_to: '${GOOGLE_ADS_ID}' });
+                  gtag('event', kind === 'call' ? 'contact_call' : 'contact_whatsapp', {
+                    event_category: 'engagement',
+                    event_label: kind,
+                  });
+                }
+                // Meta Pixel
+                if (typeof fbq === 'function') { fbq('track', 'Lead', { method: kind }); }
+                // TikTok Pixel
+                if (typeof ttq !== 'undefined' && ttq.track) { ttq.track('Contact', { method: kind }); }
+              } catch (e) {}
+            }
+            document.addEventListener('click', function (ev) {
+              var el = ev.target && ev.target.closest ? ev.target.closest('a[href]') : null;
+              if (!el) return;
+              var href = el.getAttribute('href') || '';
+              if (href.indexOf('wa.me') !== -1 || href.indexOf('whatsapp') !== -1) {
+                fireConversion('whatsapp');
+              } else if (href.indexOf('tel:') === 0) {
+                fireConversion('call');
+              }
+            }, { capture: true });
+          })();
+        `}
+      </Script>
+
       {/* Meta Pixel (Facebook/Instagram) — الكود الرسمي من Meta */}
       {META_PIXEL_ID && (
         <>
