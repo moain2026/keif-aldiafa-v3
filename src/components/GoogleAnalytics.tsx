@@ -3,18 +3,19 @@ import Script from "next/script";
 /**
  * Google gtag.js — علامة موحّدة تخدم:
  *   • Google Analytics 4 — G-ZZHYDVVMT1 (التحليلات)
- *   • Google Ads       — AW-3412658939 (تتبّع التحويلات والإعلانات)
+ *   • Google Ads       — AW-11081441847 (تتبّع التحويلات والإعلانات)
+ *   • Google Tag       — GT-NMLD8SD5 (معرّف العلامة الموحّدة للحساب)
  *
- * تمّ دمج معرّف Google Ads (Customer ID: 341-265-8939) بصيغة AW-
- * حتى يرفع خطأ «لا تتوفر علامة تتبّع من Google» في حملات Ads
- * وتعمل الحملة بشكل طبيعي. sript واحد (gtag.js) يخدم الاثنين معاً.
+ * ✅ مصحح 2026-07-13: الرقم الصحيح لحساب العميل هو AW-11081441847
+ * (مؤكّد من Google Ads → Google Tag)؛ الرقم السابق AW-3412658939 كان خاطئاً
+ * (مستخرج خطأً من Customer ID) وتسبّب في خطأ «لا تتوفر علامة تتبّع».
  *
  * يُحمّل بعد تفاعل الصفحة (afterInteractive) لحماية Core Web Vitals.
  * الـ CSP في next.config.js يسمح بنطاقات جوجل.
  */
 
 const GA_MEASUREMENT_ID = "G-ZZHYDVVMT1";
-const GOOGLE_ADS_ID = "AW-3412658939";
+const GOOGLE_ADS_ID = "AW-11081441847";
 
 /**
  * Meta Pixel + TikTok Pixel — مشروطة بمتغيرات البيئة.
