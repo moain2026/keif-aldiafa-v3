@@ -1,43 +1,23 @@
 import { MetadataRoute } from "next";
-import { execSync } from "node:child_process";
 import { CITIES } from "@/lib/cities";
 import { LOCAL_PAGES, localSlug } from "@/lib/localPages";
 
 const SITE_URL = "https://keifaldiafa.com";
 
-// تاريخ احتياطي إن تعذّر قراءة git (مثلاً بيئة بناء بلا سجل git)
-const FALLBACK_DATE = "2026-07-13";
-
-/**
- * آخر تعديل حقيقي لملف مصدر عبر git (تاريخ آخر commit مسّه).
- * يُنفَّذ وقت البناء على الخادم فقط → لا يتغيّر عند كل زحف (صادق مع Google).
- * مرجع: Google تتجاهل lastmod إن ثبت أنه مزيّف — فنربطه بتعديل حقيقي.
- */
-function gitLastModified(filePath: string): string {
-  try {
-    const out = execSync(`git log -1 --format=%cs -- "${filePath}"`, {
-      cwd: process.cwd(),
-      encoding: "utf8",
-      stdio: ["ignore", "pipe", "ignore"],
-    }).trim();
-    return out || FALLBACK_DATE;
-  } catch {
-    return FALLBACK_DATE;
-  }
-}
-
-// خريطة تاريخ لكل مجموعة صفحات مبنية على آخر تعديل فعلي لملفها المصدر
+// خريطة تواريخ lastmod ثابتة — تعكس آخر تعديل حقيقي لكل قسم (من سجل git).
+// ثابتة ومتنوّعة: لا تتغيّر عند كل زحف = صادقة مع Google. تُحدّث يدوياً عند تعديل قسم.
+// ملاحظة: Vercel يستنسخ git بعمق 1 (shallow)، فلا يُعوّل على git log per-file وقت البناء.
 const DATES = {
-  home: gitLastModified("src/app/HomePageClient.tsx"),
-  services: gitLastModified("src/app/services/page.tsx"),
-  offerings: gitLastModified("src/app/offerings/page.tsx"),
-  portfolio: gitLastModified("src/app/portfolio/PortfolioClient.tsx"),
-  about: gitLastModified("src/app/about/AboutClient.tsx"),
-  contact: gitLastModified("src/app/contact/ContactClient.tsx"),
-  locations: gitLastModified("src/app/locations/page.tsx"),
-  cityPage: gitLastModified("src/app/locations/[city]/page.tsx"),
-  serviceCity: gitLastModified("src/lib/localContent.tsx"),
-  legal: gitLastModified("src/app/legal/page.tsx"),
+  home: "2026-07-08", // آخر تعديل: الفوتر + روابط المدن + gtag head
+  services: "2026-07-06",
+  offerings: "2026-07-06",
+  portfolio: "2026-07-06",
+  about: "2026-07-06",
+  contact: "2026-07-06",
+  locations: "2026-07-06",
+  cityPage: "2026-07-06",
+  serviceCity: "2026-07-06",
+  legal: "2026-07-08", // صفحة قانونية أُنشئت 2026-07-08
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -71,7 +51,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return routes.map((route) => ({
     // ترميز percent-encoding للأحرف العربية في <loc> لمطابقة مواصفة sitemaps.org
-    // (encodeURI يحفظ المحارف المحجوزة مثل / و : ويرمّز فقط الحروف غير ASCII)
     url: encodeURI(`${SITE_URL}${route.path}`),
     lastModified: route.lastModified,
     changeFrequency: route.changeFrequency,
