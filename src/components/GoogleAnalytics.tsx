@@ -18,6 +18,16 @@ const GA_MEASUREMENT_ID = "G-ZZHYDVVMT1";
 const GOOGLE_ADS_ID = "AW-11081441847";
 
 /**
+ * Conversion Labels — تُضاف من Google Ads (Goals → Conversions → New → Website → Click).
+ * الصيغة الرسمية تشترط send_to: 'AW-XXXX/LABEL' — بدون label لا يُسجّل التحويل.
+ * تُضبط في Vercel Environment Variables بعد إنشاء إجراءات التحويل؛ تركُ فارغة يُرسل حدثاً عاماً للقياس فقط.
+ *   NEXT_PUBLIC_GADS_LABEL_WHATSAPP  → label إجراء تحويل «تواصل واتساب»
+ *   NEXT_PUBLIC_GADS_LABEL_CALL      → label إجراء تحويل «اتصال»
+ */
+const GADS_LABEL_WHATSAPP = process.env.NEXT_PUBLIC_GADS_LABEL_WHATSAPP || "";
+const GADS_LABEL_CALL = process.env.NEXT_PUBLIC_GADS_LABEL_CALL || "";
+
+/**
  * Meta Pixel + TikTok Pixel — مشروطة بمتغيرات البيئة.
  * لن تُحمَّل هذه السكربتات إطلاقاً حتى تُضاف القيم في .env.local أو Vercel:
  *   NEXT_PUBLIC_META_PIXEL_ID   → من Meta Business Suite (Events Manager)
@@ -50,19 +60,22 @@ export default function GoogleAnalytics() {
       <Script id="conversion-tracking" strategy="afterInteractive">
         {`
           (function () {
+            var GADS = '${GOOGLE_ADS_ID}';
+            var LBL_WA = '${GADS_LABEL_WHATSAPP}';
+            var LBL_CALL = '${GADS_LABEL_CALL}';
             function fireConversion(kind) {
               try {
-                // Google Ads conversion (حدث عام — يُربط بإجراء التحويل من لوحة Google Ads)
                 if (typeof gtag === 'function') {
-                  gtag('event', 'conversion', { send_to: '${GOOGLE_ADS_ID}' });
-                  gtag('event', kind === 'call' ? 'contact_call' : 'contact_whatsapp', {
-                    event_category: 'engagement',
-                    event_label: kind,
-                  });
+                  // Google Ads conversion — مع conversion label إن وُجد (الصيغة الرسمية: AW-XXXX/LABEL)
+                  var label = kind === 'call' ? LBL_CALL : LBL_WA;
+                  if (label) {
+                    gtag('event', 'conversion', { send_to: GADS + '/' + label });
+                  }
+                  // GA4: generate_lead (الحدث الموصى به رسمياً) + حدث وصفي
+                  gtag('event', 'generate_lead', { method: kind, currency: 'SAR' });
+                  gtag('event', kind === 'call' ? 'contact_call' : 'contact_whatsapp', { method: kind });
                 }
-                // Meta Pixel
                 if (typeof fbq === 'function') { fbq('track', 'Lead', { method: kind }); }
-                // TikTok Pixel
                 if (typeof ttq !== 'undefined' && ttq.track) { ttq.track('Contact', { method: kind }); }
               } catch (e) {}
             }
