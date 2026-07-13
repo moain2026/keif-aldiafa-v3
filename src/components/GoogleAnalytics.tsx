@@ -43,19 +43,8 @@ const TIKTOK_PIXEL_ID = process.env.NEXT_PUBLIC_TIKTOK_PIXEL_ID;
 export default function GoogleAnalytics() {
   return (
     <>
-      <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${GA_MEASUREMENT_ID}');
-          gtag('config', '${GOOGLE_ADS_ID}');
-        `}
-      </Script>
+      {/* ملاحظة: gtag.js الأساسي + config (GA4 + Ads) محقونان مباشرة في <head> بـlayout.tsx
+          (لضمان اكتشاف Google الآلي). هنا فقط: تتبّع التحويلات + Pixels. */}
 
       {/* تتبّع التحويلات: أي نقرة على رابط واتساب (wa.me) أو اتصال (tel:)
           تُطلق حدث conversion لـGoogle Ads + GA4 + Meta + TikTok تلقائياً.

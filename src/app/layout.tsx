@@ -150,8 +150,18 @@ export default function RootLayout({
       className={`scroll-smooth ${tajawal.variable} ${cairo.variable}`}
     >
       <head>
-        {/* تم نقل preload لـhero إلى src/app/page.tsx فقط
-            (كان هنا يضيف ~230KB على كل صفحة داخلية دون فائدة) */}
+        {/* Google tag (gtag.js) — محقون مباشرة في <head> (ليظهر في HTML المُقدّم فوراً
+            ويُكتشف من فحص Google Ads الآلي — يحل تحذير "لا تتوفر علامة تتبّع").
+            async يحمي الأداء. GA4 + Ads معاً. التتبّع المتقدّم (Pixels + التحويلات) يبقى في GoogleAnalytics. */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-11081441847"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-ZZHYDVVMT1');gtag('config','AW-11081441847');`,
+          }}
+        />
         {/* Organization Schema */}
         <script
           type="application/ld+json"
