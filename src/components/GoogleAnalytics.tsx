@@ -24,7 +24,10 @@ const GOOGLE_ADS_ID = "AW-11081441847";
  *   NEXT_PUBLIC_GADS_LABEL_WHATSAPP  → label إجراء تحويل «تواصل واتساب»
  *   NEXT_PUBLIC_GADS_LABEL_CALL      → label إجراء تحويل «اتصال»
  */
-const GADS_LABEL_WHATSAPP = process.env.NEXT_PUBLIC_GADS_LABEL_WHATSAPP || "";
+// label إجراء تحويل «واتساب» المؤكّد من Google Ads (Conversion «واتساب»).
+// يُمكن تجاوزه عبر ENV عند الحاجة.
+const GADS_LABEL_WHATSAPP =
+  process.env.NEXT_PUBLIC_GADS_LABEL_WHATSAPP || "NIEKCOWDzPYYELfEhaQp";
 const GADS_LABEL_CALL = process.env.NEXT_PUBLIC_GADS_LABEL_CALL || "";
 
 /**
