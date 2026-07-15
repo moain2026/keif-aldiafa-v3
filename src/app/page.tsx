@@ -1,7 +1,8 @@
 import { Metadata } from "next";
 import { HomePageClient } from "./HomePageClient";
 
-import { generateBreadcrumbSchema } from "@/lib/schema";
+import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema";
+import { HOME_FAQS } from "@/lib/homeFaqs";
 
 const SITE_URL = "https://keifaldiafa.com";
 
@@ -38,6 +39,11 @@ const breadcrumbSchema = generateBreadcrumbSchema([
   { name: "الرئيسية", url: SITE_URL },
 ]);
 
+// FAQPage schema — يطابق الأسئلة المرئية في HomePageClient.
+// ملاحظة: FAQ rich results ألغتها Google (مايو 2026)، لكن الـschema لا يزال يفيد
+// فهم المحتوى + AI Overviews (يقتبس من الأسئلة المهيكلة) — غير ضار.
+const faqSchema = generateFAQSchema(HOME_FAQS);
+
 export default function HomePage() {
   return (
     <>
@@ -48,6 +54,10 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <HomePageClient />
     </>
