@@ -2,6 +2,7 @@
 
 import { useRef, useEffect, lazy, Suspense } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, useScroll, useTransform } from "motion/react";
 import { HERO_IMG } from "@/lib/images";
 import { HOME_FAQS } from "@/lib/homeFaqs";
@@ -98,15 +99,27 @@ export function HomePageClient() {
       {/* HERO */}
       <section ref={heroRef} className="relative h-screen min-h-[600px] max-h-[950px] overflow-hidden" aria-label="الشاشة الرئيسية">
         <motion.div className="absolute inset-0" style={{ y: heroY }}>
-          {/* Video Background from v3 */}
+          {/* LCP element: صورة الهيرو بأولوية عالية (تُحمّل فوراً، لا يحظرها CSS).
+              نسخة جوال أخفّ للشاشات الصغيرة عبر sizes. */}
+          <Image
+            src={HERO_IMG}
+            alt="كيف الضيافة — ضيافة فاخرة"
+            fill
+            priority
+            fetchPriority="high"
+            sizes="100vw"
+            quality={70}
+            className="object-cover"
+          />
+          {/* Video Background — يُحمّل بعد أول رسم فلا ينافس الـLCP */}
           <video
             ref={videoRef}
             loop
             muted
             playsInline
             preload="none"
+            aria-hidden="true"
             className="absolute inset-0 w-full h-full object-cover"
-            poster={HERO_IMG}
           >
             <source src="/videos/hero-bg.mp4" type="video/mp4" />
           </video>
