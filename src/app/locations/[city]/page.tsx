@@ -32,8 +32,8 @@ export function generateMetadata({ params }: Params): Metadata {
     return generatePageMetadata({ title: "غير موجود", description: "", path: "/locations", noIndex: true });
 
   return generatePageMetadata({
-    title: `خدمات الضيافة في ${city.name} | قهوجيين وصبابين قهوة`,
-    description: city.intro,
+    title: `ضيافة فاخرة ${city.name} — قهوجيين وصبابين وتجهيز مناسبات`,
+    description: `✓ +500 مناسبة ✓ طاقم سعودي محترف ✓ تغطية كل أحياء ${city.name}. قهوجيين، صبابين قهوة، صبابات، وتجهيز ضيافة متكامل. اطلب عرض سعرك المجاني — واتساب 0508252134`,
     path: `/locations/${city.slug}`,
     keywords: city.keywords,
   });
