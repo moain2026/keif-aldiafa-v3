@@ -7,3 +7,4 @@ tsconfig.tsbuildinfo
 # Local images (tracked via Git LFS)
 # public/images/
 reports/shots/
+.env*
