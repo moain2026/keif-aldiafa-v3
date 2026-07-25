@@ -165,12 +165,15 @@ export default function Footer() {
               <Image
                 src="/images/badges/sbc.svg"
                 alt="المركز السعودي للأعمال"
-                width={70}
-                height={70}
+                width={110}
+                height={110}
                 quality={95}
-                className="transition-all duration-300 hover:opacity-100 flex-shrink-0"
+                className="transition-all duration-300 flex-shrink-0 h-auto w-[78px] sm:w-[92px]"
                 style={{
-                  filter: "grayscale(100%) brightness(1.1) sepia(0.2) hue-rotate(35deg) opacity(0.8)",
+                  // شهادات توثيق رسمية: تُعرض بوضوح كامل (بلا grayscale/opacity)
+                  // لأنها أقوى عناصر الثقة أمام العميل المؤسسي والحكومي.
+                  // brightness خفيف فقط ليتناسب مع الخلفية الداكنة.
+                  filter: "brightness(1.15) contrast(1.05)",
                 }}
               />
             </motion.div>
@@ -184,12 +187,15 @@ export default function Footer() {
               <Image
                 src="/images/badges/zatca.svg"
                 alt="الهيئة العامة للزكاة والدخل"
-                width={70}
-                height={70}
+                width={110}
+                height={110}
                 quality={95}
-                className="transition-all duration-300 hover:opacity-100 flex-shrink-0"
+                className="transition-all duration-300 flex-shrink-0 h-auto w-[78px] sm:w-[92px]"
                 style={{
-                  filter: "grayscale(100%) brightness(1.1) sepia(0.2) hue-rotate(35deg) opacity(0.8)",
+                  // شهادات توثيق رسمية: تُعرض بوضوح كامل (بلا grayscale/opacity)
+                  // لأنها أقوى عناصر الثقة أمام العميل المؤسسي والحكومي.
+                  // brightness خفيف فقط ليتناسب مع الخلفية الداكنة.
+                  filter: "brightness(1.15) contrast(1.05)",
                 }}
               />
             </motion.div>
@@ -203,12 +209,15 @@ export default function Footer() {
               <Image
                 src="/images/badges/commerce.svg"
                 alt="وزارة التجارة"
-                width={70}
-                height={70}
+                width={110}
+                height={110}
                 quality={95}
-                className="transition-all duration-300 hover:opacity-100 flex-shrink-0"
+                className="transition-all duration-300 flex-shrink-0 h-auto w-[78px] sm:w-[92px]"
                 style={{
-                  filter: "grayscale(100%) brightness(1.1) sepia(0.2) hue-rotate(35deg) opacity(0.8)",
+                  // شهادات توثيق رسمية: تُعرض بوضوح كامل (بلا grayscale/opacity)
+                  // لأنها أقوى عناصر الثقة أمام العميل المؤسسي والحكومي.
+                  // brightness خفيف فقط ليتناسب مع الخلفية الداكنة.
+                  filter: "brightness(1.15) contrast(1.05)",
                 }}
               />
             </motion.div>
