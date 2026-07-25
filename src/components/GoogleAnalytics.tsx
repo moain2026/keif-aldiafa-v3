@@ -30,10 +30,14 @@ const GADS_LABEL_WHATSAPP =
   process.env.NEXT_PUBLIC_GADS_LABEL_WHATSAPP || "NIEKCOWDzPYYELfEhaQp";
 // label إجراء التحويل «الاتصال» — مأخوذ من Google Ads (2026-07-25).
 // الإجراء: «الاتصال» · ctId=6687515233 · أُنشئ 2023/11/8 · المصدر: الموقع الإلكتروني.
+// ⚠️ تصحيح: الرمز الأول (pN9CDgzb6YNupNBWGX3wzQ) كان استنتاجاً من شيفرة الصفحة
+// وليس من صفحة الإجراء نفسها ⇒ استُبدل بالرمز الصحيح المقروء من صفحة إجراء
+// «الاتصال» مباشرة، ويطابق منهجاً مُختبراً: صفحة إجراء واتساب (ctId 6691160549)
+// أعادت بنفس الطريقة الرمز المنشور والعامل NIEKCOWDzPYYELfEhaQp.
 // كان فارغاً ⇒ الشرط `if (label)` يفشل ⇒ **كل نقرات زر «اتصل» لا تُسجّل إطلاقاً**
 // في Google Ads (بينما واتساب يعمل)، فتتعلم الخوارزمية من نصف البيانات فقط.
 const GADS_LABEL_CALL =
-  process.env.NEXT_PUBLIC_GADS_LABEL_CALL || "pN9CDgzb6YNupNBWGX3wzQ";
+  process.env.NEXT_PUBLIC_GADS_LABEL_CALL || "Xq_gCOHE7fQYELfEhaQp";
 
 /**
  * Meta Pixel + TikTok Pixel — مشروطة بمتغيرات البيئة.
