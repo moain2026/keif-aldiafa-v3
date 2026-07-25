@@ -55,11 +55,13 @@ function PartnerCard({ partner }: { partner: (typeof allPartners)[0] }) {
           backdropFilter: "blur(8px)",
         }}
       >
-        <div className="w-full h-full flex items-center justify-center opacity-100 transition-opacity duration-300">
+        {/* هامش داخلي: يمنع الشعارات ذات الخلفية البيضاء من ملامسة حواف البطاقة
+            فتبقى الزوايا المنحنية والإطار الذهبي والظل ظاهرة كاملة. */}
+        <div className="w-full h-full flex items-center justify-center p-2 sm:p-2.5">
           <ImageWithFallback
             src={partner.logo}
             alt={partner.name}
-            className="w-full h-full object-contain brightness-110 contrast-110 transition-all duration-500 pointer-events-none"
+            className="max-w-full max-h-full w-auto h-auto object-contain brightness-110 contrast-110 transition-all duration-500 pointer-events-none rounded-md"
             loading="lazy"
             width={160}
             height={80}
