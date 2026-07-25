@@ -14,6 +14,12 @@ export const metadata: Metadata = {
     canonical: SITE_URL,
   },
   openGraph: {
+    // مهم: metadata في الصفحة **يستبدل** كامل openGraph من layout ولا يدمجه،
+    // لذا يجب إعادة تعريف type/siteName/locale هنا وإلا سقطت من HTML
+    // (أداة تصحيح مشاركة فيسبوك تعدّ og:type أصلاً مطلوباً).
+    type: "website",
+    siteName: "كيف الضيافة",
+    locale: "ar_SA",
     title: "كيف الضيافة | قهوجيين وصبابين قهوة لضيافة فاخرة في السعودية",
     description:
       "قهوجيين وصبابين قهوة سعودية، صبابات ومباشرات، وتقديمات راقية لمناسباتكم الفاخرة",
@@ -24,6 +30,7 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt: "كيف الضيافة - خدمات الضيافة الفاخرة",
+        type: "image/jpeg",
       },
     ],
   },
