@@ -136,8 +136,8 @@ export function HomePageClient() {
           style={{ opacity: heroOpacity }}
         >
           <motion.div
-            initial={{ opacity: 0, scale: 0.9, y: 30 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
+            initial={{ scale: 0.9, y: 30 }}
+            animate={{ scale: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             className="relative w-full max-w-2xl px-6 sm:px-8 py-8 sm:py-12 rounded-3xl mt-4 sm:mt-0 hero-card-mobile"
             style={{
@@ -152,8 +152,8 @@ export function HomePageClient() {
             ))}
 
             <motion.div
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: -10 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.7, delay: 0.4 }}
               className="flex items-center justify-center gap-3 mb-6"
             >
@@ -163,8 +163,8 @@ export function HomePageClient() {
             </motion.div>
 
             <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.9, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
               className="text-text-primary mb-4 font-cairo gold-shine-text"
               style={{
@@ -192,8 +192,8 @@ export function HomePageClient() {
             />
 
             <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 10 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.7, delay: 0.7 }}
               className="flex flex-col items-center gap-2 mb-6"
             >
@@ -206,14 +206,14 @@ export function HomePageClient() {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 15 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.7, delay: 0.8 }}
               className="max-w-2xl mx-auto w-full px-4"
             >
               <motion.h1
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ y: 10 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.7, delay: 0.75 }}
                 className="text-gold-highlight mb-4 font-cairo"
                 style={{ fontSize: "clamp(1.5rem, 4.5vw, 2.1rem)", fontWeight: 800, lineHeight: 1.4 }}

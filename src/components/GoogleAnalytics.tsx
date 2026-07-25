@@ -28,7 +28,12 @@ const GOOGLE_ADS_ID = "AW-11081441847";
 // يُمكن تجاوزه عبر ENV عند الحاجة.
 const GADS_LABEL_WHATSAPP =
   process.env.NEXT_PUBLIC_GADS_LABEL_WHATSAPP || "NIEKCOWDzPYYELfEhaQp";
-const GADS_LABEL_CALL = process.env.NEXT_PUBLIC_GADS_LABEL_CALL || "";
+// label إجراء التحويل «الاتصال» — مأخوذ من Google Ads (2026-07-25).
+// الإجراء: «الاتصال» · ctId=6687515233 · أُنشئ 2023/11/8 · المصدر: الموقع الإلكتروني.
+// كان فارغاً ⇒ الشرط `if (label)` يفشل ⇒ **كل نقرات زر «اتصل» لا تُسجّل إطلاقاً**
+// في Google Ads (بينما واتساب يعمل)، فتتعلم الخوارزمية من نصف البيانات فقط.
+const GADS_LABEL_CALL =
+  process.env.NEXT_PUBLIC_GADS_LABEL_CALL || "pN9CDgzb6YNupNBWGX3wzQ";
 
 /**
  * Meta Pixel + TikTok Pixel — مشروطة بمتغيرات البيئة.
