@@ -170,7 +170,7 @@ export default function Footer() {
                 quality={95}
                 className="transition-all duration-300 hover:opacity-100 flex-shrink-0"
                 style={{
-                  filter: "grayscale(100%) brightness(1.1) sepia(0.2) hue-rotate(35deg) opacity-80",
+                  filter: "grayscale(100%) brightness(1.1) sepia(0.2) hue-rotate(35deg) opacity(0.8)",
                 }}
               />
             </motion.div>
@@ -189,7 +189,7 @@ export default function Footer() {
                 quality={95}
                 className="transition-all duration-300 hover:opacity-100 flex-shrink-0"
                 style={{
-                  filter: "grayscale(100%) brightness(1.1) sepia(0.2) hue-rotate(35deg) opacity-80",
+                  filter: "grayscale(100%) brightness(1.1) sepia(0.2) hue-rotate(35deg) opacity(0.8)",
                 }}
               />
             </motion.div>
@@ -208,7 +208,7 @@ export default function Footer() {
                 quality={95}
                 className="transition-all duration-300 hover:opacity-100 flex-shrink-0"
                 style={{
-                  filter: "grayscale(100%) brightness(1.1) sepia(0.2) hue-rotate(35deg) opacity-80",
+                  filter: "grayscale(100%) brightness(1.1) sepia(0.2) hue-rotate(35deg) opacity(0.8)",
                 }}
               />
             </motion.div>
