@@ -127,7 +127,7 @@ export const SEO_CONSTANTS = {
   SITE_NAME,
   DEFAULT_OG_IMAGE,
   PHONE: "+966508252134",
-  EMAIL: "keifaldiafa@gmail.com",
+  EMAIL: "info@keifaldiafa.com",
   WHATSAPP: "966508252134",
   INSTAGRAM: "https://www.instagram.com/keifaldiafa",
   ADDRESS: {

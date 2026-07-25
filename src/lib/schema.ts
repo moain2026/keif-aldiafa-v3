@@ -3,15 +3,23 @@
 const SITE_URL = "https://keifaldiafa.com";
 const SITE_NAME = "كيف الضيافة";
 const PHONE = "+966508252134";
-const EMAIL = "keifaldiafa@gmail.com";
+const EMAIL = "info@keifaldiafa.com";
+
+// البيانات النطامية من شهادة السجل التجاري (نشط — صدر 2023/01/29)
+const LEGAL_NAME = "مؤسسة كيف الضيافة للأفراح والمناسبات";
+const UNIFIED_NUMBER = "7033069720"; // الرقم الوطني الموحّد
 
 export function generateOrganizationSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": `${SITE_URL}/#organization`,
     name: SITE_NAME,
+    legalName: LEGAL_NAME,
     alternateName: "Keif Al-Diafa",
+    identifier: UNIFIED_NUMBER,
     url: SITE_URL,
+    email: EMAIL,
     logo: `${SITE_URL}/icon-512.png`,
     contactPoint: {
       "@type": "ContactPoint",

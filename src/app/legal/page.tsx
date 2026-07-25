@@ -58,7 +58,7 @@ export default function LegalPage() {
             </p>
             <ul className="list-disc list-inside mt-3 space-y-1 marker:text-gold-highlight">
               <li>
-                البريد الإلكتروني: <span dir="ltr">keifaldiafa@gmail.com</span>
+                البريد الإلكتروني: <span dir="ltr">info@keifaldiafa.com</span>
               </li>
               <li>
                 واتساب: <span dir="ltr">+966 50 825 2134</span>
@@ -90,7 +90,7 @@ export default function LegalPage() {
             </h2>
             <p>
               لأي استفسار قانوني، طلب ترخيص، أو الإبلاغ عن استخدام غير مصرّح به،
-              يرجى مراسلتنا على <span dir="ltr">keifaldiafa@gmail.com</span>
+              يرجى مراسلتنا على <span dir="ltr">info@keifaldiafa.com</span>
               أو زيارة{" "}
               <Link href="/contact" className="text-gold-highlight underline hover:opacity-80">
                 صفحة التواصل
