@@ -59,6 +59,25 @@ h2 { font-weight: 800; }
 
 /* ── Ultra-Luxury Components ── */
 
+/* GOLD GRADIENT TEXT — تدرّج ذهبي ثابت راقٍ (للعناوين والهوية)
+   ثابت بلا أنيميشن مستمر — أليق بالمظهر المؤسسي وأخفّ أداءً. */
+.gold-gradient-text {
+  background: var(--gradient-gold-matte);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* احتياط: متصفحات لا تدعم background-clip:text */
+@supports not ((-webkit-background-clip: text) or (background-clip: text)) {
+  .gold-gradient-text {
+    background: none;
+    color: var(--gold-primary);
+    -webkit-text-fill-color: var(--gold-primary);
+  }
+}
+
 /* GOLD SHINE TEXT (MATTE VARIANT) */
 .gold-shine-text {
   background: var(--gradient-gold-shine);
@@ -72,6 +91,11 @@ h2 { font-weight: 800; }
 @keyframes goldShine {
   0% { background-position: -200% center; }
   100% { background-position: 200% center; }
+}
+
+/* احترام تفضيل تقليل الحركة */
+@media (prefers-reduced-motion: reduce) {
+  .gold-shine-text { animation: none; }
 }
 
 /* MATTE LUXURY CARD */

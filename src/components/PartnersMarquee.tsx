@@ -59,7 +59,7 @@ function PartnerCard({ partner }: { partner: (typeof allPartners)[0] }) {
           <ImageWithFallback
             src={partner.logo}
             alt={partner.name}
-            className="w-full h-full object-fill brightness-110 contrast-110 transition-all duration-500 pointer-events-none"
+            className="w-full h-full object-contain brightness-110 contrast-110 transition-all duration-500 pointer-events-none"
             loading="lazy"
             width={160}
             height={80}

@@ -47,10 +47,9 @@ const faqSchema = generateFAQSchema(HOME_FAQS);
 export default function HomePage() {
   return (
     <>
-      {/* Preload صور الهيرو (LCP) — خاص بالرئيسية فقط (لا يُذرّر على صفحات داخلية) */}
-      <link rel="preload" as="image" href="/images/hero/hero-desktop.webp" media="(min-width: 768px)" fetchPriority="high" />
-      <link rel="preload" as="image" href="/images/hero/hero-mobile.webp" media="(max-width: 767px)" fetchPriority="high" />
-
+      {/* ملاحظة: لا preload يدوي للهيرو — مكوّن next/image بـpriority في HomePageClient
+          يولّد preload تلقائياً مع srcset مستجيب. إضافة preload يدوي هنا كانت
+          تُحمّل الصورة مرتين (هدر نطاق على الجوال). */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}

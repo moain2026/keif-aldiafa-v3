@@ -4,6 +4,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Suspense } from "react";
 
+// ثابت محلي — لا نستورد من imageCatalog (ملف server-side يستخدم node:fs)
+const SITE_URL = "https://keifaldiafa.com";
+
 interface BreadcrumbItem {
   label: string;
   href: string;
@@ -71,12 +74,17 @@ function BreadcrumbsContent({
                   </span>
                 </>
               ) : (
+                /* العنصر الأخير: يحتاج itemProp="item" مع name وإلا يراه Google
+                   كـ"Unnamed item" في اختبار النتائج المنسّقة. */
                 <span
                   className="text-[#F5F5DC]/50"
                   aria-current="page"
-                  itemProp="name"
+                  itemProp="item"
+                  itemScope
+                  itemType="https://schema.org/WebPage"
+                  itemID={`${SITE_URL}${crumb.href}`}
                 >
-                  {crumb.label}
+                  <span itemProp="name">{crumb.label}</span>
                 </span>
               )}
               <meta itemProp="position" content={String(index + 1)} />

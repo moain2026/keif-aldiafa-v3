@@ -10,9 +10,11 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 const SITE_URL = "https://keifaldiafa.com";
 
+// ملاحظة: تضمين وزن 800 (Tajawal لا يدعم 900) و900 لـCairo لأن الواجهة
+// تستخدم font-extrabold/font-black — بدونها يزوّر المتصفح الوزن (faux-bold) ويبدو رديئاً.
 const tajawal = Tajawal({
   subsets: ["arabic", "latin"],
-  weight: ["300", "400", "500", "700"],
+  weight: ["300", "400", "500", "700", "800"],
   display: "swap",
   variable: "--font-tajawal",
   preload: true,
@@ -20,7 +22,7 @@ const tajawal = Tajawal({
 
 const cairo = Cairo({
   subsets: ["arabic", "latin"],
-  weight: ["300", "400", "500", "700"],
+  weight: ["300", "400", "500", "700", "800", "900"],
   display: "swap",
   variable: "--font-cairo",
   preload: true,
