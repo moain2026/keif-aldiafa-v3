@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: SITE_URL,
     images: [
       {
-        url: `${SITE_URL}/og-image.jpg`,
+        url: `${SITE_URL}/og-cover-v2.jpg`,
         width: 1200,
         height: 630,
         alt: "كيف الضيافة - خدمات الضيافة الفاخرة",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "كيف الضيافة | قهوجيين وصبابين قهوة لضيافة فاخرة",
     description: "قهوجيين وصبابين وصبابات لمناسبات فاخرة في المملكة العربية السعودية",
-    images: [`${SITE_URL}/og-image.jpg`],
+    images: [`${SITE_URL}/og-cover-v2.jpg`],
   },
 };
 

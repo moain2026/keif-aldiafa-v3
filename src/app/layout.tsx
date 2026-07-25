@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     url: SITE_URL,
     images: [
       {
-        url: `${SITE_URL}/og-image.jpg`,
+        url: `${SITE_URL}/og-cover-v2.jpg`,
         width: 1200,
         height: 630,
         alt: "كيف الضيافة - خدمات الضيافة الفاخرة",
@@ -94,7 +94,7 @@ export const metadata: Metadata = {
     title: "كيف الضيافة | خدمات الضيافة الفاخرة في المملكة",
     description:
       "منصة تجربة فاخرة تعكس جودة وفخامة خدمات الضيافة السعودية",
-    images: [`${SITE_URL}/og-image.jpg`],
+    images: [`${SITE_URL}/og-cover-v2.jpg`],
     creator: "@keifdiafa",
   },
   robots: {

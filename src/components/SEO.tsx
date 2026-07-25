@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 const SITE_URL = "https://keifaldiafa.com";
 const SITE_NAME = "كيف الضيافة";
-const DEFAULT_OG_IMAGE = `${SITE_URL}/og-image.jpg`;
+const DEFAULT_OG_IMAGE = `${SITE_URL}/og-cover-v2.jpg`;
 
 export interface SEOProps {
   title: string;
