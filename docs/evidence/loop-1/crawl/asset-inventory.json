@@ -1,0 +1,145 @@
+{
+ "total_files": 393,
+ "total_mb": 33.13,
+ "by_category": {
+  "services": {
+   "count": 95,
+   "total_mb": 12.29,
+   "min_kb": 11.0,
+   "max_kb": 1107.0,
+   "avg_kb": 132.5
+  },
+  "events": {
+   "count": 82,
+   "total_mb": 7.78,
+   "min_kb": 34.1,
+   "max_kb": 144.9,
+   "avg_kb": 97.2
+  },
+  "weddings": {
+   "count": 18,
+   "total_mb": 1.78,
+   "min_kb": 11.0,
+   "max_kb": 148.7,
+   "avg_kb": 101.2
+  },
+  "equipment": {
+   "count": 28,
+   "total_mb": 1.78,
+   "min_kb": 20.3,
+   "max_kb": 144.6,
+   "avg_kb": 65.0
+  },
+  "sweets": {
+   "count": 14,
+   "total_mb": 1.54,
+   "min_kb": 29.6,
+   "max_kb": 307.8,
+   "avg_kb": 112.9
+  },
+  "fruits": {
+   "count": 9,
+   "total_mb": 1.42,
+   "min_kb": 50.5,
+   "max_kb": 244.9,
+   "avg_kb": 161.7
+  },
+  "snacks": {
+   "count": 10,
+   "total_mb": 1.06,
+   "min_kb": 74.9,
+   "max_kb": 133.2,
+   "avg_kb": 108.9
+  },
+  "nuts": {
+   "count": 10,
+   "total_mb": 0.86,
+   "min_kb": 37.0,
+   "max_kb": 216.6,
+   "avg_kb": 88.3
+  },
+  "hot-drinks": {
+   "count": 7,
+   "total_mb": 0.8,
+   "min_kb": 62.9,
+   "max_kb": 152.7,
+   "avg_kb": 117.2
+  },
+  "dates": {
+   "count": 12,
+   "total_mb": 0.72,
+   "min_kb": 15.1,
+   "max_kb": 132.9,
+   "avg_kb": 61.3
+  },
+  "partners": {
+   "count": 67,
+   "total_mb": 0.7,
+   "min_kb": 1.4,
+   "max_kb": 72.8,
+   "avg_kb": 10.7
+  },
+  "cold-drinks": {
+   "count": 8,
+   "total_mb": 0.46,
+   "min_kb": 18.1,
+   "max_kb": 130.7,
+   "avg_kb": 59.1
+  },
+  "distributions": {
+   "count": 5,
+   "total_mb": 0.43,
+   "min_kb": 52.4,
+   "max_kb": 103.0,
+   "avg_kb": 88.7
+  },
+  "hero": {
+   "count": 2,
+   "total_mb": 0.41,
+   "min_kb": 184.6,
+   "max_kb": 231.7,
+   "avg_kb": 208.1
+  },
+  "sandwiches": {
+   "count": 7,
+   "total_mb": 0.37,
+   "min_kb": 40.8,
+   "max_kb": 67.1,
+   "avg_kb": 54.0
+  },
+  "pastry": {
+   "count": 5,
+   "total_mb": 0.31,
+   "min_kb": 28.0,
+   "max_kb": 102.7,
+   "avg_kb": 62.8
+  },
+  "serving-equipment": {
+   "count": 10,
+   "total_mb": 0.27,
+   "min_kb": 20.0,
+   "max_kb": 40.1,
+   "avg_kb": 27.2
+  },
+  "badges": {
+   "count": 3,
+   "total_mb": 0.07,
+   "min_kb": 16.7,
+   "max_kb": 32.1,
+   "avg_kb": 25.3
+  },
+  "watermarks": {
+   "count": 1,
+   "total_mb": 0.07,
+   "min_kb": 72.8,
+   "max_kb": 72.8,
+   "avg_kb": 72.8
+  }
+ },
+ "files_over_500kb": [
+  {
+   "kb": 1107,
+   "path": "public/images/services/male/hosts/sideriya/sideriya-1.webp"
+  }
+ ]
+}

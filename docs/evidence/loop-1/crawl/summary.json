@@ -1,0 +1,14 @@
+{
+ "crawl_base": "http://localhost:3100",
+ "generated_at": "2026-07-27T05:29:03Z",
+ "pages_crawled": 48,
+ "pages_broken": 0,
+ "internal_links_unique": 40,
+ "images_unique": 161,
+ "images_broken": 0,
+ "external_links_unique": 48,
+ "external_links_broken_or_error": 1,
+ "html_pages_missing_alt_total": 320,
+ "multi_h1_pages": {},
+ "zero_h1_pages": []
+}

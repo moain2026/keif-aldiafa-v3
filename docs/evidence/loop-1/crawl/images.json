@@ -1,0 +1,968 @@
+{
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fconference-catering-saudi-hosts-vip-reception-dallah-albaraka.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 69519,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fcorporate-event-hospitality-staff-formal-reception-saudi-hosts.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 117576,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fformal-reception-indoor-event-saudi-hosts-luxury-catering.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 131447,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fgovernment-event-hospitality-staff-ceremonial-coffee-ministry-transport.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 106114,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fgovernment-event-official-ceremony-saudi-electricity-luxury-catering.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 86748,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fhotel-event-dallah-taibah-luxury-catering-qahwa-service.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 143819,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Findoor-event-exhibition-york-booth-qahwa-service.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 171543,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Findoor-event-new-balance-foot-locker-coffee-booth.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 121010,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Findoor-event-saudi-hosts-bisht-qahwa-service-traditional.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 138502,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Findoor-event-traditional-attire-ceremonial-coffee-female-guest.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 67920,
+  "content_type": "image/jpeg",
+  "used_on_pages": 4
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fjeddah-event-formal-reception-private-aviation-qahwa-service.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 80502,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fjeddah-event-marble-hall-osus-alinsha-vip-reception.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 122346,
+  "content_type": "image/jpeg",
+  "used_on_pages": 3
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fksa-event-arabic-coffee-ceremony-masked-host-exhibition.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 154951,
+  "content_type": "image/jpeg",
+  "used_on_pages": 5
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fksa-event-corporate-event-takween-al-watan-ceremonial-coffee.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 99200,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fksa-event-exhibition-dallah-albarka-dates-tray-ceremonial.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 70255,
+  "content_type": "image/jpeg",
+  "used_on_pages": 3
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fksa-event-exhibition-hafil-pink-luxury-catering.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 98203,
+  "content_type": "image/jpeg",
+  "used_on_pages": 4
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fksa-event-exhibition-hospitality-staff-hajj-conference.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 133994,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fksa-event-exhibition-luxury-catering-food-booth-dates-tray.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 51118,
+  "content_type": "image/jpeg",
+  "used_on_pages": 3
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fksa-event-luxury-catering-mcdc-conference-ceremonial-coffee.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 115406,
+  "content_type": "image/jpeg",
+  "used_on_pages": 8
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fksa-event-official-ceremony-turkish-pilgrims-office-luxury.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 98772,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fksa-event-qahwa-service-corporate-event-tawkeel.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 106279,
+  "content_type": "image/jpeg",
+  "used_on_pages": 4
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fksa-event-qahwa-service-hospitality-staff-arabic-coffee-ceremony.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 166979,
+  "content_type": "image/jpeg",
+  "used_on_pages": 9
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fksa-event-vip-reception-arabic-coffee-flyadeal-corporate.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 51861,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fluxury-catering-arabic-coffee-ceremony-gala-dinner-indoor.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 115870,
+  "content_type": "image/jpeg",
+  "used_on_pages": 4
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fluxury-catering-foot-locker-sneaker-host-ceremonial.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 81086,
+  "content_type": "image/jpeg",
+  "used_on_pages": 8
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fluxury-catering-saudi-hosts-glory-of-luxury-indoor-event.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 84600,
+  "content_type": "image/jpeg",
+  "used_on_pages": 3
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fmajlis-qahwa-service-saudi-event-camel-decor.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 184601,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fmajlis-traditional-attire-dates-tower-ceremonial-coffee-display.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 183638,
+  "content_type": "image/jpeg",
+  "used_on_pages": 8
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fmarble-hall-makkah-hotel-towers-saudi-hosts-dates-tray.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 70944,
+  "content_type": "image/jpeg",
+  "used_on_pages": 3
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fofficial-ceremony-grand-opening-saudi-hosts-red-backdrop.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 148527,
+  "content_type": "image/jpeg",
+  "used_on_pages": 7
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fofficial-ceremony-hospitality-staff-umm-al-qura-exhibition.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 125652,
+  "content_type": "image/jpeg",
+  "used_on_pages": 8
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fofficial-ceremony-saudi-hosts-traditional-attire-vip-reception.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 143176,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Foutdoor-event-nahda-park-arabic-coffee-formal-reception.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 104612,
+  "content_type": "image/jpeg",
+  "used_on_pages": 7
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Foutdoor-event-tourism-booth-expo-saudi-host-coffee-set.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 148445,
+  "content_type": "image/jpeg",
+  "used_on_pages": 8
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fqahwa-service-bon-cafe-arabic-coffee-ceremony-corporate.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 113428,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Friyadh-event-vip-reception-alinma-booth-ceremonial-coffee.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 81641,
+  "content_type": "image/jpeg",
+  "used_on_pages": 7
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Froyal-protocol-vip-reception-makkah-hotel-towers-majlis.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 127992,
+  "content_type": "image/jpeg",
+  "used_on_pages": 4
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fsaudi-event-conference-catering-bci-counter-ceremonial-coffee.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 143195,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fsaudi-event-conference-catering-dareen-travel-agency-indoor.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 99604,
+  "content_type": "image/jpeg",
+  "used_on_pages": 6
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fsaudi-event-corporate-al-safir-masked-hospitality.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 109674,
+  "content_type": "image/jpeg",
+  "used_on_pages": 4
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fsaudi-event-formal-reception-makkah-themed-exhibition.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 97957,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fsaudi-event-hifawa-vip-traditional-attire-qahwa-service.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 89656,
+  "content_type": "image/jpeg",
+  "used_on_pages": 6
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fsaudi-event-luxury-catering-hospitality-staff-saja-exhibition.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 138818,
+  "content_type": "image/jpeg",
+  "used_on_pages": 4
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fsaudi-event-qahwa-service-hospitality-staff-exhibition-booth.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 112542,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fsaudi-event-vip-arabic-coffee-ceremony-camel-decor-indoor.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 38419,
+  "content_type": "image/jpeg",
+  "used_on_pages": 7
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fsaudi-event-vip-reception-aviation-booth-arabic-coffee-ceremony.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 120463,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fsaudi-event-vip-reception-bolt-exhibition-qahwa-service.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 102243,
+  "content_type": "image/jpeg",
+  "used_on_pages": 6
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fsaudi-event-vip-reception-luxury-catering-majlis-traditional-attire.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 140139,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fsaudi-event-vip-reception-luxury-retail-traditional-attire.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 69491,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fsaudi-event-vip-reception-makkah-halal-forum-coffee-lounge.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 92915,
+  "content_type": "image/jpeg",
+  "used_on_pages": 6
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fevents%2Fvip-reception-corporate-event-aljar-marina-qahwa-service.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 137604,
+  "content_type": "image/jpeg",
+  "used_on_pages": 6
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fhero%2Fhero-desktop.webp&w=1920&q=70": {
+  "status": 200,
+  "bytes": 125518,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fhero%2Fhero-desktop.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 142285,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fhot-drinks%2Fcappuccino.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 143599,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fhot-drinks%2Fginger-pineapple.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 175427,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fhot-drinks%2Fgreen-tea.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 166702,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fhot-drinks%2Fkarak-tea.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 71067,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fhot-drinks%2Fred-tea.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 168336,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fhot-drinks%2Fsahlab.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 69510,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fhot-drinks%2Fturkish-coffee.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 170449,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fpartners%2F01_Olayan_Group.webp&w=1920&q=85": {
+  "status": 200,
+  "bytes": 4991,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fpartners%2F02_Schneider_Electric.webp&w=1920&q=85": {
+  "status": 200,
+  "bytes": 1463,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fpartners%2F03_Najeeb_Auto_Suzuki.webp&w=1920&q=85": {
+  "status": 200,
+  "bytes": 3285,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fpartners%2F04_WSM_Digital.webp&w=1920&q=85": {
+  "status": 200,
+  "bytes": 4021,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fpartners%2F05_Mokab.webp&w=1920&q=85": {
+  "status": 200,
+  "bytes": 1693,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fpartners%2F06_MyClinic.webp&w=1920&q=85": {
+  "status": 200,
+  "bytes": 6741,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fpartners%2F07_Al_Ahli_FC.webp&w=1920&q=85": {
+  "status": 200,
+  "bytes": 9198,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fpartners%2F08_Benchmark.webp&w=1920&q=85": {
+  "status": 200,
+  "bytes": 2755,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fpartners%2F09_Fuchs_KSA.webp&w=1920&q=85": {
+  "status": 200,
+  "bytes": 4762,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fpartners%2F10_Milia_Travel.webp&w=1920&q=85": {
+  "status": 200,
+  "bytes": 5094,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fpartners%2F11_Al_Mousa_Group.webp&w=1920&q=85": {
+  "status": 200,
+  "bytes": 3460,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fpartners%2F12_Damanat.webp&w=1920&q=85": {
+  "status": 200,
+  "bytes": 4305,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fpartners%2F13_Daam_Broker.webp&w=1920&q=85": {
+  "status": 200,
+  "bytes": 4441,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fpartners%2F14_Munera_Alessa.webp&w=1920&q=85": {
+  "status": 200,
+  "bytes": 3900,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fpartners%2F15_Somer.webp&w=1920&q=85": {
+  "status": 200,
+  "bytes": 8948,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fpartners%2F16_Napco_National.webp&w=1920&q=85": {
+  "status": 200,
+  "bytes": 10151,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fpartners%2F17_Saudi_Binladen_Group.webp&w=1920&q=85": {
+  "status": 200,
+  "bytes": 4788,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fpartners%2F18_Glamera.webp&w=1920&q=85": {
+  "status": 200,
+  "bytes": 4373,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fpartners%2F19_Sharq_Jeddah_Association.webp&w=1920&q=85": {
+  "status": 200,
+  "bytes": 9109,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fpartners%2F20_Olayan_Group_Alt.webp&w=1920&q=85": {
+  "status": 200,
+  "bytes": 4991,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fpartners%2F21_Najeeb_Auto_Suzuki_Alt.webp&w=1920&q=85": {
+  "status": 200,
+  "bytes": 3082,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fpartners%2F22_WSM_Digital_Alt.webp&w=1920&q=85": {
+  "status": 200,
+  "bytes": 4021,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fpartners%2F23_Benchmark_Strategy.webp&w=1920&q=85": {
+  "status": 200,
+  "bytes": 5232,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fpartners%2F24_Fuchs_KSA_Alt.webp&w=1920&q=85": {
+  "status": 200,
+  "bytes": 7312,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fpartners%2F25_Damanat_Alt.webp&w=1920&q=85": {
+  "status": 200,
+  "bytes": 3310,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fpartners%2F26_Napco_National_Alt.webp&w=1920&q=85": {
+  "status": 200,
+  "bytes": 5667,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fpartners%2F27_Binladin_Holding.webp&w=1920&q=85": {
+  "status": 200,
+  "bytes": 3326,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fpartners%2F28_Glamera_Alt.webp&w=1920&q=85": {
+  "status": 200,
+  "bytes": 3264,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fpartners%2F29_Bahja_Events.webp&w=1920&q=85": {
+  "status": 200,
+  "bytes": 10190,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fpartners%2F30_Hamat_Leading.webp&w=1920&q=85": {
+  "status": 200,
+  "bytes": 5771,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fartistic%2Fartist%2Fartist-8.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 227715,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fartistic%2Fbuffet%2Fbuffet-2.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 242349,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fartistic%2Fcounter%2Fcounter-2.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 177228,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fartistic%2Ffolkband%2Ffolkband-1.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 218864,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fartistic%2Fheritage-tent%2Ftent-1.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 195803,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fartistic%2Fheritage-tent%2Ftent-2.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 164837,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fartistic%2Fheritage-tent%2Ftent-4.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 153055,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fartistic%2Fmobile-table%2Ftable-1.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 117662,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fartistic%2Fmobile-table%2Ftable-2.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 156700,
+  "content_type": "image/jpeg",
+  "used_on_pages": 6
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fartistic%2Fmobile-table%2Ftable-3.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 77353,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fartistic%2Fmobile-table%2Ftable-4.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 172954,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fartistic%2Fmobile-table%2Ftable-5.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 156945,
+  "content_type": "image/jpeg",
+  "used_on_pages": 6
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fartistic%2Fmobile-table%2Ftable-6.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 192155,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fartistic%2Fphoto-booth%2Fphoto-booth-1.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 176212,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fartistic%2Fphoto-booth%2Fphoto-booth-2.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 128707,
+  "content_type": "image/jpeg",
+  "used_on_pages": 6
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fartistic%2Fphoto-booth%2Fphoto-booth-3.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 149040,
+  "content_type": "image/jpeg",
+  "used_on_pages": 3
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fartistic%2Fphoto-booth%2Fphoto-booth-4.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 110544,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fartistic%2Fphoto-booth%2Fphoto-booth-5.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 152133,
+  "content_type": "image/jpeg",
+  "used_on_pages": 8
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fartistic%2Fphoto-booth%2Fphoto-booth-6.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 166553,
+  "content_type": "image/jpeg",
+  "used_on_pages": 3
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Ffemale%2Fcleaning%2Fcleaning-f-2.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 50444,
+  "content_type": "image/jpeg",
+  "used_on_pages": 8
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Ffemale%2Ffemale-1.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 162894,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Ffemale%2Ffemale-2.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 50444,
+  "content_type": "image/jpeg",
+  "used_on_pages": 4
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Ffemale%2Fhostesses%2Fhostess-1.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 162894,
+  "content_type": "image/jpeg",
+  "used_on_pages": 8
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Ffemale%2Fhostesses%2Fhostess-2.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 50444,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Ffemale%2Fsafarjiat%2Fsafarjia-f-1.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 37823,
+  "content_type": "image/jpeg",
+  "used_on_pages": 4
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Ffemale%2Fsafarjiat%2Fsafarjia-f-2.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 72530,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Ffemale-services%2Ffemale-1.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 83653,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Ffemale-services%2Ffemale-2.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 122184,
+  "content_type": "image/jpeg",
+  "used_on_pages": 8
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Ffemale-services%2Ffemale-3.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 125824,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Ffemale-services%2Ffemale-4.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 96324,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Ffemale-services%2Ffemale-5.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 73605,
+  "content_type": "image/jpeg",
+  "used_on_pages": 8
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Ffemale-services%2Ffemale-6.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 80756,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Ffemale-services%2Ffemale-7.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 96182,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Ffemale-services%2Ffemale-8.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 61065,
+  "content_type": "image/jpeg",
+  "used_on_pages": 8
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Ffemale-services%2Ffemale-main-bg.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 207784,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fmale%2Fhosts%2Fdagla%2Fdagla-1.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 97682,
+  "content_type": "image/jpeg",
+  "used_on_pages": 4
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fmale%2Fhosts%2Fdagla%2Fdagla-2.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 46980,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fmale%2Fhosts%2Fdagla%2Fdagla-3.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 133656,
+  "content_type": "image/jpeg",
+  "used_on_pages": 4
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fmale%2Fhosts%2Fdagla%2Fdagla-4.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 73167,
+  "content_type": "image/jpeg",
+  "used_on_pages": 3
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fmale%2Fhosts%2Fdagla%2Fdagla-5.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 64206,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fmale%2Fhosts%2Fdagla%2Fdagla-6.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 11903,
+  "content_type": "image/jpeg",
+  "used_on_pages": 4
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fmale%2Fhosts%2Fdagla-janbiya%2Fdagla-janbiya-1.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 103512,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fmale%2Fhosts%2Fdagla-janbiya%2Fdagla-janbiya-2.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 135888,
+  "content_type": "image/jpeg",
+  "used_on_pages": 4
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fmale%2Fhosts%2Fhizam%2Fhizam-1.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 87530,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fmale%2Fhosts%2Fhizam%2Fhizam-2.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 194520,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fmale%2Fhosts%2Fmakkawi%2Fmakkawi-1.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 92376,
+  "content_type": "image/jpeg",
+  "used_on_pages": 4
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fmale%2Fhosts%2Fmakkawi%2Fmakkawi-2.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 97727,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fmale%2Fhosts%2Fsideriya%2Fsideriya-1.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 336841,
+  "content_type": "image/jpeg",
+  "used_on_pages": 3
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fmale%2Fhosts%2Fsideriya%2Fsideriya-2.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 93686,
+  "content_type": "image/jpeg",
+  "used_on_pages": 4
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fmale%2Fhosts%2Fsideriya%2Fsideriya-3.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 84624,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fmale%2Fsafarjia%2Fsafarjia-1.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 37823,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fmale%2Fsafarjia%2Fsafarjia-2.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 72530,
+  "content_type": "image/jpeg",
+  "used_on_pages": 4
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fmale%2Fsafarjia%2Fsafarjia-3.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 67063,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fmale%2Fsafarjia%2Fsafarjia-4.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 26579,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fmale%2Fsafarjia%2Fsafarjia-5.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 94421,
+  "content_type": "image/jpeg",
+  "used_on_pages": 4
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fmale%2Fsafarjia%2Fsafarjia-6.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 40847,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fmale%2Fsawas%2Fsawas-1.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 272855,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fmale%2Fsawas%2Fsawas-3.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 123618,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fmale%2Fsawas%2Fsawas-4.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 157522,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fmale%2Fsouqiya%2Fsouqiya-1.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 56501,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fmale%2Fsouqiya%2Fsouqiya-2.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 117662,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fmale%2Fsouqiya%2Fsouqiya-5.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 85319,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fmale%2Fsouqiya%2Fsouqiya-8.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 22864,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fsafarjia%2Fsafarji-3.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 60972,
+  "content_type": "image/jpeg",
+  "used_on_pages": 2
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fsafarjia%2Fsafarjia-main-bg.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 49211,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/_next/image?url=%2Fimages%2Fservices%2Fsawas%2Fsawas-main.webp&w=1920&q=75": {
+  "status": 200,
+  "bytes": 162506,
+  "content_type": "image/jpeg",
+  "used_on_pages": 1
+ },
+ "http://localhost:3100/icons/logo-1.svg": {
+  "status": 200,
+  "bytes": 74518,
+  "content_type": "image/svg+xml",
+  "used_on_pages": 48
+ },
+ "http://localhost:3100/images/badges/commerce.svg": {
+  "status": 200,
+  "bytes": 32916,
+  "content_type": "image/svg+xml",
+  "used_on_pages": 48
+ },
+ "http://localhost:3100/images/badges/sbc.svg": {
+  "status": 200,
+  "bytes": 27730,
+  "content_type": "image/svg+xml",
+  "used_on_pages": 48
+ },
+ "http://localhost:3100/images/badges/zatca.svg": {
+  "status": 200,
+  "bytes": 17067,
+  "content_type": "image/svg+xml",
+  "used_on_pages": 48
+ },
+ "http://localhost:3100/images/watermarks/svg/logo-1.svg": {
+  "status": 200,
+  "bytes": 74497,
+  "content_type": "image/svg+xml",
+  "used_on_pages": 40
+ }
+}

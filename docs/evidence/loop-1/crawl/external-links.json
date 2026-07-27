@@ -1,0 +1,492 @@
+{
+ "https://wa.me/966508252134": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/",
+   "http://localhost:3100/contact"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B6%D9%8A%D8%A7%D9%81%D8%A9%20%D9%81%D9%8A%20%D8%A3%D8%A8%D9%87%D8%A7.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B6%D9%8A%D8%A7%D9%81%D8%A9+%D9%81%D9%8A+%D8%A3%D8%A8%D9%87%D8%A7.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/locations/%D8%A3%D8%A8%D9%87%D8%A7",
+   "http://localhost:3100/locations/أبها"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B6%D9%8A%D8%A7%D9%81%D8%A9%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B6%D9%8A%D8%A7%D9%81%D8%A9+%D9%81%D9%8A+%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/locations/%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85",
+   "http://localhost:3100/locations/الدمام"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B6%D9%8A%D8%A7%D9%81%D8%A9%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B6%D9%8A%D8%A7%D9%81%D8%A9+%D9%81%D9%8A+%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/locations/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+   "http://localhost:3100/locations/الرياض"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B6%D9%8A%D8%A7%D9%81%D8%A9%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B6%D9%8A%D8%A7%D9%81%D8%A9+%D9%81%D9%8A+%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/locations/%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+   "http://localhost:3100/locations/الطائف"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B6%D9%8A%D8%A7%D9%81%D8%A9%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B6%D9%8A%D8%A7%D9%81%D8%A9+%D9%81%D9%8A+%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9+%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/locations/%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9",
+   "http://localhost:3100/locations/المدينة-المنورة"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B6%D9%8A%D8%A7%D9%81%D8%A9%20%D9%81%D9%8A%20%D8%AC%D8%AF%D8%A9.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B6%D9%8A%D8%A7%D9%81%D8%A9+%D9%81%D9%8A+%D8%AC%D8%AF%D8%A9.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/locations/%D8%AC%D8%AF%D8%A9",
+   "http://localhost:3100/locations/جدة"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B6%D9%8A%D8%A7%D9%81%D8%A9%20%D9%81%D9%8A%20%D9%85%D9%83%D8%A9%20%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B6%D9%8A%D8%A7%D9%81%D8%A9+%D9%81%D9%8A+%D9%85%D9%83%D8%A9+%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/locations/%D9%85%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9",
+   "http://localhost:3100/locations/مكة-المكرمة"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B6%D9%8A%D8%A7%D9%81%D8%A9%20%D9%81%D9%8A%20%D9%8A%D9%86%D8%A8%D8%B9.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B6%D9%8A%D8%A7%D9%81%D8%A9+%D9%81%D9%8A+%D9%8A%D9%86%D8%A8%D8%B9.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/locations/%D9%8A%D9%86%D8%A8%D8%B9",
+   "http://localhost:3100/locations/ينبع"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%B5%D8%A8%D8%A7%D8%A8%D9%8A%D9%86%20%D9%82%D9%87%D9%88%D8%A9%20%D9%81%D9%8A%20%D8%A3%D8%A8%D9%87%D8%A7.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A9+%D8%B5%D8%A8%D8%A7%D8%A8%D9%8A%D9%86+%D9%82%D9%87%D9%88%D8%A9+%D9%81%D9%8A+%D8%A3%D8%A8%D9%87%D8%A7.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/sababin-qahwa-abha"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%B5%D8%A8%D8%A7%D8%A8%D9%8A%D9%86%20%D9%82%D9%87%D9%88%D8%A9%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A9+%D8%B5%D8%A8%D8%A7%D8%A8%D9%8A%D9%86+%D9%82%D9%87%D9%88%D8%A9+%D9%81%D9%8A+%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/sababin-qahwa-dammam"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%B5%D8%A8%D8%A7%D8%A8%D9%8A%D9%86%20%D9%82%D9%87%D9%88%D8%A9%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A9+%D8%B5%D8%A8%D8%A7%D8%A8%D9%8A%D9%86+%D9%82%D9%87%D9%88%D8%A9+%D9%81%D9%8A+%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/sababin-qahwa-riyadh"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%B5%D8%A8%D8%A7%D8%A8%D9%8A%D9%86%20%D9%82%D9%87%D9%88%D8%A9%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A9+%D8%B5%D8%A8%D8%A7%D8%A8%D9%8A%D9%86+%D9%82%D9%87%D9%88%D8%A9+%D9%81%D9%8A+%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/sababin-qahwa-taif"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%B5%D8%A8%D8%A7%D8%A8%D9%8A%D9%86%20%D9%82%D9%87%D9%88%D8%A9%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A9+%D8%B5%D8%A8%D8%A7%D8%A8%D9%8A%D9%86+%D9%82%D9%87%D9%88%D8%A9+%D9%81%D9%8A+%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9+%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/sababin-qahwa-madinah"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%B5%D8%A8%D8%A7%D8%A8%D9%8A%D9%86%20%D9%82%D9%87%D9%88%D8%A9%20%D9%81%D9%8A%20%D8%AC%D8%AF%D8%A9.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A9+%D8%B5%D8%A8%D8%A7%D8%A8%D9%8A%D9%86+%D9%82%D9%87%D9%88%D8%A9+%D9%81%D9%8A+%D8%AC%D8%AF%D8%A9.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/sababin-qahwa-jeddah"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%B5%D8%A8%D8%A7%D8%A8%D9%8A%D9%86%20%D9%82%D9%87%D9%88%D8%A9%20%D9%81%D9%8A%20%D9%85%D9%83%D8%A9%20%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A9+%D8%B5%D8%A8%D8%A7%D8%A8%D9%8A%D9%86+%D9%82%D9%87%D9%88%D8%A9+%D9%81%D9%8A+%D9%85%D9%83%D8%A9+%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/sababin-qahwa-makkah"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%B5%D8%A8%D8%A7%D8%A8%D9%8A%D9%86%20%D9%82%D9%87%D9%88%D8%A9%20%D9%81%D9%8A%20%D9%8A%D9%86%D8%A8%D8%B9.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A9+%D8%B5%D8%A8%D8%A7%D8%A8%D9%8A%D9%86+%D9%82%D9%87%D9%88%D8%A9+%D9%81%D9%8A+%D9%8A%D9%86%D8%A8%D8%B9.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/sababin-qahwa-yanbu"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%B6%D9%8A%D8%A7%D9%81%D8%A9%20%D9%85%D9%86%D8%A7%D8%B3%D8%A8%D8%A7%D8%AA%20%D9%81%D9%8A%20%D8%A3%D8%A8%D9%87%D8%A7.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A9+%D8%B6%D9%8A%D8%A7%D9%81%D8%A9+%D9%85%D9%86%D8%A7%D8%B3%D8%A8%D8%A7%D8%AA+%D9%81%D9%8A+%D8%A3%D8%A8%D9%87%D8%A7.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/diyafa-munasabat-abha"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%B6%D9%8A%D8%A7%D9%81%D8%A9%20%D9%85%D9%86%D8%A7%D8%B3%D8%A8%D8%A7%D8%AA%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A9+%D8%B6%D9%8A%D8%A7%D9%81%D8%A9+%D9%85%D9%86%D8%A7%D8%B3%D8%A8%D8%A7%D8%AA+%D9%81%D9%8A+%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/diyafa-munasabat-dammam"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%B6%D9%8A%D8%A7%D9%81%D8%A9%20%D9%85%D9%86%D8%A7%D8%B3%D8%A8%D8%A7%D8%AA%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A9+%D8%B6%D9%8A%D8%A7%D9%81%D8%A9+%D9%85%D9%86%D8%A7%D8%B3%D8%A8%D8%A7%D8%AA+%D9%81%D9%8A+%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/diyafa-munasabat-riyadh"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%B6%D9%8A%D8%A7%D9%81%D8%A9%20%D9%85%D9%86%D8%A7%D8%B3%D8%A8%D8%A7%D8%AA%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A9+%D8%B6%D9%8A%D8%A7%D9%81%D8%A9+%D9%85%D9%86%D8%A7%D8%B3%D8%A8%D8%A7%D8%AA+%D9%81%D9%8A+%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/diyafa-munasabat-taif"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%B6%D9%8A%D8%A7%D9%81%D8%A9%20%D9%85%D9%86%D8%A7%D8%B3%D8%A8%D8%A7%D8%AA%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A9+%D8%B6%D9%8A%D8%A7%D9%81%D8%A9+%D9%85%D9%86%D8%A7%D8%B3%D8%A8%D8%A7%D8%AA+%D9%81%D9%8A+%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9+%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/diyafa-munasabat-madinah"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%B6%D9%8A%D8%A7%D9%81%D8%A9%20%D9%85%D9%86%D8%A7%D8%B3%D8%A8%D8%A7%D8%AA%20%D9%81%D9%8A%20%D8%AC%D8%AF%D8%A9.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A9+%D8%B6%D9%8A%D8%A7%D9%81%D8%A9+%D9%85%D9%86%D8%A7%D8%B3%D8%A8%D8%A7%D8%AA+%D9%81%D9%8A+%D8%AC%D8%AF%D8%A9.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/diyafa-munasabat-jeddah"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%B6%D9%8A%D8%A7%D9%81%D8%A9%20%D9%85%D9%86%D8%A7%D8%B3%D8%A8%D8%A7%D8%AA%20%D9%81%D9%8A%20%D9%85%D9%83%D8%A9%20%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A9+%D8%B6%D9%8A%D8%A7%D9%81%D8%A9+%D9%85%D9%86%D8%A7%D8%B3%D8%A8%D8%A7%D8%AA+%D9%81%D9%8A+%D9%85%D9%83%D8%A9+%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/diyafa-munasabat-makkah"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%B6%D9%8A%D8%A7%D9%81%D8%A9%20%D9%85%D9%86%D8%A7%D8%B3%D8%A8%D8%A7%D8%AA%20%D9%81%D9%8A%20%D9%8A%D9%86%D8%A8%D8%B9.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A9+%D8%B6%D9%8A%D8%A7%D9%81%D8%A9+%D9%85%D9%86%D8%A7%D8%B3%D8%A8%D8%A7%D8%AA+%D9%81%D9%8A+%D9%8A%D9%86%D8%A8%D8%B9.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/diyafa-munasabat-yanbu"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D9%82%D9%87%D9%88%D8%AC%D9%8A%D9%8A%D9%86%20%D9%88%D9%85%D8%A8%D8%A7%D8%B4%D8%B1%D9%8A%D9%86%20%D9%81%D9%8A%20%D8%A3%D8%A8%D9%87%D8%A7.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A9+%D9%82%D9%87%D9%88%D8%AC%D9%8A%D9%8A%D9%86+%D9%88%D9%85%D8%A8%D8%A7%D8%B4%D8%B1%D9%8A%D9%86+%D9%81%D9%8A+%D8%A3%D8%A8%D9%87%D8%A7.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/qahwajiin-abha"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D9%82%D9%87%D9%88%D8%AC%D9%8A%D9%8A%D9%86%20%D9%88%D9%85%D8%A8%D8%A7%D8%B4%D8%B1%D9%8A%D9%86%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A9+%D9%82%D9%87%D9%88%D8%AC%D9%8A%D9%8A%D9%86+%D9%88%D9%85%D8%A8%D8%A7%D8%B4%D8%B1%D9%8A%D9%86+%D9%81%D9%8A+%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/qahwajiin-dammam"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D9%82%D9%87%D9%88%D8%AC%D9%8A%D9%8A%D9%86%20%D9%88%D9%85%D8%A8%D8%A7%D8%B4%D8%B1%D9%8A%D9%86%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A9+%D9%82%D9%87%D9%88%D8%AC%D9%8A%D9%8A%D9%86+%D9%88%D9%85%D8%A8%D8%A7%D8%B4%D8%B1%D9%8A%D9%86+%D9%81%D9%8A+%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/qahwajiin-riyadh"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D9%82%D9%87%D9%88%D8%AC%D9%8A%D9%8A%D9%86%20%D9%88%D9%85%D8%A8%D8%A7%D8%B4%D8%B1%D9%8A%D9%86%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A9+%D9%82%D9%87%D9%88%D8%AC%D9%8A%D9%8A%D9%86+%D9%88%D9%85%D8%A8%D8%A7%D8%B4%D8%B1%D9%8A%D9%86+%D9%81%D9%8A+%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/qahwajiin-taif"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D9%82%D9%87%D9%88%D8%AC%D9%8A%D9%8A%D9%86%20%D9%88%D9%85%D8%A8%D8%A7%D8%B4%D8%B1%D9%8A%D9%86%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A9+%D9%82%D9%87%D9%88%D8%AC%D9%8A%D9%8A%D9%86+%D9%88%D9%85%D8%A8%D8%A7%D8%B4%D8%B1%D9%8A%D9%86+%D9%81%D9%8A+%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9+%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/qahwajiin-madinah"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D9%82%D9%87%D9%88%D8%AC%D9%8A%D9%8A%D9%86%20%D9%88%D9%85%D8%A8%D8%A7%D8%B4%D8%B1%D9%8A%D9%86%20%D9%81%D9%8A%20%D8%AC%D8%AF%D8%A9.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A9+%D9%82%D9%87%D9%88%D8%AC%D9%8A%D9%8A%D9%86+%D9%88%D9%85%D8%A8%D8%A7%D8%B4%D8%B1%D9%8A%D9%86+%D9%81%D9%8A+%D8%AC%D8%AF%D8%A9.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/qahwajiin-jeddah"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D9%82%D9%87%D9%88%D8%AC%D9%8A%D9%8A%D9%86%20%D9%88%D9%85%D8%A8%D8%A7%D8%B4%D8%B1%D9%8A%D9%86%20%D9%81%D9%8A%20%D9%85%D9%83%D8%A9%20%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A9+%D9%82%D9%87%D9%88%D8%AC%D9%8A%D9%8A%D9%86+%D9%88%D9%85%D8%A8%D8%A7%D8%B4%D8%B1%D9%8A%D9%86+%D9%81%D9%8A+%D9%85%D9%83%D8%A9+%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/qahwajiin-makkah"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D9%82%D9%87%D9%88%D8%AC%D9%8A%D9%8A%D9%86%20%D9%88%D9%85%D8%A8%D8%A7%D8%B4%D8%B1%D9%8A%D9%86%20%D9%81%D9%8A%20%D9%8A%D9%86%D8%A8%D8%B9.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A9+%D9%82%D9%87%D9%88%D8%AC%D9%8A%D9%8A%D9%86+%D9%88%D9%85%D8%A8%D8%A7%D8%B4%D8%B1%D9%8A%D9%86+%D9%81%D9%8A+%D9%8A%D9%86%D8%A8%D8%B9.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/qahwajiin-yanbu"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AD%D8%AC%D8%B2%20%D8%B6%D9%8A%D8%A7%D9%81%D8%A9%20%D9%81%D9%8A%20%D8%A3%D8%A8%D9%87%D8%A7.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%AD%D8%AC%D8%B2+%D8%B6%D9%8A%D8%A7%D9%81%D8%A9+%D9%81%D9%8A+%D8%A3%D8%A8%D9%87%D8%A7.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/locations/%D8%A3%D8%A8%D9%87%D8%A7",
+   "http://localhost:3100/locations/أبها"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AD%D8%AC%D8%B2%20%D8%B6%D9%8A%D8%A7%D9%81%D8%A9%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%AD%D8%AC%D8%B2+%D8%B6%D9%8A%D8%A7%D9%81%D8%A9+%D9%81%D9%8A+%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/locations/%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85",
+   "http://localhost:3100/locations/الدمام"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AD%D8%AC%D8%B2%20%D8%B6%D9%8A%D8%A7%D9%81%D8%A9%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%AD%D8%AC%D8%B2+%D8%B6%D9%8A%D8%A7%D9%81%D8%A9+%D9%81%D9%8A+%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/locations/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+   "http://localhost:3100/locations/الرياض"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AD%D8%AC%D8%B2%20%D8%B6%D9%8A%D8%A7%D9%81%D8%A9%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%AD%D8%AC%D8%B2+%D8%B6%D9%8A%D8%A7%D9%81%D8%A9+%D9%81%D9%8A+%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/locations/%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+   "http://localhost:3100/locations/الطائف"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AD%D8%AC%D8%B2%20%D8%B6%D9%8A%D8%A7%D9%81%D8%A9%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%AD%D8%AC%D8%B2+%D8%B6%D9%8A%D8%A7%D9%81%D8%A9+%D9%81%D9%8A+%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9+%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/locations/%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9",
+   "http://localhost:3100/locations/المدينة-المنورة"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AD%D8%AC%D8%B2%20%D8%B6%D9%8A%D8%A7%D9%81%D8%A9%20%D9%81%D9%8A%20%D8%AC%D8%AF%D8%A9.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%AD%D8%AC%D8%B2+%D8%B6%D9%8A%D8%A7%D9%81%D8%A9+%D9%81%D9%8A+%D8%AC%D8%AF%D8%A9.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/locations/%D8%AC%D8%AF%D8%A9",
+   "http://localhost:3100/locations/جدة"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AD%D8%AC%D8%B2%20%D8%B6%D9%8A%D8%A7%D9%81%D8%A9%20%D9%81%D9%8A%20%D9%85%D9%83%D8%A9%20%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%AD%D8%AC%D8%B2+%D8%B6%D9%8A%D8%A7%D9%81%D8%A9+%D9%81%D9%8A+%D9%85%D9%83%D8%A9+%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/locations/%D9%85%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9",
+   "http://localhost:3100/locations/مكة-المكرمة"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AD%D8%AC%D8%B2%20%D8%B6%D9%8A%D8%A7%D9%81%D8%A9%20%D9%81%D9%8A%20%D9%8A%D9%86%D8%A8%D8%B9.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D8%B1%D8%BA%D8%A8+%D8%A8%D8%AD%D8%AC%D8%B2+%D8%B6%D9%8A%D8%A7%D9%81%D8%A9+%D9%81%D9%8A+%D9%8A%D9%86%D8%A8%D8%B9.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/locations/%D9%8A%D9%86%D8%A8%D8%B9",
+   "http://localhost:3100/locations/ينبع"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AA%D9%82%D8%AF%D9%8A%D9%85%D8%A7%D8%AA%D9%83%D9%85%20%D9%88%D8%AA%D9%88%D8%B2%D9%8A%D8%B9%D8%A7%D8%AA%D9%83%D9%85%20%D8%A7%D9%84%D9%81%D8%A7%D8%AE%D8%B1%D8%A9.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D9%88%D8%AF+%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AA%D9%82%D8%AF%D9%8A%D9%85%D8%A7%D8%AA%D9%83%D9%85+%D9%88%D8%AA%D9%88%D8%B2%D9%8A%D8%B9%D8%A7%D8%AA%D9%83%D9%85+%D8%A7%D9%84%D9%81%D8%A7%D8%AE%D8%B1%D8%A9.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/offerings"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B6%D9%8A%D8%A7%D9%81%D8%A9%20%D9%84%D8%AF%D9%8A%D9%83%D9%85.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D9%88%D8%AF+%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B6%D9%8A%D8%A7%D9%81%D8%A9+%D9%84%D8%AF%D9%8A%D9%83%D9%85.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/",
+   "http://localhost:3100/diyafa-munasabat-abha",
+   "http://localhost:3100/diyafa-munasabat-dammam",
+   "http://localhost:3100/diyafa-munasabat-jeddah",
+   "http://localhost:3100/diyafa-munasabat-madinah",
+   "http://localhost:3100/diyafa-munasabat-makkah",
+   "http://localhost:3100/diyafa-munasabat-riyadh",
+   "http://localhost:3100/diyafa-munasabat-taif",
+   "http://localhost:3100/diyafa-munasabat-yanbu",
+   "http://localhost:3100/legal",
+   "http://localhost:3100/locations",
+   "http://localhost:3100/locations/%D8%A3%D8%A8%D9%87%D8%A7",
+   "http://localhost:3100/locations/%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85",
+   "http://localhost:3100/locations/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+   "http://localhost:3100/locations/%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+   "http://localhost:3100/locations/%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9",
+   "http://localhost:3100/locations/%D8%AC%D8%AF%D8%A9",
+   "http://localhost:3100/locations/%D9%85%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9",
+   "http://localhost:3100/locations/%D9%8A%D9%86%D8%A8%D8%B9",
+   "http://localhost:3100/locations/أبها",
+   "http://localhost:3100/locations/الدمام",
+   "http://localhost:3100/locations/الرياض",
+   "http://localhost:3100/locations/الطائف",
+   "http://localhost:3100/locations/المدينة-المنورة",
+   "http://localhost:3100/locations/جدة",
+   "http://localhost:3100/locations/مكة-المكرمة",
+   "http://localhost:3100/locations/ينبع",
+   "http://localhost:3100/qahwajiin-abha",
+   "http://localhost:3100/qahwajiin-dammam",
+   "http://localhost:3100/qahwajiin-jeddah",
+   "http://localhost:3100/qahwajiin-madinah",
+   "http://localhost:3100/qahwajiin-makkah",
+   "http://localhost:3100/qahwajiin-riyadh",
+   "http://localhost:3100/qahwajiin-taif",
+   "http://localhost:3100/qahwajiin-yanbu",
+   "http://localhost:3100/sababin-qahwa-abha",
+   "http://localhost:3100/sababin-qahwa-dammam",
+   "http://localhost:3100/sababin-qahwa-jeddah",
+   "http://localhost:3100/sababin-qahwa-madinah",
+   "http://localhost:3100/sababin-qahwa-makkah",
+   "http://localhost:3100/sababin-qahwa-riyadh",
+   "http://localhost:3100/sababin-qahwa-taif",
+   "http://localhost:3100/sababin-qahwa-yanbu",
+   "http://localhost:3100/services"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%D9%83%D9%85%20%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B6%D9%8A%D8%A7%D9%81%D8%A9.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%A3%D9%88%D8%AF+%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84+%D9%85%D8%B9%D9%83%D9%85+%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B6%D9%8A%D8%A7%D9%81%D8%A9.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/contact"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%AA%D8%B9%D8%B1%D9%81%D8%AA%20%D8%B9%D9%84%D9%89%20%D9%83%D9%8A%D9%81%20%D8%A7%D9%84%D8%B6%D9%8A%D8%A7%D9%81%D8%A9%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%83%D9%85.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%AA%D8%B9%D8%B1%D9%81%D8%AA+%D8%B9%D9%84%D9%89+%D9%83%D9%8A%D9%81+%D8%A7%D9%84%D8%B6%D9%8A%D8%A7%D9%81%D8%A9+%D9%88%D8%A3%D9%88%D8%AF+%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%83%D9%85.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/about"
+  ]
+ },
+ "https://wa.me/966508252134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%B1%D8%A3%D9%8A%D8%AA%20%D8%A3%D8%B9%D9%85%D8%A7%D9%84%D9%83%D9%85%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%A8%D8%A7%D9%82%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B6%D9%8A%D8%A7%D9%81%D8%A9.": {
+  "status": 200,
+  "final_url": "https://api.whatsapp.com/send/?phone=966508252134&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C+%D8%B1%D8%A3%D9%8A%D8%AA+%D8%A3%D8%B9%D9%85%D8%A7%D9%84%D9%83%D9%85+%D9%88%D8%A3%D9%88%D8%AF+%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%B9%D9%86+%D8%A8%D8%A7%D9%82%D8%A7%D8%AA+%D8%A7%D9%84%D8%B6%D9%8A%D8%A7%D9%81%D8%A9.&type=phone_number&app_absent=0",
+  "referenced_from": [
+   "http://localhost:3100/portfolio"
+  ]
+ },
+ "https://www.instagram.com/keifaldiafa": {
+  "status": 429,
+  "final_url": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fkeifaldiafa&is_from_rle",
+  "referenced_from": [
+   "http://localhost:3100/",
+   "http://localhost:3100/about",
+   "http://localhost:3100/contact",
+   "http://localhost:3100/diyafa-munasabat-abha",
+   "http://localhost:3100/diyafa-munasabat-dammam",
+   "http://localhost:3100/diyafa-munasabat-jeddah",
+   "http://localhost:3100/diyafa-munasabat-madinah",
+   "http://localhost:3100/diyafa-munasabat-makkah",
+   "http://localhost:3100/diyafa-munasabat-riyadh",
+   "http://localhost:3100/diyafa-munasabat-taif",
+   "http://localhost:3100/diyafa-munasabat-yanbu",
+   "http://localhost:3100/legal",
+   "http://localhost:3100/locations",
+   "http://localhost:3100/locations/%D8%A3%D8%A8%D9%87%D8%A7",
+   "http://localhost:3100/locations/%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85",
+   "http://localhost:3100/locations/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+   "http://localhost:3100/locations/%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+   "http://localhost:3100/locations/%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9",
+   "http://localhost:3100/locations/%D8%AC%D8%AF%D8%A9",
+   "http://localhost:3100/locations/%D9%85%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9",
+   "http://localhost:3100/locations/%D9%8A%D9%86%D8%A8%D8%B9",
+   "http://localhost:3100/locations/أبها",
+   "http://localhost:3100/locations/الدمام",
+   "http://localhost:3100/locations/الرياض",
+   "http://localhost:3100/locations/الطائف",
+   "http://localhost:3100/locations/المدينة-المنورة",
+   "http://localhost:3100/locations/جدة",
+   "http://localhost:3100/locations/مكة-المكرمة",
+   "http://localhost:3100/locations/ينبع",
+   "http://localhost:3100/offerings",
+   "http://localhost:3100/portfolio",
+   "http://localhost:3100/qahwajiin-abha",
+   "http://localhost:3100/qahwajiin-dammam",
+   "http://localhost:3100/qahwajiin-jeddah",
+   "http://localhost:3100/qahwajiin-madinah",
+   "http://localhost:3100/qahwajiin-makkah",
+   "http://localhost:3100/qahwajiin-riyadh",
+   "http://localhost:3100/qahwajiin-taif",
+   "http://localhost:3100/qahwajiin-yanbu",
+   "http://localhost:3100/sababin-qahwa-abha",
+   "http://localhost:3100/sababin-qahwa-dammam",
+   "http://localhost:3100/sababin-qahwa-jeddah",
+   "http://localhost:3100/sababin-qahwa-madinah",
+   "http://localhost:3100/sababin-qahwa-makkah",
+   "http://localhost:3100/sababin-qahwa-riyadh",
+   "http://localhost:3100/sababin-qahwa-taif",
+   "http://localhost:3100/sababin-qahwa-yanbu",
+   "http://localhost:3100/services"
+  ]
+ },
+ "https://www.tiktok.com/@keifaldiafa": {
+  "status": 200,
+  "final_url": "https://www.tiktok.com/@keifaldiafa",
+  "referenced_from": [
+   "http://localhost:3100/",
+   "http://localhost:3100/about",
+   "http://localhost:3100/contact",
+   "http://localhost:3100/diyafa-munasabat-abha",
+   "http://localhost:3100/diyafa-munasabat-dammam",
+   "http://localhost:3100/diyafa-munasabat-jeddah",
+   "http://localhost:3100/diyafa-munasabat-madinah",
+   "http://localhost:3100/diyafa-munasabat-makkah",
+   "http://localhost:3100/diyafa-munasabat-riyadh",
+   "http://localhost:3100/diyafa-munasabat-taif",
+   "http://localhost:3100/diyafa-munasabat-yanbu",
+   "http://localhost:3100/legal",
+   "http://localhost:3100/locations",
+   "http://localhost:3100/locations/%D8%A3%D8%A8%D9%87%D8%A7",
+   "http://localhost:3100/locations/%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85",
+   "http://localhost:3100/locations/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+   "http://localhost:3100/locations/%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+   "http://localhost:3100/locations/%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9",
+   "http://localhost:3100/locations/%D8%AC%D8%AF%D8%A9",
+   "http://localhost:3100/locations/%D9%85%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9",
+   "http://localhost:3100/locations/%D9%8A%D9%86%D8%A8%D8%B9",
+   "http://localhost:3100/locations/أبها",
+   "http://localhost:3100/locations/الدمام",
+   "http://localhost:3100/locations/الرياض",
+   "http://localhost:3100/locations/الطائف",
+   "http://localhost:3100/locations/المدينة-المنورة",
+   "http://localhost:3100/locations/جدة",
+   "http://localhost:3100/locations/مكة-المكرمة",
+   "http://localhost:3100/locations/ينبع",
+   "http://localhost:3100/offerings",
+   "http://localhost:3100/portfolio",
+   "http://localhost:3100/qahwajiin-abha",
+   "http://localhost:3100/qahwajiin-dammam",
+   "http://localhost:3100/qahwajiin-jeddah",
+   "http://localhost:3100/qahwajiin-madinah",
+   "http://localhost:3100/qahwajiin-makkah",
+   "http://localhost:3100/qahwajiin-riyadh",
+   "http://localhost:3100/qahwajiin-taif",
+   "http://localhost:3100/qahwajiin-yanbu",
+   "http://localhost:3100/sababin-qahwa-abha",
+   "http://localhost:3100/sababin-qahwa-dammam",
+   "http://localhost:3100/sababin-qahwa-jeddah",
+   "http://localhost:3100/sababin-qahwa-madinah",
+   "http://localhost:3100/sababin-qahwa-makkah",
+   "http://localhost:3100/sababin-qahwa-riyadh",
+   "http://localhost:3100/sababin-qahwa-taif",
+   "http://localhost:3100/sababin-qahwa-yanbu",
+   "http://localhost:3100/services"
+  ]
+ }
+}

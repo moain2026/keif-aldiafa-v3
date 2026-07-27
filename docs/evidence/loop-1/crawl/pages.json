@@ -1,0 +1,482 @@
+{
+ "http://localhost:3100/": {
+  "status": 200,
+  "time_s": 0.019,
+  "bytes": 276118,
+  "content_type": "text/html; charset=utf-8",
+  "title": "كيف الضيافة | قهوجيين وصبابين قهوة لضيافة فاخرة في السعودية",
+  "h1_count": 1,
+  "img_count": 126,
+  "img_missing_alt": 0
+ },
+ "http://localhost:3100/services": {
+  "status": 200,
+  "time_s": 0.032,
+  "bytes": 229180,
+  "content_type": "text/html; charset=utf-8",
+  "title": "قهوجيين وصبابين قهوة — خدمات ضيافة فاخرة | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 9,
+  "img_missing_alt": 0
+ },
+ "http://localhost:3100/offerings": {
+  "status": 200,
+  "time_s": 0.017,
+  "bytes": 289063,
+  "content_type": "text/html; charset=utf-8",
+  "title": "تقديمات ضيافة: قهوة سعودية وشاي وحلويات فاخرة | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 12,
+  "img_missing_alt": 0
+ },
+ "http://localhost:3100/portfolio": {
+  "status": 200,
+  "time_s": 0.016,
+  "bytes": 281859,
+  "content_type": "text/html; charset=utf-8",
+  "title": "معرض أعمال الضيافة — +500 مناسبة ناجحة | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 17,
+  "img_missing_alt": 0
+ },
+ "http://localhost:3100/about": {
+  "status": 200,
+  "time_s": 0.017,
+  "bytes": 77663,
+  "content_type": "text/html; charset=utf-8",
+  "title": "من نحن | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 6,
+  "img_missing_alt": 0
+ },
+ "http://localhost:3100/contact": {
+  "status": 200,
+  "time_s": 0.013,
+  "bytes": 81262,
+  "content_type": "text/html; charset=utf-8",
+  "title": "احجز قهوجيين وطاقم ضيافة — استشارة مجانية | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 5,
+  "img_missing_alt": 0
+ },
+ "http://localhost:3100/locations": {
+  "status": 200,
+  "time_s": 0.008,
+  "bytes": 72914,
+  "content_type": "text/html; charset=utf-8",
+  "title": "مناطق خدمات الضيافة — تغطية كل مدن المملكة | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 5,
+  "img_missing_alt": 0
+ },
+ "http://localhost:3100/legal": {
+  "status": 200,
+  "time_s": 0.009,
+  "bytes": 69915,
+  "content_type": "text/html; charset=utf-8",
+  "title": "الحقوق القانونية | كيف الضيافة | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 5,
+  "img_missing_alt": 0
+ },
+ "http://localhost:3100/locations/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6": {
+  "status": 200,
+  "time_s": 0.013,
+  "bytes": 130020,
+  "content_type": "text/html; charset=utf-8",
+  "title": "ضيافة فاخرة في الرياض — خبرة +500 مناسبة | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/locations/%D8%AC%D8%AF%D8%A9": {
+  "status": 200,
+  "time_s": 0.008,
+  "bytes": 128554,
+  "content_type": "text/html; charset=utf-8",
+  "title": "ضيافة فاخرة في جدة — خبرة +500 مناسبة | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/locations/%D9%85%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9": {
+  "status": 200,
+  "time_s": 0.008,
+  "bytes": 125520,
+  "content_type": "text/html; charset=utf-8",
+  "title": "ضيافة فاخرة في مكة المكرمة — خبرة +500 مناسبة | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/locations/%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9": {
+  "status": 200,
+  "time_s": 0.008,
+  "bytes": 125963,
+  "content_type": "text/html; charset=utf-8",
+  "title": "ضيافة فاخرة في المدينة المنورة — خبرة +500 مناسبة | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/locations/%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85": {
+  "status": 200,
+  "time_s": 0.009,
+  "bytes": 127148,
+  "content_type": "text/html; charset=utf-8",
+  "title": "ضيافة فاخرة في الدمام — خبرة +500 مناسبة | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/locations/%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81": {
+  "status": 200,
+  "time_s": 0.009,
+  "bytes": 126861,
+  "content_type": "text/html; charset=utf-8",
+  "title": "ضيافة فاخرة في الطائف — خبرة +500 مناسبة | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/locations/%D8%A3%D8%A8%D9%87%D8%A7": {
+  "status": 200,
+  "time_s": 0.008,
+  "bytes": 126373,
+  "content_type": "text/html; charset=utf-8",
+  "title": "ضيافة فاخرة في أبها — خبرة +500 مناسبة | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/locations/%D9%8A%D9%86%D8%A8%D8%B9": {
+  "status": 200,
+  "time_s": 0.008,
+  "bytes": 126258,
+  "content_type": "text/html; charset=utf-8",
+  "title": "ضيافة فاخرة في ينبع — خبرة +500 مناسبة | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/sababin-qahwa-jeddah": {
+  "status": 200,
+  "time_s": 0.012,
+  "bytes": 134377,
+  "content_type": "text/html; charset=utf-8",
+  "title": "صبابين قهوة جدة — طاقم سعودي وحجز بنفس اليوم | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/sababin-qahwa-riyadh": {
+  "status": 200,
+  "time_s": 0.008,
+  "bytes": 135200,
+  "content_type": "text/html; charset=utf-8",
+  "title": "صبابين قهوة الرياض — طاقم سعودي وحجز بنفس اليوم | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/sababin-qahwa-makkah": {
+  "status": 200,
+  "time_s": 0.009,
+  "bytes": 136507,
+  "content_type": "text/html; charset=utf-8",
+  "title": "صبابين قهوة مكة المكرمة — طاقم سعودي وحجز بنفس اليوم | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/sababin-qahwa-madinah": {
+  "status": 200,
+  "time_s": 0.007,
+  "bytes": 137661,
+  "content_type": "text/html; charset=utf-8",
+  "title": "صبابين قهوة المدينة المنورة — طاقم سعودي وحجز بنفس اليوم | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/sababin-qahwa-dammam": {
+  "status": 200,
+  "time_s": 0.016,
+  "bytes": 135198,
+  "content_type": "text/html; charset=utf-8",
+  "title": "صبابين قهوة الدمام — طاقم سعودي وحجز بنفس اليوم | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/sababin-qahwa-taif": {
+  "status": 200,
+  "time_s": 0.009,
+  "bytes": 135161,
+  "content_type": "text/html; charset=utf-8",
+  "title": "صبابين قهوة الطائف — طاقم سعودي وحجز بنفس اليوم | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/sababin-qahwa-abha": {
+  "status": 200,
+  "time_s": 0.008,
+  "bytes": 134637,
+  "content_type": "text/html; charset=utf-8",
+  "title": "صبابين قهوة أبها — طاقم سعودي وحجز بنفس اليوم | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/sababin-qahwa-yanbu": {
+  "status": 200,
+  "time_s": 0.008,
+  "bytes": 134699,
+  "content_type": "text/html; charset=utf-8",
+  "title": "صبابين قهوة ينبع — طاقم سعودي وحجز بنفس اليوم | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/qahwajiin-jeddah": {
+  "status": 200,
+  "time_s": 0.008,
+  "bytes": 133131,
+  "content_type": "text/html; charset=utf-8",
+  "title": "قهوجيين جدة — حجز سريع وطاقم بزيّ رسمي VIP | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/qahwajiin-riyadh": {
+  "status": 200,
+  "time_s": 0.009,
+  "bytes": 133888,
+  "content_type": "text/html; charset=utf-8",
+  "title": "قهوجيين الرياض — حجز سريع وطاقم بزيّ رسمي VIP | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/qahwajiin-makkah": {
+  "status": 200,
+  "time_s": 0.009,
+  "bytes": 135096,
+  "content_type": "text/html; charset=utf-8",
+  "title": "قهوجيين مكة المكرمة — حجز سريع وطاقم بزيّ رسمي VIP | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/qahwajiin-madinah": {
+  "status": 200,
+  "time_s": 0.009,
+  "bytes": 136265,
+  "content_type": "text/html; charset=utf-8",
+  "title": "قهوجيين المدينة المنورة — حجز سريع وطاقم بزيّ رسمي VIP | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/qahwajiin-dammam": {
+  "status": 200,
+  "time_s": 0.007,
+  "bytes": 133886,
+  "content_type": "text/html; charset=utf-8",
+  "title": "قهوجيين الدمام — حجز سريع وطاقم بزيّ رسمي VIP | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/qahwajiin-taif": {
+  "status": 200,
+  "time_s": 0.007,
+  "bytes": 133850,
+  "content_type": "text/html; charset=utf-8",
+  "title": "قهوجيين الطائف — حجز سريع وطاقم بزيّ رسمي VIP | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/qahwajiin-abha": {
+  "status": 200,
+  "time_s": 0.008,
+  "bytes": 133370,
+  "content_type": "text/html; charset=utf-8",
+  "title": "قهوجيين أبها — حجز سريع وطاقم بزيّ رسمي VIP | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/qahwajiin-yanbu": {
+  "status": 200,
+  "time_s": 0.007,
+  "bytes": 133407,
+  "content_type": "text/html; charset=utf-8",
+  "title": "قهوجيين ينبع — حجز سريع وطاقم بزيّ رسمي VIP | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/diyafa-munasabat-jeddah": {
+  "status": 200,
+  "time_s": 0.008,
+  "bytes": 136569,
+  "content_type": "text/html; charset=utf-8",
+  "title": "ضيافة مناسبات جدة — تجهيز فاخر VIP بنفس اليوم | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/diyafa-munasabat-riyadh": {
+  "status": 200,
+  "time_s": 0.01,
+  "bytes": 137374,
+  "content_type": "text/html; charset=utf-8",
+  "title": "ضيافة مناسبات الرياض — تجهيز فاخر VIP بنفس اليوم | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/diyafa-munasabat-makkah": {
+  "status": 200,
+  "time_s": 0.011,
+  "bytes": 138654,
+  "content_type": "text/html; charset=utf-8",
+  "title": "ضيافة مناسبات مكة المكرمة — تجهيز فاخر VIP بنفس اليوم | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/diyafa-munasabat-madinah": {
+  "status": 200,
+  "time_s": 0.008,
+  "bytes": 139883,
+  "content_type": "text/html; charset=utf-8",
+  "title": "ضيافة مناسبات المدينة المنورة — تجهيز فاخر VIP بنفس اليوم | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/diyafa-munasabat-dammam": {
+  "status": 200,
+  "time_s": 0.007,
+  "bytes": 137372,
+  "content_type": "text/html; charset=utf-8",
+  "title": "ضيافة مناسبات الدمام — تجهيز فاخر VIP بنفس اليوم | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/diyafa-munasabat-taif": {
+  "status": 200,
+  "time_s": 0.008,
+  "bytes": 137101,
+  "content_type": "text/html; charset=utf-8",
+  "title": "ضيافة مناسبات الطائف — تجهيز فاخر VIP بنفس اليوم | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/diyafa-munasabat-abha": {
+  "status": 200,
+  "time_s": 0.007,
+  "bytes": 136589,
+  "content_type": "text/html; charset=utf-8",
+  "title": "ضيافة مناسبات أبها — تجهيز فاخر VIP بنفس اليوم | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/diyafa-munasabat-yanbu": {
+  "status": 200,
+  "time_s": 0.008,
+  "bytes": 136461,
+  "content_type": "text/html; charset=utf-8",
+  "title": "ضيافة مناسبات ينبع — تجهيز فاخر VIP بنفس اليوم | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/locations/الرياض": {
+  "status": 200,
+  "time_s": 0.006,
+  "bytes": 130020,
+  "content_type": "text/html; charset=utf-8",
+  "title": "ضيافة فاخرة في الرياض — خبرة +500 مناسبة | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/locations/جدة": {
+  "status": 200,
+  "time_s": 0.007,
+  "bytes": 128554,
+  "content_type": "text/html; charset=utf-8",
+  "title": "ضيافة فاخرة في جدة — خبرة +500 مناسبة | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/locations/مكة-المكرمة": {
+  "status": 200,
+  "time_s": 0.006,
+  "bytes": 125520,
+  "content_type": "text/html; charset=utf-8",
+  "title": "ضيافة فاخرة في مكة المكرمة — خبرة +500 مناسبة | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/locations/المدينة-المنورة": {
+  "status": 200,
+  "time_s": 0.005,
+  "bytes": 125963,
+  "content_type": "text/html; charset=utf-8",
+  "title": "ضيافة فاخرة في المدينة المنورة — خبرة +500 مناسبة | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/locations/الدمام": {
+  "status": 200,
+  "time_s": 0.006,
+  "bytes": 127148,
+  "content_type": "text/html; charset=utf-8",
+  "title": "ضيافة فاخرة في الدمام — خبرة +500 مناسبة | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/locations/الطائف": {
+  "status": 200,
+  "time_s": 0.006,
+  "bytes": 126861,
+  "content_type": "text/html; charset=utf-8",
+  "title": "ضيافة فاخرة في الطائف — خبرة +500 مناسبة | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/locations/أبها": {
+  "status": 200,
+  "time_s": 0.006,
+  "bytes": 126373,
+  "content_type": "text/html; charset=utf-8",
+  "title": "ضيافة فاخرة في أبها — خبرة +500 مناسبة | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ },
+ "http://localhost:3100/locations/ينبع": {
+  "status": 200,
+  "time_s": 0.006,
+  "bytes": 126258,
+  "content_type": "text/html; charset=utf-8",
+  "title": "ضيافة فاخرة في ينبع — خبرة +500 مناسبة | كيف الضيافة",
+  "h1_count": 1,
+  "img_count": 22,
+  "img_missing_alt": 8
+ }
+}
