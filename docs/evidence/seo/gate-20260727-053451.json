@@ -1,0 +1,122 @@
+{
+ "base": "https://keifaldiafa.com",
+ "checked_at": "2026-07-27T05:34:51.440384+00:00",
+ "passed": 16,
+ "failed": 3,
+ "results": [
+  {
+   "rule": "R1",
+   "name": "روابط صفحات المدن الـ24",
+   "ok": true,
+   "detail": "24/24 موجودة في HTML الأولي"
+  },
+  {
+   "rule": "R1b",
+   "name": "رابط /locations",
+   "ok": true,
+   "detail": "/locations"
+  },
+  {
+   "rule": "R2",
+   "name": "title موجود",
+   "ok": true,
+   "detail": "كيف الضيافة | قهوجيين وصبابين قهوة لضيافة فاخرة في السعودية"
+  },
+  {
+   "rule": "R2",
+   "name": "description موجود",
+   "ok": true,
+   "detail": "132 حرف"
+  },
+  {
+   "rule": "R2",
+   "name": "canonical موجود",
+   "ok": true,
+   "detail": "https://keifaldiafa.com"
+  },
+  {
+   "rule": "R3",
+   "name": "كل كتل JSON-LD صالحة",
+   "ok": true,
+   "detail": "5 كتلة، 0 فاسدة"
+  },
+  {
+   "rule": "R3",
+   "name": "أنواع Schema الإلزامية",
+   "ok": true,
+   "detail": "موجودة كلها (16 نوع إجمالاً)"
+  },
+  {
+   "rule": "R4",
+   "name": "H1 واحد فقط",
+   "ok": true,
+   "detail": "العدد: 1"
+  },
+  {
+   "rule": "R4",
+   "name": "H1 يتضمن كلمة خدمية",
+   "ok": true,
+   "detail": "قهوجيين وصبابين قهوة لضيافة فاخرة في السعودية"
+  },
+  {
+   "rule": "R5",
+   "name": "كلمات الرئيسية ≥600",
+   "ok": false,
+   "detail": "470 كلمة"
+  },
+  {
+   "rule": "R6",
+   "name": "og:image موجود",
+   "ok": true,
+   "detail": "https://keifaldiafa.com/og-cover-v2.jpg"
+  },
+  {
+   "rule": "R7",
+   "name": "أبعاد لأوائل الصور",
+   "ok": false,
+   "detail": "بلا أبعاد: 2/5"
+  },
+  {
+   "rule": "R8",
+   "name": "HTML الرئيسية ≤150KB",
+   "ok": false,
+   "detail": "270KB"
+  },
+  {
+   "rule": "R9",
+   "name": "صفحة مدينة سليمة /qahwajiin-jeddah",
+   "ok": true,
+   "detail": "title+canonical+H1 ✓"
+  },
+  {
+   "rule": "R9",
+   "name": "صفحة مدينة سليمة /sababin-qahwa-riyadh",
+   "ok": true,
+   "detail": "title+canonical+H1 ✓"
+  },
+  {
+   "rule": "R9",
+   "name": "صفحة مدينة سليمة /diyafa-munasabat-dammam",
+   "ok": true,
+   "detail": "title+canonical+H1 ✓"
+  },
+  {
+   "rule": "R10",
+   "name": "robots.txt",
+   "ok": true,
+   "detail": "يتضمن Sitemap"
+  },
+  {
+   "rule": "R10",
+   "name": "sitemap /sitemap.xml",
+   "ok": true,
+   "detail": "40 loc"
+  },
+  {
+   "rule": "R10",
+   "name": "sitemap /image-sitemap.xml",
+   "ok": true,
+   "detail": "4 loc"
+  }
+ ]
+}
