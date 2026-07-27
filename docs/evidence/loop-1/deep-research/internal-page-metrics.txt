@@ -1,0 +1,13 @@
+# Internal page metrics — production build (next start :3200)
+# command: python3 over curl of built HTML; date 2026-07-27
+page                              words ar_chars  H2/3 imgTags html_bytes
+/                                   470     2314    16     126     276118
+/services                           379     1850    10       9     229180
+/offerings                          339     1665    13      12     289063
+/portfolio                          278     1327     6      17     281859
+/about                              353     1710    11       6      77663
+/contact                            327     1516     7       5      81262
+/sababin-qahwa-jeddah               739     3675    23      22     134377
+/qahwajiin-riyadh                   682     3551    23      22     133888
+/diyafa-munasabat-makkah            728     3701    23      22     138654
+/locations/riyadh(ar)               447     2233    14      22     130020
