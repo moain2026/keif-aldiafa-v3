@@ -1,0 +1,9 @@
+# Per-page content + CTA/button metrics — production build (next start :3200) — 2026-07-27
+page             words  H2/3 imgTags buttons links wa.me tel:
+home               470    16     126       1    59     9    4
+services           379    10       9       4    59     9    4
+offerings          339    13      12      10    58     9    4
+portfolio          278     6      17       6    58     8    4
+about              353    11       6       1    58     8    4
+contact            327     7       5       2    63     9    5
+locations-index    291     5       5       1    65     8    4
