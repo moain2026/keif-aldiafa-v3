@@ -159,8 +159,8 @@ export function PartnersMarquee() {
     <section className="py-12 sm:py-16 px-4 overflow-hidden contain-paint bg-[#0f0f0f]">
       <div className="max-w-7xl mx-auto mb-8 sm:mb-12">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ y: 20 }}
+          whileInView={{ y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
           className="text-center"
@@ -198,7 +198,7 @@ export function PartnersMarquee() {
       </div>
       
       <motion.p 
-        initial={{ opacity: 0 }}
+        initial={{ opacity: 1 }}
         whileInView={{ opacity: 1 }}
         className="text-[#F5F5DC]/30 text-[10px] sm:text-xs text-center mt-8 font-cairo tracking-wide"
       >

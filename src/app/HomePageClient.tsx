@@ -21,7 +21,7 @@ const whyCards = [
 
 function SectionHeader({ label, title, center = true }: { label?: string; title: string; center?: boolean }) {
   return (
-    <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-50px" }} transition={{ duration: 0.6 }} className={`mb-14 ${center ? "text-center" : ""}`}>
+    <motion.div initial={{ y: 24 }} whileInView={{ y: 0 }} viewport={{ once: true, margin: "-50px" }} transition={{ duration: 0.6 }} className={`mb-14 ${center ? "text-center" : ""}`}>
       {label && <p className={`text-gold-matte mb-3 ${center ? "text-center" : ""}`} style={{ fontSize: "0.75rem", letterSpacing: "0.35em" }}>✦ {label} ✦</p>}
       <h2 className={`text-text-primary font-cairo ${center ? "text-center" : ""}`} style={{ fontSize: "clamp(1.6rem, 4.5vw, 2.4rem)", fontWeight: 800, lineHeight: 1.3 }}>{title}</h2>
       <div className="mt-4 mb-1 rounded-full" style={{ width: center ? 90 : 70, height: 2, background: "linear-gradient(90deg, transparent, #C5A059 30%, #E2C68E 60%, transparent)", margin: "12px auto 0" }} />
@@ -260,7 +260,7 @@ export function HomePageClient() {
           <SectionHeader label="لماذا نحن" title="ضيافة مناسبات VIP نصنع فيها الفرق" />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {whyCards.map((card, i) => (
-              <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="card-luxury p-8 rounded-3xl group">
+              <motion.div key={i} initial={{ y: 20 }} whileInView={{ y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="card-luxury p-8 rounded-3xl group">
                 <div className="w-14 h-14 rounded-2xl bg-gold-matte/10 flex items-center justify-center text-gold-matte mb-6 group-hover:bg-gold-matte group-hover:text-luxury-black transition-all duration-500">
                   {card.icon}
                 </div>
@@ -278,7 +278,7 @@ export function HomePageClient() {
           <SectionHeader label="أسئلة شائعة" title="أسئلة شائعة عن كيف الضيافة" />
           <div className="space-y-6">
             {HOME_FAQS.map((f, i) => (
-              <motion.div key={i} initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }}>
+              <motion.div key={i} initial={{ y: 12 }} whileInView={{ y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }}>
                 <h3 className="text-text-primary font-cairo font-bold mb-2">{f.question}</h3>
                 <p className="text-text-secondary leading-relaxed text-sm">{f.answer}</p>
               </motion.div>

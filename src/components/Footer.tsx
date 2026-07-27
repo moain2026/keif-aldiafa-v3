@@ -43,7 +43,7 @@ export default function Footer() {
                 <p className="text-[#B8860B]/50" style={{ fontSize: "0.62rem", letterSpacing: "0.25em" }}>KEIF AL-DIAFA · LUXURY HOSPITALITY</p>
               </div>
             </div>
-            <p className="text-[#F5F5DC]/50 text-sm leading-relaxed max-w-sm">
+            <p className="text-[#F5F5DC]/70 text-sm leading-relaxed max-w-sm">
               منصة تجربة فاخرة تعكس جودة وفخامة خدمات الضيافة السعودية الأصيلة. نحوّل كل مناسبة إلى ذكرى لا تُنسى.
             </p>
             {/* Social Icons */}
@@ -69,7 +69,7 @@ export default function Footer() {
             <ul className="space-y-2.5">
               {navLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-[#F5F5DC]/50 text-sm hover:text-[#B8860B] transition-colors duration-200 flex items-center gap-2 group min-h-[36px]">
+                  <Link href={link.href} className="text-[#F5F5DC]/70 text-sm hover:text-[#B8860B] transition-colors duration-200 flex items-center gap-2 group min-h-[44px]">
                     <span className="w-3 h-px bg-[#B8860B]/30 group-hover:w-5 group-hover:bg-[#B8860B] transition-all duration-300" />
                     {link.label}
                   </Link>
@@ -82,7 +82,7 @@ export default function Footer() {
             <ul className="grid grid-cols-2 gap-x-4 gap-y-2.5">
               {CITIES.map((city) => (
                 <li key={city.slug}>
-                  <Link href={`/locations/${city.slug}`} className="text-[#F5F5DC]/50 text-sm hover:text-[#B8860B] transition-colors duration-200 flex items-center gap-2 group min-h-[36px]">
+                  <Link href={`/locations/${city.slug}`} className="text-[#F5F5DC]/70 text-sm hover:text-[#B8860B] transition-colors duration-200 flex items-center gap-2 group min-h-[44px]">
                     <span className="w-3 h-px bg-[#B8860B]/30 group-hover:w-5 group-hover:bg-[#B8860B] transition-all duration-300 flex-shrink-0" />
                     <span>ضيافة {city.name}</span>
                   </Link>
@@ -128,7 +128,7 @@ export default function Footer() {
                 { icon: <svg viewBox="0 0 24 24" fill="none" stroke="#B8860B" strokeWidth="2" className="w-4 h-4"><path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>, text: "info@keifaldiafa.com", href: "mailto:info@keifaldiafa.com" },
                 { icon: <svg viewBox="0 0 24 24" fill="none" stroke="#B8860B" strokeWidth="2" className="w-4 h-4"><path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>, text: "جميع مناطق المملكة العربية السعودية", href: "/locations" },
               ].map((item) => (
-                <a key={item.text} href={item.href} className="flex items-start gap-3 text-[#F5F5DC]/50 text-sm hover:text-[#B8860B] transition-colors duration-200 group min-h-[36px]" target={item.href.startsWith("http") ? "_blank" : undefined} rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}>
+                <a key={item.text} href={item.href} className="flex items-start gap-3 text-[#F5F5DC]/70 text-sm hover:text-[#B8860B] transition-colors duration-200 group min-h-[44px]" target={item.href.startsWith("http") ? "_blank" : undefined} rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}>
                   <span className="mt-0.5 flex-shrink-0">{item.icon}</span>
                   <span>{item.text}</span>
                 </a>
@@ -147,8 +147,8 @@ export default function Footer() {
 
         {/* Trust Badges Section */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ y: 20 }}
+          whileInView={{ y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.6 }}
           className="py-8 mb-6 flex flex-col items-center gap-6"
@@ -257,7 +257,7 @@ export default function Footer() {
             </span>
             <span className="inline-block w-6 h-px bg-gradient-to-l from-transparent to-[#B8860B]/40" />
           </p>
-          <p className="text-[#B8860B]/30 text-xs" style={{ letterSpacing: "0.1em" }}>KEIF AL-DIAFA · LUXURY HOSPITALITY · KSA</p>
+          <p className="text-[#B8860B]/60 text-xs" style={{ letterSpacing: "0.1em" }}>KEIF AL-DIAFA · LUXURY HOSPITALITY · KSA</p>
         </div>
       </div>
     </footer>
