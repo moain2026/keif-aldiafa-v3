@@ -65,7 +65,7 @@ export default function ContactClient() {
             <motion.a key={i} href={method.href} target={method.href.startsWith("http") ? "_blank" : undefined} rel="noopener noreferrer" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }} whileHover={{ y: -4 }} className="card-luxury p-5 rounded-2xl text-center">
               <div className="w-12 h-12 rounded-xl mx-auto mb-3 flex items-center justify-center" style={{ background: `${method.color}18`, border: `1px solid ${method.color}40`, color: method.color }}>{method.icon}</div>
               <p className="text-[#F5F5DC] text-sm" style={{ fontWeight: 600 }}>{method.label}</p>
-              <p className="text-[#F5F5DC]/40 text-xs mt-1">{method.value}</p>
+              <p className="text-[#F5F5DC]/60 text-xs mt-1">{method.value}</p>
             </motion.a>
           ))}
         </div>

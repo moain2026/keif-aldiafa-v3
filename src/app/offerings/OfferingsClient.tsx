@@ -272,7 +272,7 @@ function Lightbox({
             </div>
           </div>
           <div className="mt-6 text-center">
-            <h3 className="text-2xl font-amiri text-[#D4A017] mb-2">{item.name}</h3>
+            <h2 className="text-2xl font-amiri text-[#D4A017] mb-2">{item.name}</h2>
             <p className="text-[#F5F5DC]/70 text-sm max-w-md mx-auto">{item.description}</p>
           </div>
         </motion.div>
@@ -489,7 +489,7 @@ export default function OfferingsClient() {
               <div className="absolute inset-0 bg-[#B8860B]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               
               <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
-                <h3 className="text-[#F5F5DC]" style={{ fontSize: "1.1rem", fontWeight: 700 }}>{item.name}</h3>
+                <h2 className="text-[#F5F5DC]" style={{ fontSize: "1.1rem", fontWeight: 700 }}>{item.name}</h2>
                 <p className="text-[#F5F5DC]/50 text-xs mt-1 line-clamp-2">{item.description}</p>
               </div>
             </motion.div>

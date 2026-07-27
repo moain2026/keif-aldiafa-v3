@@ -100,7 +100,7 @@ export default function LegalPage() {
           </section>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-white/10 text-xs text-[#F5F5DC]/40 text-center">
+        <div className="mt-12 pt-8 border-t border-white/10 text-xs text-[#F5F5DC]/60 text-center">
           آخر تحديث: {year} · كيف الضيافة للأفراح والمناسبات · جدة، المملكة العربية السعودية
         </div>
       </div>

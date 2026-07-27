@@ -105,7 +105,7 @@ function NavbarContent({ deferredPrompt, setDeferredPrompt }: NavbarProps) {
         role="banner"
       >
         <div className="max-w-7xl mx-auto px-4 py-1.5 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3 group" aria-label="الصفحة الرئيسية">
+          <Link href="/" className="flex items-center gap-3 group" aria-label="كيف الضيافة — الصفحة الرئيسية">
             <motion.div
               whileHover={{ rotate: 5, scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
@@ -123,7 +123,7 @@ function NavbarContent({ deferredPrompt, setDeferredPrompt }: NavbarProps) {
               <span className="block gold-shine-text" style={{ fontSize: "1.15rem", fontWeight: 800, lineHeight: 1.1 }}>
                 كيف الضيافة
               </span>
-              <span className="block text-gold-matte/60" style={{ fontSize: "0.6rem", letterSpacing: "0.25em" }}>
+              <span className="block text-gold-matte/80" style={{ fontSize: "0.6rem", letterSpacing: "0.25em" }}>
                 KEIF AL-DIAFA
               </span>
             </div>

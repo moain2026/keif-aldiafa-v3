@@ -40,7 +40,7 @@ export default function Footer() {
               <DallahLogo size={60} />
               <div>
                 <p className="gold-gradient-text" style={{ fontSize: "1.3rem", fontWeight: 800 }}>كيف الضيافة</p>
-                <p className="text-[#B8860B]/50" style={{ fontSize: "0.62rem", letterSpacing: "0.25em" }}>KEIF AL-DIAFA · LUXURY HOSPITALITY</p>
+                <p className="text-[#B8860B]/80" style={{ fontSize: "0.62rem", letterSpacing: "0.25em" }}>KEIF AL-DIAFA · LUXURY HOSPITALITY</p>
               </div>
             </div>
             <p className="text-[#F5F5DC]/70 text-sm leading-relaxed max-w-sm">
@@ -65,7 +65,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-[#B8860B] mb-4" style={{ fontSize: "0.9rem", fontWeight: 700, letterSpacing: "0.1em" }}>روابط سريعة</h3>
+            <h2 className="text-[#B8860B] mb-4" style={{ fontSize: "0.9rem", fontWeight: 700, letterSpacing: "0.1em" }}>روابط سريعة</h2>
             <ul className="space-y-2.5">
               {navLinks.map((link) => (
                 <li key={link.href}>
@@ -78,7 +78,7 @@ export default function Footer() {
             </ul>
 
             {/* المناطق — روابط صفحات المدن (2×2) لاكتشافها وتقوية السيو المحلي */}
-            <h3 className="text-[#B8860B] mt-6 mb-4" style={{ fontSize: "0.9rem", fontWeight: 700, letterSpacing: "0.1em" }}>خدماتنا حسب المدينة</h3>
+            <h2 className="text-[#B8860B] mt-6 mb-4" style={{ fontSize: "0.9rem", fontWeight: 700, letterSpacing: "0.1em" }}>خدماتنا حسب المدينة</h2>
             <ul className="grid grid-cols-2 gap-x-4 gap-y-2.5">
               {CITIES.map((city) => (
                 <li key={city.slug}>
@@ -91,12 +91,12 @@ export default function Footer() {
             </ul>
 
             {/* صفحات الخدمة×المدينة (24 رابط) — فكّ عزلة صفحات الأموال وتمرير PageRank داخلي */}
-            <h3
+            <h2
               className="text-[#B8860B] mt-6 mb-4"
               style={{ fontSize: "0.9rem", fontWeight: 700, letterSpacing: "0.1em" }}
             >
               خدماتنا في مدن المملكة
-            </h3>
+            </h2>
             <ul className="space-y-2 max-h-56 overflow-y-auto pr-1" style={{ scrollbarWidth: "thin" }}>
               {LOCAL_PAGES.map((p) => {
                 const c = SC_CITIES[p.city];
@@ -121,7 +121,7 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-[#B8860B] mb-4" style={{ fontSize: "0.9rem", fontWeight: 700, letterSpacing: "0.1em" }}>معلومات التواصل</h3>
+            <h2 className="text-[#B8860B] mb-4" style={{ fontSize: "0.9rem", fontWeight: 700, letterSpacing: "0.1em" }}>معلومات التواصل</h2>
             <div className="space-y-3">
               {[
                 { icon: <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 text-[#25D366]"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" /></svg>, text: "+966 50 825 2134", href: "tel:+966508252134" },
@@ -136,10 +136,10 @@ export default function Footer() {
             </div>
 
             {/* Services summary */}
-            <h3 className="text-[#B8860B] mb-3 mt-6" style={{ fontSize: "0.9rem", fontWeight: 700, letterSpacing: "0.1em" }}>خدماتنا</h3>
+            <h2 className="text-[#B8860B] mb-3 mt-6" style={{ fontSize: "0.9rem", fontWeight: 700, letterSpacing: "0.1em" }}>خدماتنا</h2>
             <div className="flex flex-wrap gap-1.5">
               {["مضيفون", "مضيفات", "سفرجي", "سقاء", "سواس", "خطاط", "رسام", "فرقة شعبية"].map((s) => (
-                <span key={s} className="text-[#F5F5DC]/40 text-xs px-2 py-1 rounded-full" style={{ background: "rgba(184,134,11,0.06)", border: "1px solid rgba(184,134,11,0.1)" }}>{s}</span>
+                <span key={s} className="text-[#F5F5DC]/60 text-xs px-2 py-1 rounded-full" style={{ background: "rgba(184,134,11,0.06)", border: "1px solid rgba(184,134,11,0.1)" }}>{s}</span>
               ))}
             </div>
           </div>
@@ -246,7 +246,7 @@ export default function Footer() {
               الحقوق القانونية
             </Link>
           </p>
-          <p className="flex items-center gap-2 text-[#F5F5DC]/40 text-xs" dir="ltr">
+          <p className="flex items-center gap-2 text-[#F5F5DC]/60 text-xs" dir="ltr">
             <span className="inline-block w-6 h-px bg-gradient-to-r from-transparent to-[#B8860B]/40" />
             <span style={{ letterSpacing: "0.04em" }}>Developed by</span>
             <span
@@ -257,7 +257,7 @@ export default function Footer() {
             </span>
             <span className="inline-block w-6 h-px bg-gradient-to-l from-transparent to-[#B8860B]/40" />
           </p>
-          <p className="text-[#B8860B]/60 text-xs" style={{ letterSpacing: "0.1em" }}>KEIF AL-DIAFA · LUXURY HOSPITALITY · KSA</p>
+          <p className="text-[#B8860B]/80 text-xs" style={{ letterSpacing: "0.1em" }}>KEIF AL-DIAFA · LUXURY HOSPITALITY · KSA</p>
         </div>
       </div>
     </footer>

@@ -407,7 +407,7 @@ export default function PortfolioClient() {
         {/* Empty State */}
         {displayedItems.length === 0 && (
           <div className="text-center py-24">
-            <p className="text-[#F5F5DC]/40 text-lg">لا توجد صور في هذه الفئة حالياً</p>
+            <p className="text-[#F5F5DC]/60 text-lg">لا توجد صور في هذه الفئة حالياً</p>
           </div>
         )}
       </div>
