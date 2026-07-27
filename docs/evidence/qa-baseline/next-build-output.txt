@@ -1,0 +1,72 @@
+
+> keif-aldiafa-website@1.0.0 build
+> next build
+
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+  ▲ Next.js 14.2.35
+  - Experiments (use with caution):
+    · scrollRestoration
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+
+./src/app/layout.tsx
+158:9  Warning: Prefer `next/script` component when using the inline script for Google Analytics. See: https://nextjs.org/docs/messages/next-script-for-ga  @next/next/next-script-for-ga
+
+./src/components/DallahLogo.tsx
+14:7  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/components/ImageWithFallback.tsx
+88:12  Warning: Image elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+92:5  Warning: Image elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+   Collecting page data ...
+   Generating static pages (0/47) ...
+   Generating static pages (11/47) 
+   Generating static pages (23/47) 
+   Generating static pages (35/47) 
+ ✓ Generating static pages (47/47)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    5.45 kB         157 kB
+├ ○ /_not-found                          142 B          87.5 kB
+├ ● /[serviceCity]                       1.09 kB         145 kB
+├   ├ /sababin-qahwa-jeddah
+├   ├ /sababin-qahwa-riyadh
+├   ├ /sababin-qahwa-makkah
+├   └ [+21 more paths]
+├ ○ /about                               4.71 kB         153 kB
+├ ○ /contact                             5.37 kB         144 kB
+├ ○ /image-sitemap.xml                   0 B                0 B
+├ ○ /legal                               181 B          96.3 kB
+├ ○ /locations                           181 B          96.3 kB
+├ ● /locations/[city]                    1.09 kB         145 kB
+├   ├ /locations/الرياض
+├   ├ /locations/جدة
+├   ├ /locations/مكة-المكرمة
+├   └ [+5 more paths]
+├ ○ /offerings                           9.58 kB         166 kB
+├ ○ /portfolio                           5.21 kB         162 kB
+├ ○ /robots.txt                          0 B                0 B
+├ ○ /services                            10.9 kB         163 kB
+├ ○ /sitemap_index.xml                   0 B                0 B
+└ ○ /sitemap.xml                         0 B                0 B
++ First Load JS shared by all            87.4 kB
+  ├ chunks/117-8a1334e26a3e6904.js       31.7 kB
+  ├ chunks/fd9d1056-0f29870bbd6c2643.js  53.6 kB
+  └ other shared chunks (total)          2.01 kB
+
+
+ƒ Middleware                             25.2 kB
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses getStaticProps)
+
