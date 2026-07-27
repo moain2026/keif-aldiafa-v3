@@ -1,0 +1,16 @@
+Package              Current    Wanted   Latest  Location                         Depended by
+@types/node         20.19.35  20.19.43   26.1.1  node_modules/@types/node         keif-aldiafa-v3
+@types/react         18.3.28   18.3.31  19.2.17  node_modules/@types/react        keif-aldiafa-v3
+@types/react-dom      18.3.7    18.3.7   19.2.3  node_modules/@types/react-dom    keif-aldiafa-v3
+autoprefixer         10.4.27    10.5.4   10.5.4  node_modules/autoprefixer        keif-aldiafa-v3
+eslint                8.57.1    8.57.1   10.8.0  node_modules/eslint              keif-aldiafa-v3
+eslint-config-next   14.2.15   14.2.15  16.2.12  node_modules/eslint-config-next  keif-aldiafa-v3
+lighthouse            13.4.0    13.4.1   13.4.1  node_modules/lighthouse          keif-aldiafa-v3
+motion               12.35.0   12.42.2  12.42.2  node_modules/motion              keif-aldiafa-v3
+next                 14.2.35   14.2.35  16.2.12  node_modules/next                keif-aldiafa-v3
+postcss                8.5.8    8.5.23   8.5.23  node_modules/postcss             keif-aldiafa-v3
+react                 18.3.1    18.3.1   19.2.8  node_modules/react               keif-aldiafa-v3
+react-dom             18.3.1    18.3.1   19.2.8  node_modules/react-dom           keif-aldiafa-v3
+tailwind-merge         3.5.0     3.6.0    3.6.0  node_modules/tailwind-merge      keif-aldiafa-v3
+tailwindcss           3.4.19    3.4.19    4.3.3  node_modules/tailwindcss         keif-aldiafa-v3
+typescript             5.9.3     5.9.3    7.0.2  node_modules/typescript          keif-aldiafa-v3
